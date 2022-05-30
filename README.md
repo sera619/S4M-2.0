@@ -19,4 +19,4 @@ __While this project is under alpha development it will be only available in ger
 |__Features__|__Beschreibung__|
 |:------:|:--------|
 |*Benutzererkennung*| S4M erkennt das Tonprofil des Sprechers und kann so vor unbefugten Nutzern schützen.|
-|*dynamische Kommandoerkennung*|Keine Abfrage von kompletten Templatetexten. S4M reagiert auf Schlüsselbegriffe in Sätzen und lernt dabei deine Stimme und Sprechweise immer besser kennen.|
+|*dynamische Kommandoerkennung*|Keine Abfrage von kompletten Templatetexten. S4M reagiert auf Schlüsselbegriffe in Sätzen und lernt dabei deine Stimme und Sprechweise immer besser zu verstehen.|
