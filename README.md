@@ -1,13 +1,16 @@
 ###### This README is currently work in progress #####
 
 # S4M 2.0 Voiceassistant #
-# TecAlpha Version #
 
+**TecAlpha Version**
+
+---
 __!IMPORTANT!__
 
 __While this project is under alpha development it will be only available in german !__
 
 *Notice: This will be changed if a stable release version is available.*
+
 
 ## Was ist S4M ##
 
