@@ -13,7 +13,7 @@ __While this project is under alpha development it will be only available in ger
 
 > S4M ist ein Sprachassistent der, wie die bekannten anderen Assistenten Siri oder Alexa, euch mit verschiedenen Funktionen unterstützen kann. Simple Zeitabfragen oder Todo-Listen. Musikplayer und die Möglichkeit mit anderen S4M's per LiveChat to sprechen. Weitere Features sind in Planung.
 >
->S4M ist in der Lage den Gesprächspartner zu erkennen und dann individuell auf die gespeicherten präferenzen zu reagieren.
+>S4M ist in der Lage den Gesprächspartner zu erkennen und dann individuell auf den gespeicherten Benutzer zu reagieren.
 
 ## Details ##
 
