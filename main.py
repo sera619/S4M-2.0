@@ -1,4 +1,6 @@
-import pyttsx3, yaml, time, pvporcupine, pyaudio, struct, os, sys, json, text2numde, multiprocessing, numpy
+from dataclasses import dataclass
+from datetime import datetime
+import pyttsx3, yaml, datetime, pvporcupine, pyaudio, struct, os, sys, json, text2numde, multiprocessing, numpy
 
 from loguru import logger
 from res.TTS import Voice
@@ -6,14 +8,43 @@ from vosk import Model, SpkModel, KaldiRecognizer
 from conf.UserManagement import UserManagement
 from chatbot import Chat, register_call
 
+import io
+import pytz
+from snips_nlu import SnipsNLUEngine
+from snips_nlu.default_configs import CONFIG_DE
+from snips_nlu.dataset import Dataset
+
+
 SAMPLE_RATE = 16000
 FRAME_LENGTH = 512
 
 CONFIG_FILE = 'config.yml'
 
-@register_call
-def getTime(session_id  = ""):
-	return time.strftime("%H:%M:%S")
+def getTime(place):
+	country_timezoes = {
+		'deutschland':pytz.timezone('Europe/Berlin'),
+		'frankreich':pytz.timezone('Europe/Paris'),
+		'amerika': pytz.timezone('America/New_York'),
+		'england': pytz.timezone('Europe/London'),
+		'china': pytz.timezone('Asia/Shanghai'),
+	}
+
+	timenow = datetime.datetime.now()
+	timezone = country_timezoes.get(place.lower())
+	if timezone:
+		timenow = datetime.datetime.now(timezone)
+		return "In "+ place.capitalize() +" ist jetzt " + str(timenow.hour) + " Uhr und " + str(timenow.minute) + " Minuten."
+	return "Es ist " + str(timenow.hour) + " Uhr und " + str(timenow.minute) + " Minuten."
+
+
+def stop():
+	if va.tts.is_busy():
+		va.tts.stop()
+		return ("Okay ich bin still.")
+	return ("Ich sage doch gar nichts.")
+
+
+
 
 class VoiceAssistant():
 
