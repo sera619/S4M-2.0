@@ -117,6 +117,21 @@ class VoiceAssistant():
 		self.allow_trusted_user = self.cfg['allow_only_trusted_speaker']
 		logger.debug("\nBenutzerverwaltung initialisiert")
 		
+
+		logger.debug("\nInitialisiere Chatbot...")
+		self.nlu_enginge = None
+		dataset = Dataset.from_yaml_files("de", ['./temp/stop_dataset.yaml', './temp/time_dataset.yaml'])
+		nlu_engine = SnipsNLUEngine(config=CONFIG_DE)
+		self.nlu_enginge = nlu_engine.fit(dataset)
+
+		if not self.nlu_enginge:
+			logger.error('\nKonnte Dialog-Engine nicht laden!')
+			sys.exit(1)
+		else:
+			logger.debug('\nDialog Metadaten: {} geladen.', self.nlu_enginge.dataset_metadata)
+		logger.debug("\nChatbot initialisiert")
+
+		
 		self.tts.say("\nInitialisierung abgeschlossen")
 
 
@@ -142,32 +157,44 @@ class VoiceAssistant():
 				pcm_unpacked = struct.unpack_from("h" * self.porcupine.frame_length, pcm)		
 				keyword_index = self.porcupine.process(pcm_unpacked)
 				if keyword_index >= 0:
-					logger.debug("\nWake Word {} wurde verstanden.", self.wake_words[keyword_index])
-					self.tts.say("Was kann ich für dich tun?")
+					logger.debug("\nWake Word {} wurde erkannt.", self.wake_words[keyword_index])
+					#self.tts.say("Was kann ich für dich tun?")
 					self.is_listening = True
 
 				if self.is_listening:
 					if self.rec.AcceptWaveform(pcm):
 						recResult = json.loads(self.rec.Result())
-						sentence = recResult['text']
-						with open('recs.txt', 'w') as file:
+						with open('recs.txt', 'rw') as file:
 							file.write(sentence+'\n')
 
-						logger.debug('recResult: {}', recResult)
 						speaker = self.__detect_speaker__(recResult['spk'])
+						logger.debug('recResult: {}', recResult)
 						if (speaker == None) and (self.allow_trusted_user):
 							logger.warning("Ich kenne deine Stimme nicht")
 							self.current_speaker = None
-							self.is_listening = False
+							#self.is_listening = False
 						else:
 							if speaker:
 								logger.debug('Sprecher ist {}', speaker)
 							
 							self.current_speaker = speaker
+							self.current_speaker_fingerprint = recResult['spk']
+							sentence = recResult['text']
 
-							logger.debug('\nIch habe verstanden "{}"', sentence)
-							if sentence == 'ende':
-								exit()
+							parsing = self.nlu_enginge.parse(sentence)
+							output = ""
+							if parsing['intent']['intentName'] == 'getTime':
+								if len(parsing['slots']) == 0:
+									output = getTime("Germany")
+								elif parsing["slots"][0]['entity'] == 'country':
+									output = getTime(parsing["slots"][0]['rawValue'])
+							elif parsing['intent']['intentName'] == 'stop':
+								stop()
+							
+							self.tts.speak(output)
+
+							logger.debug('\nIch habe "{}" verstanden.', sentence)
+
 							self.is_listening = False
 							self.current_speaker = None
 						
@@ -191,6 +218,6 @@ if __name__ == '__main__':
 	multiprocessing.set_start_method('spawn')
 
 	va = VoiceAssistant()
-	logger.info("Anwendung wurde gestartet")
+	logger.debug("\nAnwendung wurde gestartet")
 	va.run()
 
