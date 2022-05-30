@@ -81,7 +81,7 @@ class IntentManagement:
 
         if os.path.isfile(MERGED_FILE):
             logger.debug("\nChatbot-AI Template erfolgreich erstellt.")
-            self.chatbot = Chat(MERGED_FILE)
+            self.chat = Chat(MERGED_FILE)
         else:
             logger.error("\nChatbot-AI Template in {} konnte nicht gefunden werden!", MERGED_FILE)
         logger.debug('Chatbot aus {} initialisiert.', MERGED_FILE)
