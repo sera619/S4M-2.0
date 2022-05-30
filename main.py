@@ -1,3 +1,14 @@
+"""
+	______________________________________________________________
+							   S4M 2.0
+						    Voice Assistant
+	--------------------------------------------------------------
+				This software is developed by S3R43o3.
+	Do not copy or modify without the permission of the developer.
+						  	2022 © S3R43o3
+	______________________________________________________________
+
+"""
 
 import pyttsx3, yaml, datetime, pvporcupine, pyaudio, struct, os, sys, json, text2numde, multiprocessing, numpy
 
