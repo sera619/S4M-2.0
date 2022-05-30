@@ -1,0 +1,12 @@
+#stop intent
+---
+type: intent
+name: stop
+utterances:
+  - stop
+  - halt
+  - sei still
+  - ende
+  - abbrechen
+
+
