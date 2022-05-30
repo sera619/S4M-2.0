@@ -10,36 +10,21 @@
 
 """
 
-import pyttsx3, yaml, datetime, pvporcupine, pyaudio, struct, os, sys, json, text2numde, multiprocessing, numpy
-
+import pyttsx3, yaml, datetime, pvporcupine, pyaudio, struct, os, sys, json, text2numde, multiprocessing, numpy, io, pytz
 from loguru import logger
 from res.TTS import Voice
 from vosk import Model, SpkModel, KaldiRecognizer
-from conf.UserManagement import UserManagement
 from chatbot import Chat, register_call
-
-import io
-import pytz
 from snips_nlu import SnipsNLUEngine
 from snips_nlu.default_configs import CONFIG_DE
 from snips_nlu.dataset import Dataset
+from conf.IntentManagement import IntentManagement 
+from conf.UserManagement import UserManagement
 
 
 SAMPLE_RATE = 16000
 FRAME_LENGTH = 512
-
 CONFIG_FILE = 'config.yml'
-
-
-
-def stop():
-	if va.tts.is_busy():
-		va.tts.stop()
-		return ("Okay ich bin still.")
-	return ("Ich sage doch gar nichts.")
-
-
-
 
 class VoiceAssistant():
 
@@ -113,18 +98,22 @@ class VoiceAssistant():
 		logger.debug("\nBenutzerverwaltung initialisiert")
 		
 
-		logger.debug("\nInitialisiere Chatbot...")
-		self.nlu_enginge = None
-		dataset = Dataset.from_yaml_files("de", ['./temp/stop_dataset.yaml', './temp/time_dataset.yaml'])
-		nlu_engine = SnipsNLUEngine(config=CONFIG_DE)
-		self.nlu_enginge = nlu_engine.fit(dataset)
+		logger.debug("\nInitialisiere Intent-Management...")
+		self.intent_management = IntentManagement()
+		logger.debug("\n{} intents initialisiert", self.intent_management.get_count())
 
-		if not self.nlu_enginge:
-			logger.error('\nKonnte Dialog-Engine nicht laden!')
-			sys.exit(1)
-		else:
-			logger.debug('\nDialog Metadaten: {} geladen.', self.nlu_enginge.dataset_metadata)
-		logger.debug("\nChatbot initialisiert")
+		# logger.debug("\nInitialisiere Chatbot...")
+		# self.nlu_enginge = None
+		# dataset = Dataset.from_yaml_files("de", ['./temp/stop_dataset.yaml', './temp/time_dataset.yaml'])
+		# nlu_engine = SnipsNLUEngine(config=CONFIG_DE)
+		# self.nlu_enginge = nlu_engine.fit(dataset)
+
+		# if not self.nlu_enginge:
+		# 	logger.error('\nKonnte Dialog-Engine nicht laden!')
+		# 	sys.exit(1)
+		# else:
+		# 	logger.debug('\nDialog Metadaten: {} geladen.', self.nlu_enginge.dataset_metadata)
+		# logger.debug("\nChatbot initialisiert")
 
 		
 		self.tts.say("\nInitialisierung abgeschlossen")
@@ -148,50 +137,36 @@ class VoiceAssistant():
 		try:
 			while True:
 			
-				pcm = self.audio_stream.read(self.porcupine.frame_length)
-				pcm_unpacked = struct.unpack_from("h" * self.porcupine.frame_length, pcm)		
-				keyword_index = self.porcupine.process(pcm_unpacked)
+				pcm = GLOBALS.voice_assistant.audio_stream.read(GLOBALS.voice_assistant.porcupine.frame_length)
+				pcm_unpacked = struct.unpack_from("h" * GLOBALS.voice_assistant.porcupine.frame_length, pcm)		
+				keyword_index = GLOBALS.voice_assistant.porcupine.process(pcm_unpacked)
 				if keyword_index >= 0:
-					logger.debug("\nWake Word {} wurde erkannt.", self.wake_words[keyword_index])
-					#self.tts.say("Was kann ich für dich tun?")
-					self.is_listening = True
-
-				if self.is_listening:
-					if self.rec.AcceptWaveform(pcm):
-						recResult = json.loads(self.rec.Result())
-						with open('recs.txt', 'rw') as file:
-							file.write(sentence+'\n')
-
-						speaker = self.__detect_speaker__(recResult['spk'])
-						logger.debug('recResult: {}', recResult)
-						if (speaker == None) and (self.allow_trusted_user):
-							logger.warning("Ich kenne deine Stimme nicht")
-							self.current_speaker = None
-							#self.is_listening = False
+					logger.info("Wake Word {} wurde verstanden.", GLOBALS.voice_assistant.wake_words[keyword_index])
+					GLOBALS.voice_assistant.is_listening = True
+					
+				# Spracherkennung
+				if GLOBALS.voice_assistant.is_listening:
+					if GLOBALS.voice_assistant.rec.AcceptWaveform(pcm):
+						recResult = json.loads(GLOBALS.voice_assistant.rec.Result())
+						
+						speaker = GLOBALS.voice_assistant.__detectSpeaker__(recResult['spk'])
+						if (speaker == None) and (GLOBALS.voice_assistant.allow_only_known_speakers == True):
+							logger.info("Ich kenne deine Stimme nicht und darf damit keine Befehle von dir entgegen nehmen.")
+							GLOBALS.voice_assistant.current_speaker = None
 						else:
 							if speaker:
-								logger.debug('Sprecher ist {}', speaker)
-							
-							self.current_speaker = speaker
-							self.current_speaker_fingerprint = recResult['spk']
+								logger.debug("Sprecher ist {}", speaker)
+							GLOBALS.voice_assistant.current_speaker = speaker
+							GLOBALS.voice_assistant.current_speaker_fingerprint = recResult['spk']
 							sentence = recResult['text']
-
-							parsing = self.nlu_enginge.parse(sentence)
-							output = ""
-							if parsing['intent']['intentName'] == 'getTime':
-								if len(parsing['slots']) == 0:
-									output = getTime("Germany")
-								elif parsing["slots"][0]['entity'] == 'country':
-									output = getTime(parsing["slots"][0]['rawValue'])
-							elif parsing['intent']['intentName'] == 'stop':
-								stop()
+							logger.debug('Ich habe verstanden "{}"', sentence)
 							
-							self.tts.speak(output)
-
-							logger.debug('\nIch habe "{}" verstanden.', sentence)
-
-							self.is_listening = False
-							self.current_speaker = None
+							# Lasse den Assistenten auf die Spracheingabe reagieren
+							output = GLOBALS.voice_assistant.intent_management.process(sentence, speaker)
+							GLOBALS.voice_assistant.tts.say(output)
+							
+							GLOBALS.voice_assistant.is_listening = False
+							GLOBALS.voice_assistant.current_speaker = None
 						
 
 
@@ -210,9 +185,9 @@ class VoiceAssistant():
 				self.pa.terminate()
 
 if __name__ == '__main__':
+	import util.GlobalVariables as GLOBALS
 	multiprocessing.set_start_method('spawn')
-
-	va = VoiceAssistant()
+	GLOBALS.voice_assistant = VoiceAssistant()
+	#va = VoiceAssistant()
 	logger.debug("\nAnwendung wurde gestartet")
-	va.run()
-
+	GLOBALS.voice_assistant.run()
