@@ -1,6 +1,7 @@
 ###### This README is currently work in progress #####
 
 # S4M 2.0 Voiceassistant #
+# TecAlpha Version #
 
 __!IMPORTANT!__
 
@@ -36,7 +37,7 @@ __While this project is under alpha development it will be only available in ger
 *Was brauche ich um S4M 2.0 zu benutzen?*
 >Um S4M 2.0 zu verwenden benötigst du:
 >
-> - Windows PC
+> - Windows PC 10/11
 > - funktionierendes Microphon
 > - Einen Breitband-Internetanschluss (DSL)
 
