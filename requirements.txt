@@ -22,7 +22,7 @@ python-crfsuite==0.9.7
 pyttsx3==2.90
 pytz==2020.4
 pywin32==228
-PyYAML==5.3.1
+PyYAML==5.4
 requests==2.24.0
 scikit-learn==0.22.2.post1
 scipy==1.5.3
