@@ -45,7 +45,7 @@ def default_snips_nlu_handler(session, text):
 				argument_string = json.dumps(arguments)
 				logger.debug("Rufe {} auf mit den Argumenten {}.", intent, argument_string)
 				output = getattr(globals()[intent], intent)(**arguments)
-				
+				logger.debug('\n>>> Sprachausgabe: {}',output)
 				break
 	
 	return output
@@ -140,5 +140,4 @@ class IntentMgmt:
 		logger.info('Chatbot aus {} initialisiert.', MERGED_FILE)
 	
 	def process(self, text, speaker):
-	
 		return self.chat.respond(text)
