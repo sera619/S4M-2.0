@@ -11,12 +11,15 @@ __While this project is under alpha development it will be only available in ger
 
 *Notice: This will be changed if a stable release version is available.*
 
+---
 
 ## Was ist S4M ##
 
 > S4M ist ein Sprachassistent der, wie die bekannten anderen Assistenten Siri oder Alexa, euch mit verschiedenen Funktionen unterstützen kann. Simple Zeitabfragen oder Todo-Listen. Musikplayer und die Möglichkeit mit anderen S4M's per LiveChat zu sprechen. Weitere Features sind in Planung.
 >
 >S4M ist in der Lage den Gesprächspartner zu erkennen und dann individuell auf den gespeicherten Benutzer zu reagieren.
+
+---
 
 ## Features ##
 
@@ -25,6 +28,8 @@ __While this project is under alpha development it will be only available in ger
 |*Benutzererkennung*| S4M erkennt das Tonprofil des Sprechers und kann so vor unbefugten Nutzern schützen.|
 |*dynamische Kommandoerkennung*|Keine Abfrage von kompletten Templatetexten. S4M reagiert auf Schlüsselbegriffe in Sätzen und lernt dabei deine Stimme und Sprechweise immer besser zu verstehen.|
 |*Kein BIGDATA*| S4M verwendet keine Cloud und benötigt keine sensiblen Daten. Jegliche Angabe von privaten Daten ist und bleibt freiwillig. Diese Daten werden lokal auf deinem System gespeichert und verwaltet!|
+
+---
 
 ## FAQ ##
 
@@ -45,5 +50,6 @@ __While this project is under alpha development it will be only available in ger
 > - Einen Breitband-Internetanschluss (DSL)
 
 *Braucht S4M 2.0 immer einer Internetverbindung?*
->
 >Nein, S4M 2.0 bringt alles was er braucht mit. Jedoch sind dann Funktionen die den Zugriff auf das Internet benötigen nicht mehr verfügbar.
+
+---
