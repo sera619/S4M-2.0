@@ -72,13 +72,11 @@ class VoiceAssistant():
 		self.allow_only_known_speakers = self.cfg["assistant"]["allow_only_known_speakers"]
 		logger.info("Benutzerverwaltung initialisiert")
 		
-		# Initialisiere den Chatbot. Ersetzen von ChatbotAI durch SNIPS-NLU		
 		logger.info("Initialisiere Intent-Management...")
 		self.intent_management = IntentMgmt()
 		logger.info('{} intents geladen', self.intent_management.get_count())
 		self.tts.say("Initialisierung abgeschlossen")
 	
-	# Finde den besten Sprecher aus der Liste aller bekannter Sprecher aus dem User Management
 	def __detectSpeaker__(self, input):
 		bestSpeaker = None
 		bestCosDist = 100
@@ -104,7 +102,6 @@ class VoiceAssistant():
 					logger.info("Wake Word {} wurde verstanden.", global_variables.voice_assistant.wake_words[keyword_index])
 					global_variables.voice_assistant.is_listening = True
 					
-				# Spracherkennung
 				if global_variables.voice_assistant.is_listening:
 					if global_variables.voice_assistant.rec.AcceptWaveform(pcm):
 						recResult = json.loads(global_variables.voice_assistant.rec.Result())
@@ -121,7 +118,6 @@ class VoiceAssistant():
 							sentence = recResult['text']
 							logger.debug('Ich habe verstanden "{}"', sentence)
 							
-							# Lasse den Assistenten auf die Spracheingabe reagieren
 							output = global_variables.voice_assistant.intent_management.process(sentence, speaker)
 							global_variables.voice_assistant.tts.say(output)
 							

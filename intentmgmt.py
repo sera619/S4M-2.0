@@ -85,7 +85,6 @@ class IntentMgmt:
 				if install_result == 0:
 					logger.debug("Abhängigkeiten für {} erfolgreich installiert oder bereits vorhanden.", ff)
 			
-			# Finde Python-Dateien, die mit Intent beginnen
 			intent_files = glob.glob(os.path.join(ff, 'intent_*.py'))
 			for infi in intent_files:
 				logger.debug("Lade Intent-Datei {}...", infi)
