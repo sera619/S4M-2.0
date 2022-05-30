@@ -1,4 +1,0 @@
-{% block %}
-    {% client %} (stop|halt|abbrechen|ende|ruhe|stopp) {% endclient %}
-    {% response %} {% call stop: 0 %} {% endclient %}
-{% endblock %}

@@ -26,6 +26,10 @@ class Voice:
 	def stop(self):
 		if self.process:
 			self.process.terminate()
+			
+	def is_busy(self):
+		if self.process:
+			return self.process.is_alive()			
 		
 	def get_voice_keys_by_language(self, language=''):
 		result = []
@@ -35,6 +39,8 @@ class Voice:
 		lang_search_str = language.upper()+"-"
 		
 		for voice in voices:
+			# explode voice path
+			# HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_DE-DE_HEDDA_11.0
 			if language == '':
 				result.append(voice.id)
 			elif lang_search_str in voice.id:

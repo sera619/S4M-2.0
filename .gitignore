@@ -1,5 +1,5 @@
 /env-voiceassist
-/models/vosk-model-de-0.6
-/models/vosk-model-spk-0.4
+/models
+/__pycache__
 .env
 
