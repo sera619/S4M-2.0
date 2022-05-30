@@ -1,5 +1,4 @@
-from dataclasses import dataclass
-from datetime import datetime
+
 import pyttsx3, yaml, datetime, pvporcupine, pyaudio, struct, os, sys, json, text2numde, multiprocessing, numpy
 
 from loguru import logger
@@ -20,21 +19,6 @@ FRAME_LENGTH = 512
 
 CONFIG_FILE = 'config.yml'
 
-def getTime(place):
-	country_timezoes = {
-		'deutschland':pytz.timezone('Europe/Berlin'),
-		'frankreich':pytz.timezone('Europe/Paris'),
-		'amerika': pytz.timezone('America/New_York'),
-		'england': pytz.timezone('Europe/London'),
-		'china': pytz.timezone('Asia/Shanghai'),
-	}
-
-	timenow = datetime.datetime.now()
-	timezone = country_timezoes.get(place.lower())
-	if timezone:
-		timenow = datetime.datetime.now(timezone)
-		return "In "+ place.capitalize() +" ist jetzt " + str(timenow.hour) + " Uhr und " + str(timenow.minute) + " Minuten."
-	return "Es ist " + str(timenow.hour) + " Uhr und " + str(timenow.minute) + " Minuten."
 
 
 def stop():
@@ -60,13 +44,13 @@ class VoiceAssistant():
 		else:
 			logger.debug("\nKonfiguration konnte nicht gelesen werden.")
 			sys.exit(1)
-		language = self.cfg['language']
+		language = self.cfg['assistant']['language']
 		if not language:
 			language = "de"
 		logger.debug("\nVerwende Sprache {}", language)
 			
 		logger.debug("\nInitialisiere Wake Word Erkennung...")
-		self.wake_words = self.cfg['wakewords']
+		self.wake_words = self.cfg['assistant']['wakewords']
 		
 		if not self.wake_words:
 			self.wake_words = ['bumblebee']
@@ -114,7 +98,7 @@ class VoiceAssistant():
 		
 		logger.debug("\nInitialisiere Benutzerverwaltung...")
 		self.user_management = UserManagement(init_dummies=True)
-		self.allow_trusted_user = self.cfg['allow_only_trusted_speaker']
+		self.allow_trusted_user = self.cfg['assistant']['allow_only_trusted_speaker']
 		logger.debug("\nBenutzerverwaltung initialisiert")
 		
 

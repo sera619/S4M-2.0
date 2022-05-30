@@ -1,5 +1,9 @@
 assistant:
-language: "de"
-wakewords: ["bumblebee", "terminator"]
-allow_only_trusted_speaker: False
+    language: "de"
+    wakewords: ["bumblebee", "terminator"]
+    allow_only_trusted_speaker: False
+defaults:
+    de:
+        no_intent_recognized: ["Ich habe dich nicht verstanden.", "Den Befehl kenne ich nicht.", "Ich habe den Befehl nicht verstanden."]
+        
 
