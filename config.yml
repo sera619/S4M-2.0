@@ -1,0 +1,5 @@
+assistant:
+language: "de"
+wakewords: ["bumblebee", "terminator"]
+allow_only_trusted_speaker: False
+
