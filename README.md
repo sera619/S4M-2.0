@@ -40,7 +40,7 @@ __While this project is under alpha development it will be only available in ger
 > S4M 2.0 wird zunächst für Windows10/11 verfügbar sein. Eine andere Plattform ist bisher nicht geplant. Das bedeutet aber nicht das sich das nicht in Zukunft ändern kann.
 
 *Welche Daten speichert S4M 2.0?*
->S4M speichert __KEINE__ empfindlichen privaten Daten. Die Authentifizierung erfolgt über Stimmabgleich. Diese Daten werden lokal auf deinem System gespeichert wird. Diese Daten __BLEIBEN__ auf deinem System!
+>S4M speichert __KEINE__ empfindlichen privaten Daten. Die Authentifizierung erfolgt über Stimmabgleich. Diese Daten werden lokal auf deinem System gespeichert. Diese Daten __BLEIBEN__ auf deinem System!
 
 *Was brauche ich um S4M 2.0 zu benutzen?*
 >Um S4M 2.0 zu verwenden benötigst du:
