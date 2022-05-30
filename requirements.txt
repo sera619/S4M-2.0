@@ -35,7 +35,7 @@ snips-nlu-utils==0.9.1
 tabulate==0.8.7
 tinydb==4.2.0
 tqdm==4.51.0
-urllib3==1.25.11
+urllib3==1.26.5
 vosk==0.3.7
 win32-setctime==1.0.3
 wincertstore==0.2
