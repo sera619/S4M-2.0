@@ -127,7 +127,7 @@ class IntentMgmt:
 							outfile.write(infile.read())
 							
 			if os.path.exists(WILDCARD_FILE):
-				logger.debug("Prozessiere letzendlich Chatbotai Wildcard Template...")
+				logger.debug("Evaluiere Wildcard...")
 				with open(WILDCARD_FILE) as infile:
 						outfile.write(infile.read())
 			else:
