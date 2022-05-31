@@ -5,6 +5,9 @@
     {% client %}(stop|halt|stopp|schweigefuchs){% endclient %}
     {% response %}{% call stop: 0 %}{% endresponse %}
 {% endblock %}{% block %}
+    {% client %}(Weißt du was über|Weißt du etwas über|Wer ist|was ist|Erzähle mir was über|Kennst du) (?P<query>.*){% endclient %}
+    {% response %}{% call wiki: %query %}{% endresponse %}
+{% endblock %}{% block %}
     {% client %}.*{% endclient %}
     {% response %}{% call default_snips_nlu_handler: %0 %}{% endresponse %}
 {% endblock %}

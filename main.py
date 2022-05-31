@@ -9,7 +9,7 @@ from intentmgmt import IntentMgmt
 from pygame import mixer
 
 CONFIG_FILE = "config.yml"
-
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 class VoiceAssistant():
 
 	def __init__(self):
@@ -123,6 +123,7 @@ class VoiceAssistant():
 							logger.debug('\nIch habe verstanden "{}"', sentence)
 							
 							output = global_variables.voice_assistant.intent_management.process(sentence, speaker)
+							logger.debug('\n>>> Sprachausgabe: {}', output)
 							global_variables.voice_assistant.tts.say(output)
 							
 							global_variables.voice_assistant.is_listening = False
