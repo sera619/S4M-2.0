@@ -7,8 +7,8 @@ from pygame import mixer
 
 @register_call('animalSound')
 def animalSound(session_id = "general", animal="none"):
-    config_path = os.path.join('intents','functions','animalsound','config_animalsounds.yml')
-    ogg_path = os.path.join('intents', 'functions', 'animalsound', 'animals')
+    config_path = os.path.join('intents','functions','animalsounds','config_animalsounds.yml')
+    ogg_path = os.path.join('intents', 'functions', 'animalsounds', 'animals')
     cfg = None
     
     with open(config_path, "r", encoding='utf8') as ymlfile:

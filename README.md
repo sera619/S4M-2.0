@@ -28,6 +28,8 @@ __While this project is under alpha development it will be only available in ger
 |*Benutzererkennung*| S4M erkennt das Tonprofil des Sprechers und kann so vor unbefugten Nutzern schützen.|
 |*dynamische Kommandoerkennung*|Keine Abfrage von kompletten Templatetexten. S4M reagiert auf Schlüsselbegriffe in Sätzen und lernt dabei deine Stimme und Sprechweise immer besser zu verstehen.|
 |*Kein BIGDATA*| S4M verwendet keine Cloud und benötigt keine sensiblen Daten. Jegliche Angabe von privaten Daten ist und bleibt freiwillig. Diese Daten werden lokal auf deinem System gespeichert und verwaltet!|
+|*Tierstimmen*| Wie seine Verwandten kann auch S4M Tierstimmen immitieren. Zurzeit sind 26 verfügbar|
+|*Wikipedia*|Die größte Enzyklopädie der Welt steht dir zur Verfügung|
 
 ---
 
