@@ -1,14 +1,5 @@
+import yaml, time, pvporcupine, pyaudio, struct, os, sys, json, tinydb, io
 from loguru import logger
-import yaml
-import time
-import pvporcupine
-import pyaudio
-import struct
-import os
-import sys
-import json
-import tinydb
-import io
 import numpy as np
 from vosk import Model, SpkModel, KaldiRecognizer
 from TTS import Voice
@@ -147,8 +138,8 @@ class VoiceAssistant():
                                 sentence = recResult['text']
                                 logger.debug('\nIch habe verstanden "{}"', sentence)
 
-                                # Lasse den Assistenten auf die Spracheingabe reagieren
                                 output = global_variables.voice_assistant.intent_management.process(sentence, speaker)
+                                logger.debug("\n>>> Sprachausgabe: {}", output)
                                 global_variables.voice_assistant.tts.say(output)
 
                                 global_variables.voice_assistant.is_listening = False
