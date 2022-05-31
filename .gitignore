@@ -2,4 +2,6 @@
 /models
 /__pycache__
 .env
-
+/build
+/dist
+/output
