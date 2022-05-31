@@ -68,7 +68,7 @@ class VoiceAssistant():
         self.tts = Voice()
         voices = self.tts.get_voice_keys_by_language(language)
         if len(voices) > 0:
-            logger.info('Stimme {} gesetzt.', voices[0])
+            logger.info('\nStimme {} gesetzt.', voices[0])
             self.tts.set_voice(voices[0])
         else:
             logger.warning("\nEs wurden keine Stimmen gefunden.")
@@ -119,45 +119,58 @@ class VoiceAssistant():
         try:
             while True:
 
-                pcm = global_variables.voice_assistant.audio_stream.read(
-                    global_variables.voice_assistant.porcupine.frame_length)
-                pcm_unpacked = struct.unpack_from(
-                    "h" * global_variables.voice_assistant.porcupine.frame_length, pcm)
-                keyword_index = global_variables.voice_assistant.porcupine.process(
-                    pcm_unpacked)
+                pcm = global_variables.voice_assistant.audio_stream.read(global_variables.voice_assistant.porcupine.frame_length)
+                pcm_unpacked = struct.unpack_from("h" * global_variables.voice_assistant.porcupine.frame_length, pcm)
+                keyword_index = global_variables.voice_assistant.porcupine.process(pcm_unpacked)
                 if keyword_index >= 0:
-                    logger.info("\nWake Word {} wurde verstanden.",
-                                global_variables.voice_assistant.wake_words[keyword_index])
+                    logger.info("\nWake Word {} wurde verstanden.",global_variables.voice_assistant.wake_words[keyword_index])
                     global_variables.voice_assistant.is_listening = True
 
-                if global_variables.voice_assistant.is_listening:
-                    if global_variables.voice_assistant.rec.AcceptWaveform(pcm):
-                        recResult = json.loads(
-                            global_variables.voice_assistant.rec.Result())
+                    if global_variables.voice_assistant.is_listening:
 
-                        speaker = global_variables.voice_assistant.__detectSpeaker__(
-                            recResult['spk'])
-                        if (speaker == None) and (global_variables.voice_assistant.allow_only_known_speakers == True):
-                            logger.info(
-                                "\nIch kenne deine Stimme nicht und darf damit keine Befehle von dir entgegen nehmen.")
-                            global_variables.voice_assistant.current_speaker = None
-                        else:
-                            if speaker:
-                                logger.debug("\nSprecher ist {}", speaker)
-                            global_variables.voice_assistant.current_speaker = speaker
-                            global_variables.voice_assistant.current_speaker_fingerprint = recResult[
-                                'spk']
-                            sentence = recResult['text']
-                            logger.debug(
-                                '\nIch habe verstanden "{}"', sentence)
+                        if mixer.music.get_busy():
+                            mixer.music.set_volume(0.1)
 
-                            output = global_variables.voice_assistant.intent_management.process(
-                                sentence, speaker)
-                            logger.debug('\n>>> Sprachausgabe: {}', output)
-                            global_variables.voice_assistant.tts.say(output)
+                        if global_variables.voice_assistant.rec.AcceptWaveform(pcm):
+                            recResult = json.loads(
+                                global_variables.voice_assistant.rec.Result())
 
-                            global_variables.voice_assistant.is_listening = False
-                            global_variables.voice_assistant.current_speaker = None
+                            speaker = global_variables.voice_assistant.__detectSpeaker__(recResult['spk'])
+                            if (speaker == None) and (global_variables.voice_assistant.allow_only_known_speakers == True):
+                                logger.info("\nIch kenne deine Stimme nicht und darf damit keine Befehle von dir entgegen nehmen.")
+                                global_variables.voice_assistant.current_speaker = None
+                            else:
+                                if speaker:
+                                    logger.debug("\nSprecher ist {}", speaker)
+                                global_variables.voice_assistant.current_speaker = speaker
+                                global_variables.voice_assistant.current_speaker_fingerprint = recResult['spk']
+                                sentence = recResult['text']
+                                logger.debug('\nIch habe verstanden "{}"', sentence)
+
+                                # Lasse den Assistenten auf die Spracheingabe reagieren
+                                output = global_variables.voice_assistant.intent_management.process(sentence, speaker)
+                                global_variables.voice_assistant.tts.say(output)
+
+                                global_variables.voice_assistant.is_listening = False
+                                global_variables.voice_assistant.current_speaker = None
+
+                    else:
+                        mixer.music.set_volume(global_variables.voice_assistant.volume)
+
+                        for cb in global_variables.voice_assistant.callbacks:
+                            output = cb()
+
+                            if output:
+                                if not global_variables.voice_assistant.tts.is_busy():
+
+                                    if mixer.music.get_busy():
+                                        mixer.music.set_volume(0.1)
+
+                                    global_variables.voice_assistant.tts.say(output)
+                                    logger.debug("\n>>> Sprachausgabe: {}", output)
+                                    cb(True)
+
+                                    # TODO Reset Volume
 
         except KeyboardInterrupt:
             logger.debug("\nPer Keyboard beendet")
@@ -174,8 +187,8 @@ class VoiceAssistant():
 
 
 if __name__ == '__main__':
-	import global_variables
-	multiprocessing.set_start_method('spawn')
-	global_variables.voice_assistant = VoiceAssistant()
-	logger.info("\nAnwendung wurde gestartet")
-	global_variables.voice_assistant.run()
+    import global_variables
+    multiprocessing.set_start_method('spawn')
+    global_variables.voice_assistant = VoiceAssistant()
+    logger.info("\nAnwendung wurde gestartet")
+    global_variables.voice_assistant.run()
