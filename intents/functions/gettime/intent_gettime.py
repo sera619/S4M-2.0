@@ -1,5 +1,4 @@
 from datetime import datetime
-from loguru import logger
 import pytz
 import global_variables
 import os
