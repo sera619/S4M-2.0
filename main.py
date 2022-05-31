@@ -13,32 +13,32 @@ CONFIG_FILE = "config.yml"
 class VoiceAssistant():
 
 	def __init__(self):
-		logger.info("Initialisiere VoiceAssistant...")
+		logger.info("\nInitialisiere VoiceAssistant...")
 		
-		logger.debug("Lese Konfiguration...")
+		logger.debug("\nLese Konfiguration...")
 		
 		global CONFIG_FILE
 		with open(CONFIG_FILE, "r", encoding='utf8') as ymlfile:
 			self.cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
 		if self.cfg:
-			logger.debug("Konfiguration gelesen.")
+			logger.debug("\nKonfiguration gelesen.")
 		else:
-			logger.debug("Konfiguration konnte nicht gelesen werden.")
+			logger.debug("\nKonfiguration konnte nicht gelesen werden.")
 			sys.exit(1)
 		language = self.cfg['assistant']['language']
 		if not language:
 			language = "de"
-		logger.info("Verwende Sprache {}", language)
+		logger.info("\nVerwende Sprache {}", language)
 			
-		logger.debug("Initialisiere Wake Word Erkennung...")
+		logger.debug("\nInitialisiere Wake Word Erkennung...")
 		self.wake_words = self.cfg['assistant']['wakewords']
 		if not self.wake_words:
 			self.wake_words = ['bumblebee']
-		logger.debug("Wake words are {}", ','.join(self.wake_words))
+		logger.debug("\nWake words are {}", ','.join(self.wake_words))
 		self.porcupine = pvporcupine.create(keywords=self.wake_words)
-		logger.debug("Wake Word Erkennung wurde initialisiert.")
+		logger.debug("\nWake Word Erkennung wurde initialisiert.")
 		
-		logger.debug("Initialisiere Audioeingabe...")
+		logger.debug("\nInitialisiere Audioeingabe...")
 		self.pa = pyaudio.PyAudio()
 		
 		self.audio_stream = self.pa.open(
@@ -48,37 +48,37 @@ class VoiceAssistant():
 			input=True,
 			frames_per_buffer=self.porcupine.frame_length,
 			input_device_index=0)
-		logger.debug("Audiostream geöffnet.")
+		logger.debug("\nAudiostream geöffnet.")
 
-		logger.info("Initialisiere Sprachausgabe...")
+		logger.info("\nInitialisiere Sprachausgabe...")
 		self.tts = Voice()
 		voices = self.tts.get_voice_keys_by_language(language)
 		if len(voices) > 0:
 			logger.info('Stimme {} gesetzt.', voices[0])
 			self.tts.set_voice(voices[0])
 		else:
-			logger.warning("Es wurden keine Stimmen gefunden.")
-		self.tts.say("Sprachausgabe aktiviert.")
-		logger.debug("Sprachausgabe initialisiert")
+			logger.warning("\nEs wurden keine Stimmen gefunden.")
+		self.tts.say("\nSprachausgabe aktiviert.")
+		logger.debug("\nSprachausgabe initialisiert")
 		
-		logger.info("Initialisiere Spracherkennung...")
+		logger.info("\nInitialisiere Spracherkennung...")
 		stt_model = Model('./models/vosk-model-de-0.6')
 		speaker_model = SpkModel('./models/vosk-model-spk-0.4')
 		self.rec = KaldiRecognizer(stt_model, speaker_model, 16000)
 		self.is_listening = False
-		logger.info("Initialisierung der Spracherkennung abgeschlossen.")
+		logger.info("\nInitialisierung der Spracherkennung abgeschlossen.")
 		
-		logger.info("Initialisiere Benutzerverwaltung...")
+		logger.info("\nInitialisiere Benutzerverwaltung...")
 		self.user_management = UserMgmt(init_dummies=True)
 		self.allow_only_known_speakers = self.cfg["assistant"]["allow_only_known_speakers"]
-		logger.info("Benutzerverwaltung initialisiert")
+		logger.info("\nBenutzerverwaltung initialisiert")
 		
 		# audio player
 		mixer.init()
 
-		logger.info("Initialisiere Intent-Management...")
+		logger.info("\nInitialisiere Intent-Management...")
 		self.intent_management = IntentMgmt()
-		logger.info('{} intents geladen', self.intent_management.get_count())
+		logger.info('\n{} intents geladen', self.intent_management.get_count())
 		self.tts.say("Initialisierung abgeschlossen")
 	
 	def __detectSpeaker__(self, input):
@@ -95,7 +95,7 @@ class VoiceAssistant():
 		return bestSpeaker		
 			
 	def run(self):
-		logger.info("VoiceAssistant Instanz wurde gestartet.")
+		logger.info("\nVoiceAssistant Instanz wurde gestartet.")
 		try:
 			while True:
 			
@@ -103,7 +103,7 @@ class VoiceAssistant():
 				pcm_unpacked = struct.unpack_from("h" * global_variables.voice_assistant.porcupine.frame_length, pcm)		
 				keyword_index = global_variables.voice_assistant.porcupine.process(pcm_unpacked)
 				if keyword_index >= 0:
-					logger.info("Wake Word {} wurde verstanden.", global_variables.voice_assistant.wake_words[keyword_index])
+					logger.info("\nWake Word {} wurde verstanden.", global_variables.voice_assistant.wake_words[keyword_index])
 					global_variables.voice_assistant.is_listening = True
 					
 				if global_variables.voice_assistant.is_listening:
@@ -112,15 +112,15 @@ class VoiceAssistant():
 						
 						speaker = global_variables.voice_assistant.__detectSpeaker__(recResult['spk'])
 						if (speaker == None) and (global_variables.voice_assistant.allow_only_known_speakers == True):
-							logger.info("Ich kenne deine Stimme nicht und darf damit keine Befehle von dir entgegen nehmen.")
+							logger.info("\nIch kenne deine Stimme nicht und darf damit keine Befehle von dir entgegen nehmen.")
 							global_variables.voice_assistant.current_speaker = None
 						else:
 							if speaker:
-								logger.debug("Sprecher ist {}", speaker)
+								logger.debug("\nSprecher ist {}", speaker)
 							global_variables.voice_assistant.current_speaker = speaker
 							global_variables.voice_assistant.current_speaker_fingerprint = recResult['spk']
 							sentence = recResult['text']
-							logger.debug('Ich habe verstanden "{}"', sentence)
+							logger.debug('\nIch habe verstanden "{}"', sentence)
 							
 							output = global_variables.voice_assistant.intent_management.process(sentence, speaker)
 							global_variables.voice_assistant.tts.say(output)
@@ -129,9 +129,9 @@ class VoiceAssistant():
 							global_variables.voice_assistant.current_speaker = None
 					
 		except KeyboardInterrupt:
-			logger.debug("Per Keyboard beendet")
+			logger.debug("\nPer Keyboard beendet")
 		finally:
-			logger.debug('Beginne Aufräumarbeiten...')
+			logger.debug('\nBeginne Aufräumarbeiten...')
 			if global_variables.voice_assistant.porcupine:
 				global_variables.voice_assistant.porcupine.delete()
 				
@@ -145,5 +145,5 @@ if __name__ == '__main__':
 	import global_variables
 	multiprocessing.set_start_method('spawn')
 	global_variables.voice_assistant = VoiceAssistant()
-	logger.info("Anwendung wurde gestartet")
+	logger.info("\nAnwendung wurde gestartet")
 	global_variables.voice_assistant.run()

@@ -1,0 +1,21 @@
+intent:
+    animalsounds:
+        de:
+            animal_not_found: ["Das Tier kenne ich nicht.", "Was ist das den bitte für ein Tier?"]
+        en:
+            animal_not_found: ["I dont know such an animal."]
+        animals:
+            cat: ["cat", "katze"]
+            dog: ["dog", "hund"]
+            ape: ["ape", "affe"]
+            bee: ["bee", "biene"]
+            chicken: ["chicken", "huhn"]
+            lion: ["lion", "löwe"]
+            pony: ["pony", "pferd"]
+            pig: ["pig", "schwein"]
+            goat: ["goat", "ziege"]
+            cow: ["cow", "kuh"]
+            elephant: ["elephant", "elefant"]
+            owl: ["owl", "eule"]
+            wolf: ["wolf", "wolf"]
+            dug: ["dug", "ente"]

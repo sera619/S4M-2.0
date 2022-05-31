@@ -43,7 +43,7 @@ def default_snips_nlu_handler(session, text):
 					arguments[slot["slotName"]] = slot["value"]["value"]
 					
 				argument_string = json.dumps(arguments)
-				logger.debug("Rufe {} auf mit den Argumenten {}.", intent, argument_string)
+				logger.debug("\nRufe {} auf mit den Argumenten {}.", intent, argument_string)
 				output = getattr(globals()[intent], intent)(**arguments)
 				logger.debug('\n>>> Sprachausgabe: {}',output)
 				break
@@ -78,42 +78,42 @@ class IntentMgmt:
 		
 		self.intent_count = 0
 		for ff in self.functions_folders:
-			logger.debug("Suche nach Funktionen in {}...", ff)
+			logger.debug("\nSuche nach Funktionen in {}...", ff)
 			req_file = os.path.join(ff, 'requirements.txt')
 			if os.path.exists(req_file):
 				install_result = self.install_requirements(req_file)
 				if install_result == 0:
-					logger.debug("Abhängigkeiten für {} erfolgreich installiert oder bereits vorhanden.", ff)
+					logger.debug("\nAbhängigkeiten für {} erfolgreich installiert oder bereits vorhanden.", ff)
 			
 			intent_files = glob.glob(os.path.join(ff, 'intent_*.py'))
 			for infi in intent_files:
-				logger.debug("Lade Intent-Datei {}...", infi)
+				logger.debug("\nLade Intent-Datei {}...", infi)
 								
 				name = infi.strip('.py')
 				name = "intents.functions." + Path(ff).name + ".intent_" + Path(ff).name
 				name = name.replace(os.path.sep, ".")
 				
-				logger.debug("Importiere modul {}...", name)
+				logger.debug("\nImportiere modul {}...", name)
 				globals()[Path(ff).name] = importlib.import_module(name)
-				logger.debug("Modul {} geladen.", str(Path(ff).name))
+				logger.debug("\nModul {} geladen.", str(Path(ff).name))
 				self.dynamic_intents.append(str(Path(ff).name))
 				self.intent_count +=1
 				
-		logger.info("Initialisiere snips nlu...")
+		logger.info("\nInitialisiere snips nlu...")
 		snips_files = glob.glob(os.path.join("./intents/snips-nlu", '*.yaml'))
 		self.snips_nlu_engine = SnipsNLUEngine(Config=CONFIG_DE)
 		dataset = Dataset.from_yaml_files("de", snips_files)
 		nlu_engine = SnipsNLUEngine(config=CONFIG_DE)
 		self.nlu_engine = nlu_engine.fit(dataset)
-		logger.info("{} Snips NLU files gefunden.", len(snips_files))
+		logger.info("\n{} Snips NLU files gefunden.", len(snips_files))
 		if not self.nlu_engine:
-			logger.error("Konnte Dialog-Engine nicht laden.")
+			logger.error("\nKonnte Dialog-Engine nicht laden.")
 		else:
-			logger.debug("Dialog Metadaten: {}.", self.nlu_engine.dataset_metadata)
+			logger.debug("\nDialog Metadaten: {}.", self.nlu_engine.dataset_metadata)
 	
-		logger.debug("Snips NLU Training abgeschlossen")
+		logger.debug("\nSnips NLU Training abgeschlossen")
 		
-		logger.info("Initialisiere ChatbotAI...")
+		logger.info("\nInitialisiere ChatbotAI...")
 		
 		chatbotai_files = glob.glob(os.path.join("./intents/chatbotai", '*.template'))
 		WILDCARD_FILE = './intents/chatbotai/wildcard.template'
@@ -122,22 +122,22 @@ class IntentMgmt:
 		with open(MERGED_FILE, 'w') as outfile:
 			for caf in chatbotai_files:
 				if (not Path(caf).name == Path(WILDCARD_FILE).name) and (not Path(caf).name == Path(MERGED_FILE).name):
-					logger.debug("Verarbeite chatbotai Template {}...", Path(caf).name)
+					logger.debug("\nVerarbeite chatbotai Template {}...", Path(caf).name)
 					with open(caf) as infile:
 							outfile.write(infile.read())
 							
 			if os.path.exists(WILDCARD_FILE):
-				logger.debug("Evaluiere Wildcard...")
+				logger.debug("\nEvaluiere Wildcard...")
 				with open(WILDCARD_FILE) as infile:
 						outfile.write(infile.read())
 			else:
-				logger.warning("Wildcard-Datei {} konnte nicht gefunden werden. Snips NLU ist damit nicht nutzbar.", WILDCARD_FILE)		
+				logger.warning("\nWildcard-Datei {} konnte nicht gefunden werden. Snips NLU ist damit nicht nutzbar.", WILDCARD_FILE)		
 		
 		if os.path.isfile(MERGED_FILE):
 			self.chat = Chat(MERGED_FILE)
 		else:
-			logger.error('Dialogdatei konnte nicht in {} gefunden werden.', MERGED_FILE)
-		logger.info('Chatbot aus {} initialisiert.', MERGED_FILE)
+			logger.error('\nDialogdatei konnte nicht in {} gefunden werden.', MERGED_FILE)
+		logger.info('\nChatbot aus {} initialisiert.', MERGED_FILE)
 	
 	def process(self, text, speaker):
 		return self.chat.respond(text)
