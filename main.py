@@ -6,6 +6,7 @@ from TTS import Voice
 import multiprocessing
 from usermgmt import UserMgmt
 from intentmgmt import IntentMgmt
+from pygame import mixer
 
 CONFIG_FILE = "config.yml"
 
@@ -72,6 +73,9 @@ class VoiceAssistant():
 		self.allow_only_known_speakers = self.cfg["assistant"]["allow_only_known_speakers"]
 		logger.info("Benutzerverwaltung initialisiert")
 		
+		# audio player
+		mixer.init()
+
 		logger.info("Initialisiere Intent-Management...")
 		self.intent_management = IntentMgmt()
 		logger.info('{} intents geladen', self.intent_management.get_count())
