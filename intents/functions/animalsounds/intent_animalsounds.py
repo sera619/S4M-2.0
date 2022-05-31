@@ -1,7 +1,6 @@
-import os,sys, yaml, json, random
+import os, yaml, random, global_variables
 from loguru import logger
-import global_variables
-from chatbot import Chat, register_call
+from chatbot import register_call
 from pygame import mixer
 
 

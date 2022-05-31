@@ -1,5 +1,9 @@
+altgraph==0.17.2
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
+beautifulsoup4==4.11.1
+bottle==0.12.21
+bottle-websocket==0.2.9
 certifi==2022.5.18.1
 cffi==1.15.0
 charset-normalizer==2.0.12
@@ -13,11 +17,14 @@ cx-Logging==3.0
 decorator==5.1.1
 deprecation==2.1.0
 docopt==0.6.2
-enum34==1.1.10
+Eel==0.14.0
 future==0.17.1
 fuzzywuzzy==0.18.0
 geocoder==1.38.1
 geojson==2.5.0
+gevent==21.12.0
+gevent-websocket==0.10.1
+greenlet==1.1.2
 idna==3.3
 importlib-metadata==4.11.4
 joblib==1.1.0
@@ -27,11 +34,16 @@ lxml==4.8.0
 num2words==0.5.10
 numpy==1.22.4
 packaging==21.3
+pefile==2022.5.30
 pvporcupine==1.9.5
 pyaml==19.12.0
 PyAudio @ file:///C:/1Coding/Python/S4M-2.0/conf/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+pycountry==22.3.5
 pycparser==2.21
 pycryptodomex==3.14.1
+pygame==2.1.2
+pyinstaller==5.1
+pyinstaller-hooks-contrib==2022.6
 pykeepass==4.0.2
 pynput==1.7.6
 pyowm==3.3.0
@@ -43,6 +55,7 @@ python-dateutil==2.8.2
 pyttsx3==2.90
 pytz==2022.1
 pywin32==304
+pywin32-ctypes==0.2.0
 PyYAML==6.0
 ratelim==0.1.6
 requests==2.27.1
@@ -54,11 +67,16 @@ snips-nlu==0.20.2
 snips-nlu-de==0.2.3
 snips-nlu-parsers==0.4.3
 snips-nlu-utils==0.9.1
+soupsieve==2.3.2.post1
 tabulate==0.8.9
 text2numde==1.0
 tinydb==4.7.0
 tqdm==4.64.0
 urllib3==1.26.9
 vosk==0.3.7
+whichcraft==0.6.1
+wikipedia==1.4.0
 win32-setctime==1.1.0
 zipp==3.8.0
+zope.event==4.5.0
+zope.interface==5.4.0
