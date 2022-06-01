@@ -4,7 +4,6 @@ import global_variables
 import yaml
 import random
 import os
-from pygame import mixer
 
 # Spezieller Intent, der Zugriff auf voice_assistant braucht	
 @register_call("stop")
@@ -30,13 +29,15 @@ def stop(session_id = "general", dummy=0):
 		if global_variables.voice_assistant.tts.is_busy():
 			global_variables.voice_assistant.tts.stop()
 			result = random.choice(cfg['intent']['stop'][LANGUAGE]['be_silent'])
-						
-		if mixer.music.get_busy():
-			mixer.music.stop()
+			
+		# Wird ein Sound ausgegeben? Stoppe ihn
+		if global_variables.voice_assistant.audio_player.is_playing():
+			global_variables.voice_assistant.audio_player.stop()
 			result = random.choice(cfg['intent']['stop'][LANGUAGE]['be_silent'])
-
+			
+		# Setze den Context zurück und unterbrich etwaige Intents, die mehrere Dialogzeilen haben
+		global_variables.context = None
 		return result
-
 	else:
 		logger.error("Konnte Konfigurationsdatei für Intent 'stop' nicht laden.")
 		return ""

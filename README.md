@@ -1,13 +1,13 @@
-###### This README is currently work in progress #####
+###### This README is currently work in progress ######
 
 # S4M 2.0 Voiceassistant #
 
 **TecAlpha Version**
 
 ---
-__!IMPORTANT!__
+**!IMPORTANT!**
 
-__While this project is under alpha development it will be only available in german !__
+**While this project is under alpha development it will be only available in german !**
 
 *Notice: This will be changed if a stable release version is available.*
 
@@ -23,13 +23,20 @@ __While this project is under alpha development it will be only available in ger
 
 ## Features ##
 
-|__Features__|__Beschreibung__|
+| **Features** |**Beschreibung**|
 |:------:|:--------|
 |*Benutzererkennung*| S4M erkennt das Tonprofil des Sprechers und kann so vor unbefugten Nutzern schützen.|
 |*dynamische Kommandoerkennung*|Keine Abfrage von kompletten Templatetexten. S4M reagiert auf Schlüsselbegriffe in Sätzen und lernt dabei deine Stimme und Sprechweise immer besser zu verstehen.|
 |*Kein BIGDATA*| S4M verwendet keine Cloud und benötigt keine sensiblen Daten. Jegliche Angabe von privaten Daten ist und bleibt freiwillig. Diese Daten werden lokal auf deinem System gespeichert und verwaltet!|
-|*Tierstimmen*| Wie seine Verwandten kann auch S4M Tierstimmen immitieren. Zurzeit sind 26 verfügbar|
-|*Wikipedia*|Die größte Enzyklopädie der Welt steht dir zur Verfügung|
+|*Tierstimmen*| Wie seine Verwandten kann auch S4M Tierstimmen immitieren. Zurzeit sind 26 verfügbar.|
+|*Wikipedia*|Die größte Enzyklopädie der Welt steht dir zur Verfügung.|
+|*Erinnerungen*|Nichts mehr vergessen! Speichere Termine oder stelle einen Wecker.|
+|*Smart Home*| Anbindung an deine Smart-Home Geräte.|
+|*Wetter Station*|Wettervorhersagen mit Temparatur, Luftdruck und alles andere rund ums Wetter.|
+|*Radiostream*|Radio-Streaming vom deutschen Rundfunk.|
+|*Musicplayer*|Natürlich kannst du auch einfach deine eigene Playlist abspielen.|
+|*Quiz Game*| Ein kleines Quiz für helle Köpfe!|
+|*Password Manager*| Per Stimmabgleich gesicherter Passwortmanager.|
 
 ---
 
@@ -42,7 +49,7 @@ __While this project is under alpha development it will be only available in ger
 > S4M 2.0 wird zunächst für Windows10/11 verfügbar sein. Eine andere Plattform ist bisher nicht geplant. Das bedeutet aber nicht das sich das nicht in Zukunft ändern kann.
 
 *Welche Daten speichert S4M 2.0?*
->S4M speichert __KEINE__ empfindlichen privaten Daten. Die Authentifizierung erfolgt über Stimmabgleich. Diese Daten werden lokal auf deinem System gespeichert. Diese Daten __BLEIBEN__ auf deinem System!
+>S4M speichert **KEINE** empfindlichen privaten Daten. Die Authentifizierung erfolgt über Stimmabgleich. Diese Daten werden lokal auf deinem System gespeichert. Diese Daten **BLEIBEN** auf deinem System!
 
 *Was brauche ich um S4M 2.0 zu benutzen?*
 >Um S4M 2.0 zu verwenden benötigst du:
