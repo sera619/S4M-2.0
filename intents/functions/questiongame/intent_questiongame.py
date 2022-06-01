@@ -51,13 +51,11 @@ class Q20Session():
 		self.items = []
 		self.current_question = 0
 		
-		# Lese die Konfiguration
 		config_path = os.path.join('intents','functions','questiongame','config_questiongame.yml')
 		cfg = None
 		with open(config_path, "r", encoding='utf8') as ymlfile:
 			cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
-		# Holen der Sprache aus der globalen Konfigurationsdatei
 		LANGUAGE = global_variables.voice_assistant.cfg['assistant']['language']		
 		
 		self.PLEASE_START_NEW_GAME = cfg['intent']['questiongame'][LANGUAGE]['please_start_new_game']

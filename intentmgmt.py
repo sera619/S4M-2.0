@@ -1,20 +1,11 @@
+import pip, importlib, importlib.util, glob, os, sys, json, random, global_variables
 from loguru import logger
-import pip
-import importlib
-import importlib.util
-import glob
-import os
-import sys
 from pathlib import Path
 from snips_nlu import SnipsNLUEngine
 from snips_nlu.default_configs import CONFIG_DE
 from snips_nlu.dataset import Dataset
 from chatbot import Chat, register_call, mapper
-import json
-import random
-import global_variables
 
-# Erweitere die Klasse Chat durch die Funktion get_intend_name
 class Chat(Chat):
     def get_intend_name(self, text, session_id="general"):
         session = mapper.Session(self, session_id)
@@ -47,11 +38,8 @@ def get_snips_nlu_intent(text):
 		
 	for intent in global_variables.voice_assistant.intent_management.dynamic_intents:
 		
-		# Wurde überhaupt ein Intent erkannt?
 		if parsing["intent"]["intentName"]:
 		
-			# Die Wahrscheinlichkeit wird geprüft, um sicherzustellen, dass nicht irgendein Intent angewendet wird,
-			# der garnicht gemeint war
 			if (parsing["intent"]["intentName"].lower() == intent.lower()) and (parsing["intent"]["probability"] > 0.5):
 				return parsing["intent"]["intentName"]
 	return ""
@@ -61,43 +49,32 @@ def default_snips_nlu_handler(session, text):
 	parsing = global_variables.voice_assistant.intent_management.nlu_engine.parse(text)
 	output = "Ich verstehe deine Frage nicht. Kannst du sie umformulieren?"
 	
-	# Schaue, ob es einen Intent gibt, der zu dem NLU intent passt
 	intent_found = False
 	
-	# Lese die Sprache des Assistenten aus der Konfigurationsdatei
 	ASSISTANT_LANGUAGE = global_variables.voice_assistant.cfg['assistant']['language']
 	
-	# Hole die Liste aller Antworten, die darauf hindeuten, dass kein Intent detektiert wurde
 	if ASSISTANT_LANGUAGE:
 		NO_INTENT_RECOGNIZED = global_variables.voice_assistant.cfg['defaults'][ASSISTANT_LANGUAGE]['no_intent_recognized']
 	else:
 		NO_INTENT_RECOGNIZED = ['I did not understand']
 	
-	# Wähle ein zufälliges Item, das erstmal aussagt, dass kein Intent gefunden wurde.
-	# WIRD ein Intent gefunden, dann wird output durch eine vernünftige Antwort ersetzt.
 	output = random.choice(NO_INTENT_RECOGNIZED)
 	
 	for intent in global_variables.voice_assistant.intent_management.dynamic_intents:
 		
-		# Wurde überhaupt ein Intent erkannt?
 		if parsing["intent"]["intentName"]:
 		
-			# Die Wahrscheinlichkeit wird geprüft, um sicherzustellen, dass nicht irgendein Intent angewendet wird,
-			# der garnicht gemeint war
 			if (parsing["intent"]["intentName"].lower() == intent.lower()) and (parsing["intent"]["probability"] > 0.5):
 				intent_found = True
 								
-				# Parse alle Parameter
 				arguments = dict()
 				for slot in parsing["slots"]:
 					arguments[slot["slotName"]] = slot["value"]["value"]
 					
-				# Rufe Methode dynamich mit der Parameterliste auf
 				argument_string = json.dumps(arguments)
 				logger.debug("Rufe {} auf mit den Argumenten {}.", intent, argument_string)
 				output = getattr(globals()[intent], intent)(**arguments)
 				
-				# Suche nicht weiter
 				break
 	
 	return output
@@ -125,7 +102,6 @@ class IntentMgmt:
 
 	def __init__(self):
 	
-		# 1. Registriere Funktionen, die von snips-nlu und chatbotai aufgerufen werden
 		self.functions_folders = [os.path.abspath(name) for name in glob.glob("./intents/functions/*/")]
 		self.dynamic_intents = []
 		
@@ -138,7 +114,6 @@ class IntentMgmt:
 				if install_result == 0:
 					logger.debug("Abhängigkeiten für {} erfolgreich installiert oder bereits vorhanden.", ff)
 			
-			# Finde Python-Dateien, die mit Intent beginnen
 			intent_files = glob.glob(os.path.join(ff, 'intent_*.py'))
 			for infi in intent_files:
 				logger.debug("Lade Intent-Datei {}...", infi)
@@ -153,7 +128,6 @@ class IntentMgmt:
 				self.dynamic_intents.append(str(Path(ff).name))
 				self.intent_count +=1
 				
-		# 2. Finde alle Dialoge, die über snips nlu abgehandelt werden
 		logger.info("Initialisiere snips nlu...")
 		snips_files = glob.glob(os.path.join("./intents/snips-nlu", '*.yaml'))
 		self.snips_nlu_engine = SnipsNLUEngine(Config=CONFIG_DE)
@@ -168,24 +142,19 @@ class IntentMgmt:
 	
 		logger.debug("Snips NLU Training abgeschlossen")
 		
-		# 3. Finde alle Dialoge, die über ChatbotAI abgehandelt werden
 		logger.info("Initialisiere ChatbotAI...")
 		
 		chatbotai_files = glob.glob(os.path.join("./intents/chatbotai", '*.template'))
 		WILDCARD_FILE = './intents/chatbotai/wildcard.template'
 		MERGED_FILE = './intents/chatbotai/_merger.template'
 		
-		# Füge alle Dateien zusammen
 		with open(MERGED_FILE, 'w') as outfile:
 			for caf in chatbotai_files:
-				# Das Wildcard-Template darf erst am Ende geladen werden
-				# Das Merger-Template darf garnicht geladen werden (das ist eine Zusammenführung aller einzelnen Template Dateien)
 				if (not Path(caf).name == Path(WILDCARD_FILE).name) and (not Path(caf).name == Path(MERGED_FILE).name):
 					logger.debug("Verarbeite chatbotai Template {}...", Path(caf).name)
 					with open(caf) as infile:
 						outfile.write(infile.read())
 							
-			# Hänge den Wildcard Intent ans Ende
 			if os.path.exists(WILDCARD_FILE):
 				logger.debug("Prozessiere letzendlich Chatbotai Wildcard Template...")
 				with open(WILDCARD_FILE) as infile:
@@ -194,8 +163,6 @@ class IntentMgmt:
 				logger.warning("Wildcard-Datei {} konnte nicht gefunden werden. Snips NLU ist damit nicht nutzbar.", WILDCARD_FILE)		
 		
 		if os.path.isfile(MERGED_FILE):
-			# Wir müssen hier kein Default template setzen, da dieses durch den Wildcard Intent nie aufgerufen wird.
-			# Vorher wird snips nlu aufgerufen.
 			self.chat = Chat(MERGED_FILE)
 		else:
 			logger.error('Dialogdatei konnte nicht in {} gefunden werden.', MERGED_FILE)
@@ -203,7 +170,6 @@ class IntentMgmt:
 		logger.info('Chatbot aus {} initialisiert.', MERGED_FILE)
 		
 	def register_callbacks(self):
-		# Registriere alle Callback Funktionen
 		logger.info("Registriere Callbacks...")
 		callbacks = []
 		for ff in self.functions_folders:
@@ -220,13 +186,10 @@ class IntentMgmt:
 	
 	def process(self, text, speaker):
 	
-		# Evaluiere ChatbotAI, wenn keines der strikten Intents greift, wird die Eingabe über die dialogs.template
-		# automatisch an snips nlu umgeleitet.
 		intent_name = self.chat.get_intend_name(text)
 		if intent_name == "default_snips_nlu_handler":
 			intent_name = get_snips_nlu_intent(text)
 			
-		# Überprüfe, ob der Benutzer diesen Intent ausführen darf
 		if global_variables.voice_assistant.user_management.authenticate_intent(speaker, intent_name):
 		
 			old_context = global_variables.context
@@ -239,8 +202,6 @@ class IntentMgmt:
 			else:
 				return response
 		else:
-			# In diesem Beispiel lassen wir den Assistenten antworten. In Zukunft wird er einfach nicht
-			# reagieren, um das Abspielen gar nicht erst zu unterbrechen
 			response = speaker + " darf den Befehl " + intent_name + " nicht ausführen."
 
 		return response

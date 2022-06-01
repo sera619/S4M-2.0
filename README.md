@@ -31,6 +31,12 @@
 |*Tierstimmen*| Wie seine Verwandten kann auch S4M Tierstimmen immitieren. Zurzeit sind 26 verfügbar.|
 |*Wikipedia*|Die größte Enzyklopädie der Welt steht dir zur Verfügung.|
 |*Erinnerungen*|Nichts mehr vergessen! Speichere Termine oder stelle einen Wecker.|
+|*Smart Home*| Anbindung an deine Smart-Home Geräte.|
+|*Wetter Station*|Wettervorhersagen mit Temparatur, Luftdruck und alles andere rund ums Wetter.|
+|*Radiostream*|Radio-Streaming vom deutschen Rundfunk.|
+|*Musicplayer*|Natürlich kannst du auch einfach deine eigene Playlist abspielen.|
+|*Quiz Game*| Ein kleines Quiz für helle Köpfe!|
+|*Password Manager*| Per Stimmabgleich gesicherter Passwortmanager.|
 
 ---
 

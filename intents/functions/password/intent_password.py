@@ -14,12 +14,10 @@ import numpy as np
 def getPassword(session_id = "general", entry="none"):
 	cfg = None
 	
-	# Laden der intent-eigenen Konfigurationsdatei
 	config_path = os.path.join('intents','functions','password','config_password.yml')
 	with open(config_path, "r", encoding='utf-8') as ymlfile:
 		cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
 	
-	# Holen der Sprache aus der globalen Konfigurationsdatei
 	LANGUAGE = global_variables.voice_assistant.cfg['assistant']['language']
 	
 	db_file = cfg['intent']['password']['db_file']
@@ -40,14 +38,12 @@ def getPassword(session_id = "general", entry="none"):
 	
 	NO_VOICE_MATCH = cfg['intent']['password'][LANGUAGE]['no_voice_match']
 	
-	# Konnte die Konfigurationsdatei des Intents geladen werden?
 	if cfg:
 		try:
 			kp = PyKeePass(os.path.abspath(db_file), keyfile=os.path.abspath(key_file))
 		except Exception as e:
 			return cfg['intent']['password'][LANGUAGE]['could_not_access_keystore']
 
-		# Verifiziere Stimme
 		fp_entry = kp.find_entries(title='_fingerprint', first=True)
 		if fp_entry:
 			a = json.loads(fp_entry.notes)
@@ -80,12 +76,10 @@ def getPassword(session_id = "general", entry="none"):
 def getUsername(session_id = "general", entry="none"):
 	cfg = None
 
-	# Laden der intent-eigenen Konfigurationsdatei
 	config_path = os.path.join('intents','functions','password','config_password.yml')
 	with open(config_path, "r", encoding='utf-8') as ymlfile:
 		cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
 	
-	# Holen der Sprache aus der globalen Konfigurationsdatei
 	LANGUAGE = global_variables.voice_assistant.cfg['assistant']['language']
 	
 	db_file = cfg['intent']['password']['db_file']
@@ -105,14 +99,12 @@ def getUsername(session_id = "general", entry="none"):
 	
 	NO_VOICE_MATCH = cfg['intent']['password'][LANGUAGE]['no_voice_match']
 	
-	# Konnte die Konfigurationsdatei des Intents geladen werden?
 	if cfg:
 		try:
 			kp = PyKeePass(os.path.abspath(db_file), keyfile=os.path.abspath(key_file))
 		except Exception as e:
 			return cfg['intent']['password'][LANGUAGE]['could_not_access_keystore']
 		
-		# Verifiziere Stimme
 		fp_entry = kp.find_entries(title='_fingerprint', first=True)
 		if fp_entry:
 			a = json.loads(fp_entry.notes)

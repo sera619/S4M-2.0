@@ -20,32 +20,23 @@ def musicstream(station=None):
 		logger.error("Konnte Konfigurationsdatei für das Musikstreaming nicht lesen.")
 		return ""
 		
-	# Holen der Sprache aus der globalen Konfigurationsdatei
 	LANGUAGE = global_variables.voice_assistant.cfg['assistant']['language']
 	
-	# Meldung falls der Sender nicht gefunden wurde
 	UNKNOWN_STATION = random.choice(cfg['intent']['musicstream'][LANGUAGE]['unknown_station'])
 	
-	# Radiosender haben häufig Zahlen in den Namen, weswegen wir für einen besseren Abgleich
-	# Zahlenwörter in Zahlenwerte umwandeln.
 	station = text2numde.sentence2num(station)
 	
-	# Wir eliminieren weiterhin alle Whitespaces, denn das Buchstabieren in VOSK bringt
-	# pro Buchstabe eine Leerstelle mit sich.
 	station = "".join(station.split())
 	
 	station_stream = None
 	for key, value in cfg['intent']['musicstream']['stations'].items():
 	
-		# Wir führen eine Fuzzy-Suche aus, da die Namen der Radiosender nicht immer perfekt
-		# von VOSK erkannt werden.
 		ratio = fuzz.ratio(station.lower(), key.lower())
 		logger.info("Übereinstimmung von {} und {} ist {}%", station, key, ratio)
 		if ratio > 70:
 			station_stream = value
 			break
 
-	# Wurde kein Sender gefunden?
 	if station_stream is None:
 		return UNKNOWN_STATION
 		
@@ -58,5 +49,4 @@ def musicstream(station=None):
 	#global_variables.voice_assistant.play_audio(station_stream)
 	global_variables.voice_assistant.audio_player.play_stream(station_stream)
 		
-	# Der Assistent muss nicht sprechen, wenn ein Radiostream gespielt wird
 	return ""	

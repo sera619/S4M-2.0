@@ -36,12 +36,10 @@ class Voice:
 		if self.process:
 			self.process.terminate()
 			
-	# Überprüfe, ob derzeit gesprochen wird
 	def is_busy(self):
 		if self.process:
 			return self.process.is_alive()
 			
-	# Setze die Lautstärke mit der gesprochen wird
 	def set_volume(self, volume=0.5):
 		self.volume = volume
 		
@@ -50,11 +48,9 @@ class Voice:
 		engine = pyttsx3.init()
 		voices = engine.getProperty('voices')
 		
-		# Wir hängen ein "-" an die Sprache in Großschrift an, damit sie in der ID gefunden wird
 		lang_search_str = language.upper()+"-"
 		
 		for voice in voices:
-			# Die ID einer Sprache ist beispielsweise:
 			# HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_DE-DE_HEDDA_11.0
 			if language == '':
 				result.append(voice.id)

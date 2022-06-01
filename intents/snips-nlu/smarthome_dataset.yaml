@@ -7,7 +7,7 @@ values:
     - an
     - ein
     - aus
-    
+---   
 type: entity
 name: device_ent
 automatically_extensible: true

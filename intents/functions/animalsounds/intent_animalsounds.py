@@ -1,8 +1,6 @@
 from chatbot import register_call
-import global_variables
-import random
-import os
-import yaml
+import global_variables, random, os, yaml
+from loguru import logger
 
 @register_call("animalSound")
 def animalSound(session_id = "general", animal="none"):
