@@ -26,6 +26,9 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(766, 439)
+        icon = QIcon()
+        icon.addFile(u":/icons/glossy_3d_blue_orbs2_108.png", QSize(), QIcon.Normal, QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(u"QMainWindow{\n"
 "border:none;\n"
 "border-radius: 30pt;\n"
@@ -153,9 +156,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon = QIcon()
-        icon.addFile(u":/icons/icons/minus.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.mini_button.setIcon(icon)
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/icons/minus.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.mini_button.setIcon(icon1)
         self.mini_button.setIconSize(QSize(20, 20))
 
         self.horizontalLayout.addWidget(self.mini_button, 0, Qt.AlignRight|Qt.AlignTop)
@@ -183,9 +186,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/icons/arrow-down-right.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.maxi_button.setIcon(icon1)
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/icons/arrow-down-right.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.maxi_button.setIcon(icon2)
         self.maxi_button.setIconSize(QSize(20, 20))
 
         self.horizontalLayout.addWidget(self.maxi_button, 0, Qt.AlignRight|Qt.AlignTop)
@@ -210,9 +213,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/icons/x.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.x_button.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/icons/x.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.x_button.setIcon(icon3)
         self.x_button.setIconSize(QSize(20, 20))
 
         self.horizontalLayout.addWidget(self.x_button, 0, Qt.AlignRight|Qt.AlignTop)
@@ -294,9 +297,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/icons/zoom-in.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.details_button.setIcon(icon3)
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/icons/zoom-in.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.details_button.setIcon(icon4)
         self.details_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.details_button, 4, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
@@ -321,9 +324,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icons/book.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.skills_button.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/icons/book.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.skills_button.setIcon(icon5)
         self.skills_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.skills_button, 3, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
@@ -353,9 +356,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/icons/users.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.users_button.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/icons/users.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.users_button.setIcon(icon6)
         self.users_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.users_button, 1, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
@@ -385,9 +388,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon6 = QIcon()
-        icon6.addFile(u":/icons/icons/home.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.home_button.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/icons/home.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.home_button.setIcon(icon7)
         self.home_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.home_button, 0, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
@@ -762,9 +765,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.footer_help_btn = QPushButton(self.footer_right_frame)
         self.footer_help_btn.setObjectName(u"footer_help_btn")
-        icon7 = QIcon()
-        icon7.addFile(u":/icons/icons/help-circle.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.footer_help_btn.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/icons/help-circle.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.footer_help_btn.setIcon(icon8)
         self.footer_help_btn.setIconSize(QSize(14, 14))
 
         self.verticalLayout_2.addWidget(self.footer_help_btn, 0, Qt.AlignRight|Qt.AlignBottom)

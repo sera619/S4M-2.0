@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="assets/iconset.qrc">
+    <normaloff>:/icons/glossy_3d_blue_orbs2_108.png</normaloff>:/icons/glossy_3d_blue_orbs2_108.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow{
 border:none;
