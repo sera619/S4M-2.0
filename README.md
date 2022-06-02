@@ -37,7 +37,7 @@
 |*Musicplayer*|Natürlich kannst du auch einfach deine eigene Playlist abspielen.|
 |*Quiz Game*| Ein kleines Quiz für helle Köpfe!|
 |*Password Manager*| Per Stimmabgleich gesicherter Passwortmanager.|
-|*Benutzerfreundliches Userinterface*| Beim Dysign und Funktionen des [User-Interface](assets/ScreenShot/mainmanu.png) wurde auf Benutzerfreundlichkeit viel Wert gelegt.|
+|*Benutzerfreundliches Userinterface*| Beim Dysign und Funktionen des [User-Interface](##Preview) wurde auf Benutzerfreundlichkeit viel Wert gelegt.|
 
 ---
 
