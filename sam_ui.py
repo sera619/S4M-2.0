@@ -11,6 +11,7 @@ from qt_material import apply_stylesheet
 import sys, os, time, datetime, json
 from ui_utils import UIutils
 from MiniUI import Ui_MiniFrame
+import main as SAM
 
 app = QApplication(sys.argv)
 
@@ -40,6 +41,7 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.miniui = MiniUI()
         self.ui.setupUi(self)
+        self.SAM = SAM
         self.ui.men_button.clicked.connect(lambda: self.animateMenu())
         self.ui_utils = UIutils()
         apply_stylesheet(app, theme="dark_red.xml")
@@ -159,8 +161,7 @@ class MainWindow(QMainWindow):
 
     def start_sam(self):
         self.hide
-        os.system('python main.py')
-        
+        self.SAM.runSam()
 
 
 
