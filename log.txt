@@ -1,0 +1,942 @@
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pytz in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (2022.1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: geocoder==1.38.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.38.1)
+Requirement already satisfied: ratelim in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.1.6)
+Requirement already satisfied: requests in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (2.27.1)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (1.16.0)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.17.1)
+Requirement already satisfied: click in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (8.1.3)
+Requirement already satisfied: colorama in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from click->geocoder==1.38.1) (0.4.4)
+Requirement already satisfied: decorator in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from ratelim->geocoder==1.38.1) (5.1.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2022.5.18.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (1.26.9)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.18.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: text2numde==1.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: sounddevice==0.4.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.4.1)
+Requirement already satisfied: CFFI>=1.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from sounddevice==0.4.1) (1.15.0)
+Requirement already satisfied: pycparser in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from CFFI>=1.0->sounddevice==0.4.1) (2.21)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\fuzzywuzzy\fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pykeepass==3.2.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (3.2.1)
+Requirement already satisfied: python-dateutil in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (2.8.1)
+Requirement already satisfied: argon2-cffi in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (21.3.0)
+Requirement already satisfied: construct==2.10.54 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (2.10.54)
+Requirement already satisfied: lxml in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (4.8.0)
+Requirement already satisfied: pycryptodomex>=3.6.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (3.14.1)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (0.17.1)
+Requirement already satisfied: argon2-cffi-bindings in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from argon2-cffi->pykeepass==3.2.1) (21.2.0)
+Requirement already satisfied: six>=1.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from python-dateutil->pykeepass==3.2.1) (1.16.0)
+Requirement already satisfied: cffi>=1.0.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->pykeepass==3.2.1) (1.15.0)
+Requirement already satisfied: pycparser in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->pykeepass==3.2.1) (2.21)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pynput==1.7.3 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.7.3)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pynput==1.7.3) (1.16.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.18.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: python-dateutil==2.8.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (2.8.1)
+Requirement already satisfied: six>=1.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from python-dateutil==2.8.1) (1.16.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: num2words==0.5.10 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.5.10)
+Requirement already satisfied: docopt>=0.6.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from num2words==0.5.10) (0.6.2)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: text2numde==1.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pyowm==3.1.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (3.1.1)
+Requirement already satisfied: PySocks<2,>=1.7.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (1.7.1)
+Requirement already satisfied: geojson<3,>=2.3.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (2.5.0)
+Requirement already satisfied: requests[socks] in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (2.27.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (2022.5.18.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (1.26.9)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: geocoder==1.38.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.38.1)
+Requirement already satisfied: ratelim in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.1.6)
+Requirement already satisfied: requests in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (2.27.1)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (1.16.0)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.17.1)
+Requirement already satisfied: click in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (8.1.3)
+Requirement already satisfied: colorama in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from click->geocoder==1.38.1) (0.4.4)
+Requirement already satisfied: decorator in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from ratelim->geocoder==1.38.1) (5.1.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2022.5.18.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (1.26.9)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pycountry==20.7.3 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (20.7.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: wikipedia==1.4.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from wikipedia==1.4.0) (2.27.1)
+Requirement already satisfied: beautifulsoup4 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from wikipedia==1.4.0) (4.11.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (2022.5.18.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (1.26.9)
+Requirement already satisfied: soupsieve>1.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from beautifulsoup4->wikipedia==1.4.0) (2.3.2.post1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Fitting lookup intent parser...
+Fitted lookup intent parser in 0:00:00.003004
+Fitting probabilistic intent parser...
+Fitting LogRegIntentClassifier...
+LogRegIntentClassifier in 0:00:01.013035
+Fitting getTime slot filler...
+Fitted CRFSlotFiller in 0:00:00.194292
+Fitting musicstream slot filler...
+Fitted CRFSlotFiller in 0:00:00.879799
+Fitting reminder slot filler...
+Fitted CRFSlotFiller in 0:00:13.186451
+Fitting smarthome slot filler...
+Fitted CRFSlotFiller in 0:00:01.158053
+Fitting stop slot filler...
+Fitted CRFSlotFiller in 0:00:00
+Fitted probabilistic intent parser in 0:00:16.434632
+Fitted NLU engine in 0:00:16.737999
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pytz in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (2022.1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: geocoder==1.38.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.38.1)
+Requirement already satisfied: ratelim in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.1.6)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.17.1)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (1.16.0)
+Requirement already satisfied: requests in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (2.27.1)
+Requirement already satisfied: click in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (8.1.3)
+Requirement already satisfied: colorama in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from click->geocoder==1.38.1) (0.4.4)
+Requirement already satisfied: decorator in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from ratelim->geocoder==1.38.1) (5.1.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (1.26.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2022.5.18.1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.18.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: text2numde==1.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: sounddevice==0.4.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.4.1)
+Requirement already satisfied: CFFI>=1.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from sounddevice==0.4.1) (1.15.0)
+Requirement already satisfied: pycparser in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from CFFI>=1.0->sounddevice==0.4.1) (2.21)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\fuzzywuzzy\fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pykeepass==3.2.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (3.2.1)
+Requirement already satisfied: argon2-cffi in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (21.3.0)
+Requirement already satisfied: construct==2.10.54 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (2.10.54)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (0.17.1)
+Requirement already satisfied: pycryptodomex>=3.6.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (3.14.1)
+Requirement already satisfied: lxml in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (4.8.0)
+Requirement already satisfied: python-dateutil in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (2.8.1)
+Requirement already satisfied: argon2-cffi-bindings in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from argon2-cffi->pykeepass==3.2.1) (21.2.0)
+Requirement already satisfied: six>=1.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from python-dateutil->pykeepass==3.2.1) (1.16.0)
+Requirement already satisfied: cffi>=1.0.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->pykeepass==3.2.1) (1.15.0)
+Requirement already satisfied: pycparser in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->pykeepass==3.2.1) (2.21)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pynput==1.7.3 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.7.3)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pynput==1.7.3) (1.16.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.18.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: python-dateutil==2.8.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (2.8.1)
+Requirement already satisfied: six>=1.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from python-dateutil==2.8.1) (1.16.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: num2words==0.5.10 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.5.10)
+Requirement already satisfied: docopt>=0.6.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from num2words==0.5.10) (0.6.2)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: text2numde==1.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pyowm==3.1.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (3.1.1)
+Requirement already satisfied: requests[socks] in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (2.27.1)
+Requirement already satisfied: geojson<3,>=2.3.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (2.5.0)
+Requirement already satisfied: PySocks<2,>=1.7.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (1.7.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (1.26.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (2022.5.18.1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: geocoder==1.38.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.38.1)
+Requirement already satisfied: ratelim in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.1.6)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.17.1)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (1.16.0)
+Requirement already satisfied: requests in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (2.27.1)
+Requirement already satisfied: click in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (8.1.3)
+Requirement already satisfied: colorama in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from click->geocoder==1.38.1) (0.4.4)
+Requirement already satisfied: decorator in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from ratelim->geocoder==1.38.1) (5.1.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (1.26.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2022.5.18.1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pycountry==20.7.3 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (20.7.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: wikipedia==1.4.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from wikipedia==1.4.0) (2.27.1)
+Requirement already satisfied: beautifulsoup4 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from wikipedia==1.4.0) (4.11.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (1.26.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (2022.5.18.1)
+Requirement already satisfied: soupsieve>1.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from beautifulsoup4->wikipedia==1.4.0) (2.3.2.post1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Fitting lookup intent parser...
+Fitted lookup intent parser in 0:00:00.003003
+Fitting probabilistic intent parser...
+Fitting LogRegIntentClassifier...
+LogRegIntentClassifier in 0:00:00.689626
+Fitting getTime slot filler...
+Fitted CRFSlotFiller in 0:00:00.198180
+Fitting musicstream slot filler...
+Fitted CRFSlotFiller in 0:00:00.792720
+Fitting reminder slot filler...
+Fitted CRFSlotFiller in 0:00:12.283158
+Fitting smarthome slot filler...
+Fitted CRFSlotFiller in 0:00:01.155048
+Fitting stop slot filler...
+Fitted CRFSlotFiller in 0:00:00
+Fitted probabilistic intent parser in 0:00:15.123739
+Fitted NLU engine in 0:00:15.404993
+.\sam_ui.py:109: DeprecationWarning: Function: 'globalPos() const' is marked as deprecated, please check the documentation for more information.
+  self.clickPosition = event.globalPos()
+.\sam_ui.py:82: DeprecationWarning: Function: 'globalPos() const' is marked as deprecated, please check the documentation for more information.
+  self.move(self.pos() + e.globalPos() - self.clickPosition)
+.\sam_ui.py:83: DeprecationWarning: Function: 'globalPos() const' is marked as deprecated, please check the documentation for more information.
+  self.clickPosition = e.globalPos()
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pytz in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (2022.1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: geocoder==1.38.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.38.1)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (1.16.0)
+Requirement already satisfied: ratelim in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.1.6)
+Requirement already satisfied: click in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (8.1.3)
+Requirement already satisfied: requests in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (2.27.1)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.17.1)
+Requirement already satisfied: colorama in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from click->geocoder==1.38.1) (0.4.4)
+Requirement already satisfied: decorator in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from ratelim->geocoder==1.38.1) (5.1.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2.0.12)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (1.26.9)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2022.5.18.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (3.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.18.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: text2numde==1.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: sounddevice==0.4.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.4.1)
+Requirement already satisfied: CFFI>=1.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from sounddevice==0.4.1) (1.15.0)
+Requirement already satisfied: pycparser in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from CFFI>=1.0->sounddevice==0.4.1) (2.21)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\fuzzywuzzy\fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pykeepass==3.2.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (3.2.1)
+Requirement already satisfied: lxml in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (4.8.0)
+Requirement already satisfied: python-dateutil in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (2.8.1)
+Requirement already satisfied: argon2-cffi in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (21.3.0)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (0.17.1)
+Requirement already satisfied: construct==2.10.54 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (2.10.54)
+Requirement already satisfied: pycryptodomex>=3.6.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (3.14.1)
+Requirement already satisfied: argon2-cffi-bindings in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from argon2-cffi->pykeepass==3.2.1) (21.2.0)
+Requirement already satisfied: six>=1.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from python-dateutil->pykeepass==3.2.1) (1.16.0)
+Requirement already satisfied: cffi>=1.0.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->pykeepass==3.2.1) (1.15.0)
+Requirement already satisfied: pycparser in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->pykeepass==3.2.1) (2.21)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pynput==1.7.3 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.7.3)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pynput==1.7.3) (1.16.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.18.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: python-dateutil==2.8.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (2.8.1)
+Requirement already satisfied: six>=1.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from python-dateutil==2.8.1) (1.16.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: num2words==0.5.10 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.5.10)
+Requirement already satisfied: docopt>=0.6.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from num2words==0.5.10) (0.6.2)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: text2numde==1.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pyowm==3.1.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (3.1.1)
+Requirement already satisfied: geojson<3,>=2.3.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (2.5.0)
+Requirement already satisfied: requests<3,>=2.20.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (2.27.1)
+Requirement already satisfied: PySocks<2,>=1.7.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (1.7.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3,>=2.20.0->pyowm==3.1.1) (2.0.12)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3,>=2.20.0->pyowm==3.1.1) (1.26.9)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3,>=2.20.0->pyowm==3.1.1) (2022.5.18.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3,>=2.20.0->pyowm==3.1.1) (3.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: geocoder==1.38.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.38.1)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (1.16.0)
+Requirement already satisfied: ratelim in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.1.6)
+Requirement already satisfied: click in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (8.1.3)
+Requirement already satisfied: requests in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (2.27.1)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.17.1)
+Requirement already satisfied: colorama in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from click->geocoder==1.38.1) (0.4.4)
+Requirement already satisfied: decorator in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from ratelim->geocoder==1.38.1) (5.1.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2.0.12)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (1.26.9)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2022.5.18.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (3.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pycountry==20.7.3 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (20.7.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: wikipedia==1.4.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from wikipedia==1.4.0) (2.27.1)
+Requirement already satisfied: beautifulsoup4 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from wikipedia==1.4.0) (4.11.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (2.0.12)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (1.26.9)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (2022.5.18.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (3.3)
+Requirement already satisfied: soupsieve>1.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from beautifulsoup4->wikipedia==1.4.0) (2.3.2.post1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Fitting lookup intent parser...
+Fitted lookup intent parser in 0:00:00.003002
+Fitting probabilistic intent parser...
+Fitting LogRegIntentClassifier...
+LogRegIntentClassifier in 0:00:00.687624
+Fitting getTime slot filler...
+Fitted CRFSlotFiller in 0:00:00.208190
+Fitting musicstream slot filler...
+Fitted CRFSlotFiller in 0:00:00.907824
+Fitting reminder slot filler...
+Fitted CRFSlotFiller in 0:00:12.594442
+Fitting smarthome slot filler...
+Fitted CRFSlotFiller in 0:00:01.093994
+Fitting stop slot filler...
+Fitted CRFSlotFiller in 0:00:00.001000
+Fitted probabilistic intent parser in 0:00:15.497078
+Fitted NLU engine in 0:00:15.779335
+Traceback (most recent call last):
+  File "C:\1Coding\Python\S4M-2.0\main.py", line 66, in update
+    global_variables.voice_assistant.loop()
+  File "C:\1Coding\Python\S4M-2.0\main.py", line 249, in loop
+    output = cb()
+  File "C:\1Coding\Python\S4M-2.0\intents\functions\reminder\intent_reminder.py", line 23, in callback
+    cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\composer.py", line 81, in compose_node
+    elif self.check_event(SequenceStartEvent):
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\yaml\parser.py", line 103, in check_event
+    if isinstance(self.current_event, choice):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\1Coding\Python\S4M-2.0\main.py", line 66, in update
+    global_variables.voice_assistant.loop()
+  File "C:\1Coding\Python\S4M-2.0\main.py", line 201, in loop
+    pcm = global_variables.voice_assistant.audio_stream.read(global_variables.voice_assistant.porcupine.frame_length)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\1Coding\Python\S4M-2.0\main.py", line 64, in update
+    def update(self, event):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\1Coding\Python\S4M-2.0\main.py", line 66, in update
+    global_variables.voice_assistant.loop()
+  File "C:\1Coding\Python\S4M-2.0\main.py", line 201, in loop
+    pcm = global_variables.voice_assistant.audio_stream.read(global_variables.voice_assistant.porcupine.frame_length)
+  File "C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pytz in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (2022.1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: geocoder==1.38.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.38.1)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.17.1)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (1.16.0)
+Requirement already satisfied: click in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (8.1.3)
+Requirement already satisfied: ratelim in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.1.6)
+Requirement already satisfied: requests in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (2.27.1)
+Requirement already satisfied: colorama in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from click->geocoder==1.38.1) (0.4.4)
+Requirement already satisfied: decorator in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from ratelim->geocoder==1.38.1) (5.1.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2022.5.18.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (1.26.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (3.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.18.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: text2numde==1.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: sounddevice==0.4.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.4.1)
+Requirement already satisfied: CFFI>=1.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from sounddevice==0.4.1) (1.15.0)
+Requirement already satisfied: pycparser in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from CFFI>=1.0->sounddevice==0.4.1) (2.21)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+C:\1Coding\Python\S4M-2.0\env-voiceassist\lib\site-packages\fuzzywuzzy\fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pykeepass==3.2.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (3.2.1)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (0.17.1)
+Requirement already satisfied: python-dateutil in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (2.8.1)
+Requirement already satisfied: construct==2.10.54 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (2.10.54)
+Requirement already satisfied: pycryptodomex>=3.6.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (3.14.1)
+Requirement already satisfied: argon2-cffi in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (21.3.0)
+Requirement already satisfied: lxml in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pykeepass==3.2.1) (4.8.0)
+Requirement already satisfied: argon2-cffi-bindings in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from argon2-cffi->pykeepass==3.2.1) (21.2.0)
+Requirement already satisfied: six>=1.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from python-dateutil->pykeepass==3.2.1) (1.16.0)
+Requirement already satisfied: cffi>=1.0.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->pykeepass==3.2.1) (1.15.0)
+Requirement already satisfied: pycparser in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->pykeepass==3.2.1) (2.21)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pynput==1.7.3 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.7.3)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pynput==1.7.3) (1.16.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.18.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: python-dateutil==2.8.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (2.8.1)
+Requirement already satisfied: six>=1.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from python-dateutil==2.8.1) (1.16.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: num2words==0.5.10 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (0.5.10)
+Requirement already satisfied: docopt>=0.6.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from num2words==0.5.10) (0.6.2)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: text2numde==1.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.0)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pyowm==3.1.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (3.1.1)
+Requirement already satisfied: requests[socks] in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (2.27.1)
+Requirement already satisfied: PySocks<2,>=1.7.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (1.7.1)
+Requirement already satisfied: geojson<3,>=2.3.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from pyowm==3.1.1) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (2022.5.18.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (1.26.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests[socks]->pyowm==3.1.1) (3.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: geocoder==1.38.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.38.1)
+Requirement already satisfied: future in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.17.1)
+Requirement already satisfied: six in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (1.16.0)
+Requirement already satisfied: click in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (8.1.3)
+Requirement already satisfied: ratelim in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (0.1.6)
+Requirement already satisfied: requests in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from geocoder==1.38.1) (2.27.1)
+Requirement already satisfied: colorama in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from click->geocoder==1.38.1) (0.4.4)
+Requirement already satisfied: decorator in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from ratelim->geocoder==1.38.1) (5.1.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2022.5.18.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (1.26.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests->geocoder==1.38.1) (3.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: pycountry==20.7.3 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (20.7.3)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Requirement already satisfied: wikipedia==1.4.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (1.4.0)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from wikipedia==1.4.0) (2.27.1)
+Requirement already satisfied: beautifulsoup4 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from wikipedia==1.4.0) (4.11.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (2022.5.18.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (1.26.9)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (2.0.12)
+Requirement already satisfied: idna<4,>=2.5 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia==1.4.0) (3.3)
+Requirement already satisfied: soupsieve>1.2 in c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages (from beautifulsoup4->wikipedia==1.4.0) (2.3.2.post1)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+WARNING: Ignoring invalid distribution -ounddevice (c:\1coding\python\s4m-2.0\env-voiceassist\lib\site-packages)
+Fitting lookup intent parser...
+Fitted lookup intent parser in 0:00:00.003003
+Fitting probabilistic intent parser...
+Fitting LogRegIntentClassifier...
+LogRegIntentClassifier in 0:00:00.688625
+Fitting getTime slot filler...
+Fitted CRFSlotFiller in 0:00:00.211193
+Fitting musicstream slot filler...
+Fitted CRFSlotFiller in 0:00:00.844768
+Fitting reminder slot filler...
+Fitted CRFSlotFiller in 0:00:12.593440
+Fitting smarthome slot filler...
+Fitted CRFSlotFiller in 0:00:01.181073
+Fitting stop slot filler...
+Fitted CRFSlotFiller in 0:00:00.001001
+Fitted probabilistic intent parser in 0:00:15.522101
+Fitted NLU engine in 0:00:15.804358

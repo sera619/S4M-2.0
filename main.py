@@ -262,7 +262,9 @@ class VoiceAssistant:
 							
 							global_variables.voice_assistant.audio_player.set_volume(global_variables.voice_assistant.volume)
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
+
+def runSam():
 	multiprocessing.set_start_method('spawn')
 	
 	global_variables.voice_assistant = VoiceAssistant()
