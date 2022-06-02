@@ -21,7 +21,7 @@
 
 ---
 
-Sam hat aktuell **70 696** Zeilen handgeschrieben Code.
+>S4M hat aktuell **70 696** Zeilen handgeschrieben Code.
 >
 > ![codeline](assets/ScreenShot/_small.png)
 
