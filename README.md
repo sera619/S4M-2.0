@@ -37,6 +37,7 @@
 |*Musicplayer*|Natürlich kannst du auch einfach deine eigene Playlist abspielen.|
 |*Quiz Game*| Ein kleines Quiz für helle Köpfe!|
 |*Password Manager*| Per Stimmabgleich gesicherter Passwortmanager.|
+|*Benutzerfreundliches Userinterface*| Beim Dysign und Funktionen des [User-Interface](assets/ScreenShot/mainmanu.png) wurde auf Benutzerfreundlichkeit viel Wert gelegt.|
 
 ---
 
@@ -62,3 +63,12 @@
 >Nein, S4M 2.0 bringt alles was er braucht mit. Jedoch sind dann Funktionen die den Zugriff auf das Internet benötigen nicht mehr verfügbar.
 
 ---
+
+## Preview ##
+
+Da sich S4M 2.0 langsam in den Breich einer ersten open Beta bewegt, gibt es hier Vorab schoneinmal das User-Interface:
+>
+   > ![mainmenu](assets/ScreenShot/mainmanu.png)
+>
+   > ![usermanagement](assets/ScreenShot/usermgm.png)
+

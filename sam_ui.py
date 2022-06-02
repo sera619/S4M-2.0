@@ -142,6 +142,7 @@ class MainWindow(QMainWindow):
         self.update_userlist()
     
     def update_userlist(self):
+        self.ui.home_user_list.clear()
         if self.ui_utils.is_new_user():
             self.ui.home_start_btn.setEnabled(False)
         else:
