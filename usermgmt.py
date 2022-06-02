@@ -30,3 +30,5 @@ class UserMgmt:
 		self.speaker_table = self.db.table('speakers')
 		if init_dummies:
 			self.__add_dummies__()
+
+	

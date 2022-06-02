@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>997</width>
-    <height>794</height>
+    <width>766</width>
+    <height>439</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,12 +16,52 @@
   <property name="styleSheet">
    <string notr="true">QMainWindow{
 border:none;
+border-radius: 30pt;
+}
+QPushButton{
+border:none;
+	font: 10pt &quot;Ethnocentric&quot;;
+}
+*{
+	background-color: rgb(2, 28, 35);
+	color: rgb(0, 255, 255);
+	border:none;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">border-radius: 20px;</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>12</number>
+    </property>
+    <property name="topMargin">
+     <number>4</number>
+    </property>
+    <property name="rightMargin">
+     <number>12</number>
+    </property>
+    <property name="bottomMargin">
+     <number>4</number>
+    </property>
     <item alignment="Qt::AlignTop">
      <widget class="QFrame" name="top_frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>0</height>
+       </size>
+      </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
@@ -29,7 +69,22 @@ border:none;
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item alignment="Qt::AlignLeft|Qt::AlignTop">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft|Qt::AlignBottom">
         <widget class="QFrame" name="top_left_frame">
          <property name="styleSheet">
           <string notr="true">border:none
@@ -57,7 +112,7 @@ border:none;
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item alignment="Qt::AlignLeft|Qt::AlignTop">
+          <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
            <widget class="QPushButton" name="men_button">
             <property name="text">
              <string>Menu</string>
@@ -67,8 +122,14 @@ border:none;
          </layout>
         </widget>
        </item>
-       <item alignment="Qt::AlignTop">
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
         <widget class="QFrame" name="top_mid_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -91,10 +152,13 @@ border:none;
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+          <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
            <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">font: 22pt &quot;Ethnocentric&quot;;</string>
+            </property>
             <property name="text">
-             <string>TextLabel</string>
+             <string>S4M 2.0 Assistant</string>
             </property>
            </widget>
           </item>
@@ -125,13 +189,14 @@ border:none;
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item>
+          <item alignment="Qt::AlignRight|Qt::AlignTop">
            <widget class="QFrame" name="window_buttons">
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">Border: none</string>
+             <string notr="true">Border: none;
+</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -141,7 +206,7 @@ border:none;
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout">
              <property name="spacing">
-              <number>10</number>
+              <number>3</number>
              </property>
              <property name="leftMargin">
               <number>0</number>
@@ -155,24 +220,117 @@ border:none;
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item alignment="Qt::AlignRight">
+             <item alignment="Qt::AlignRight|Qt::AlignTop">
               <widget class="QPushButton" name="mini_button">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	padding: 2px 4px;
+	color: rgb(0, 255, 255);
+}
+QPushButton:hover{
+	border: 1px solid;
+	border-radius: 10px;
+	
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed{
+	border: 1px solid;
+	border-radius: 10px;
+	color: black;
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}</string>
+               </property>
                <property name="text">
-                <string>--</string>
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="assets/iconset.qrc">
+                 <normaloff>:/icons/icons/minus.png</normaloff>:/icons/icons/minus.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+             <item alignment="Qt::AlignRight|Qt::AlignTop">
               <widget class="QPushButton" name="maxi_button">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	padding: 2px 4px;
+	color: rgb(0, 255, 255);
+}
+QIcon{
+color: rgb(0,255,255);
+}
+QPushButton:hover{
+	border: 1px solid;
+	border-radius: 10px;
+	
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed{
+	border: 1px solid;
+	border-radius: 10px;
+	color: black;
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}</string>
+               </property>
                <property name="text">
-                <string>min</string>
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="assets/iconset.qrc">
+                 <normaloff>:/icons/icons/arrow-down-right.png</normaloff>:/icons/icons/arrow-down-right.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignRight">
+             <item alignment="Qt::AlignRight|Qt::AlignTop">
               <widget class="QPushButton" name="x_button">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	padding: 2px 4px;
+	color: rgb(0, 255, 255);
+}
+QPushButton:hover{
+	border: 1px solid;
+	border-radius: 10px;
+	
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed{
+	border: 1px solid;
+	border-radius: 10px;
+	color: black;
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}</string>
+               </property>
                <property name="text">
-                <string>X</string>
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="assets/iconset.qrc">
+                 <normaloff>:/icons/icons/x.png</normaloff>:/icons/icons/x.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
                </property>
               </widget>
              </item>
@@ -194,8 +352,44 @@ border:none;
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_6">
-       <item>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>3</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignTop">
         <widget class="QFrame" name="side_menu">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>0</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 7 pt &quot;Ethnocentric&quot;;</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -203,10 +397,117 @@ border:none;
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="0">
-           <widget class="QPushButton" name="pushButton">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>2</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>15</number>
+          </property>
+          <item row="3" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QLabel" name="skills_btn_label">
             <property name="text">
-             <string>PushButton</string>
+             <string>Skills</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QPushButton" name="details_button">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="assets/iconset.qrc">
+              <normaloff>:/icons/icons/zoom-in.png</normaloff>:/icons/icons/zoom-in.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QPushButton" name="skills_button">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="assets/iconset.qrc">
+              <normaloff>:/icons/icons/book.png</normaloff>:/icons/icons/book.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QLabel" name="users_btn_label">
+            <property name="text">
+             <string>Users</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QPushButton" name="users_button">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="assets/iconset.qrc">
+              <normaloff>:/icons/icons/users.png</normaloff>:/icons/icons/users.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QLabel" name="detail_btn_label">
+            <property name="text">
+             <string>Details</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QPushButton" name="home_button">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="assets/iconset.qrc">
+              <normaloff>:/icons/icons/home.png</normaloff>:/icons/icons/home.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QLabel" name="home_btn_label">
+            <property name="text">
+             <string>Home</string>
             </property>
            </widget>
           </item>
@@ -215,18 +516,524 @@ border:none;
        </item>
        <item>
         <widget class="QStackedWidget" name="stackedWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	font: 8pt &quot;Ethnocentric&quot;;
+color:rgb(0, 255, 255);
+}
+QPushButton{
+	font: 8pt &quot;Ethnocentric&quot;;
+	border: 1px solid;
+padding: 5px 10px;
+	border-radius: 15px;
+}</string>
+         </property>
          <property name="currentIndex">
           <number>1</number>
          </property>
-         <widget class="QWidget" name="home_page"/>
-         <widget class="QWidget" name="user_page"/>
+         <widget class="QWidget" name="home_page">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="home_main_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="spacing">
+               <number>4</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="home_head_label">
+                <property name="font">
+                 <font>
+                  <family>Ethnocentric</family>
+                  <pointsize>14</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel{
+	font: 14pt &quot;Ethnocentric&quot;;
+}</string>
+                </property>
+                <property name="text">
+                 <string>WIllkommen</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="home_info_label">
+                <property name="text">
+                 <string>Aktuelle Benutzer:</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QListWidget" name="home_user_list"/>
+              </item>
+              <item>
+               <widget class="QFrame" name="home_btn_frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <property name="spacing">
+                  <number>8</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+                  <widget class="QPushButton" name="home_login_btn">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+}
+	</string>
+                   </property>
+                   <property name="text">
+                    <string>Starte S4M</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                  <widget class="QPushButton" name="home_newuser_btn">
+                   <property name="font">
+                    <font>
+                     <family>Ethnocentric</family>
+                     <pointsize>8</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                     <kerning>true</kerning>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+}
+	</string>
+                   </property>
+                   <property name="text">
+                    <string>Neuer User</string>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>15</width>
+                     <height>15</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="new_user_page">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="newuser_head_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="newuser_head_label">
+                <property name="styleSheet">
+                 <string notr="true">font: 13pt &quot;Ethnocentric&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Neuen Benutzer erstellen</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="newuser_error_label">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 0, 0);</string>
+                </property>
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="newuser_mainframe">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+font: 8pt &quot;Ethnocentric&quot;;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="spacing">
+               <number>15</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_3">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string>Benutzername</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                  <widget class="QLineEdit" name="new_username">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="maxLength">
+                    <number>14</number>
+                   </property>
+                   <property name="placeholderText">
+                    <string>max. 12 Zeichen</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>Telefonnr.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QLineEdit" name="newuser_number">
+                   <property name="maxLength">
+                    <number>13</number>
+                   </property>
+                   <property name="placeholderText">
+                    <string>012345678911</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="new_gender_frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>Gender</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                  <widget class="QComboBox" name="gender_combobox">
+                   <property name="currentText">
+                    <string/>
+                   </property>
+                   <property name="currentIndex">
+                    <number>-1</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>Gastzugang</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QCheckBox" name="guest_checker">
+                   <property name="text">
+                    <string>Ist ein Gast</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <property name="spacing">
+               <number>5</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+               <widget class="QPushButton" name="newuser_cancel_btn">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+}
+	</string>
+                </property>
+                <property name="text">
+                 <string>Abbrechen</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+               <widget class="QPushButton" name="newuser_create_btn">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+}
+	</string>
+                </property>
+                <property name="text">
+                 <string>Erstellen</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
      </widget>
     </item>
-    <item>
+    <item alignment="Qt::AlignVCenter">
      <widget class="QFrame" name="footer_frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>0</height>
+       </size>
+      </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
@@ -275,15 +1082,18 @@ border:none;
           </property>
           <item alignment="Qt::AlignBottom">
            <widget class="QLabel" name="footer_left_label">
+            <property name="styleSheet">
+             <string notr="true">font: 6pt &quot;Ethnocentric&quot;;</string>
+            </property>
             <property name="text">
-             <string>TextLabel</string>
+             <string>S4M 2.0 v1.0.1 | by S3R43o3</string>
             </property>
            </widget>
           </item>
          </layout>
         </widget>
        </item>
-       <item>
+       <item alignment="Qt::AlignRight|Qt::AlignBottom">
         <widget class="QFrame" name="footer_right_frame">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -308,9 +1118,19 @@ border:none;
            <number>0</number>
           </property>
           <item alignment="Qt::AlignRight|Qt::AlignBottom">
-           <widget class="QLabel" name="footer_right_label">
+           <widget class="QPushButton" name="footer_help_btn">
             <property name="text">
-             <string>TextLabel</string>
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="assets/iconset.qrc">
+              <normaloff>:/icons/icons/help-circle.png</normaloff>:/icons/icons/help-circle.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>14</width>
+              <height>14</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -324,7 +1144,7 @@ border:none;
   </widget>
  </widget>
  <resources>
-  <include location="assets/icon-set.qrc"/>
+  <include location="assets/iconset.qrc"/>
  </resources>
  <connections/>
 </ui>
