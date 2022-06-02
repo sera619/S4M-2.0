@@ -16,15 +16,16 @@ class UIutils:
     
     def name_exist(self, name):
         speaker = Query()
-        if self.speaker_table.contains(speaker.name == name):
+        if self.speaker_table.contains(speaker.name == str(name)):
             return True
         else:
             return False
+        
     def get_table(self):
         return self.speaker_table
 
-    def create_user(self, name, gender, phone, voice, permissions):
-        self.speaker_table.insert({'name': name, 'gender':gender, 'voice': voice,'phone':phone,'intents': permissions})
+    def create_user(self, name, gender, phone, voice, permissions,lang):
+        self.speaker_table.insert({'name': name, 'gender':gender, 'voice': voice,'phone':phone,'intents': permissions,'language':lang})
 
 
     def get_user_list(self):
@@ -32,6 +33,9 @@ class UIutils:
         users = []
         for user in self.speaker_table:
             users.append(user['name'])
+        if len(users) == 2:
+            users = []
+        print(users)
         return users
 
 
