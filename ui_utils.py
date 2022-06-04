@@ -7,12 +7,33 @@ class UIutils:
     def __init__(self):
         self.db = TinyDB('users.json')
         self.speaker_table = self.db.table('speakers')
+        self.user_to_edit = None
 
     def is_new_user(self):
         if len(self.speaker_table) == 2:
             return True
         else:
             return False
+
+    def get_user(self, name):
+        speaker = Query()
+        user = self.speaker_table.search(speaker.name == str(name))
+        self.user_to_edit =user
+        return user 
+    
+    def edit_name(self,user_name):
+        if self.user_to_edit != None:
+            speaker = Query()
+            self.speaker_table.update({'name': self.user_to_edit},speaker.name == user_name)
+
+    def edit_guest(self,active):
+        if self.user_to_edit != None:
+            if active == True:
+                self.speaker_table.update({'intents': '[*]'}, Query().name == self.user_to_edit['name'])
+            else:
+                self.speaker_table.update({'intents': '["animalsounds","gettime"]'}, Query().name == self.user_to_edit['name'])
+            
+
     
     def name_exist(self, name):
         speaker = Query()

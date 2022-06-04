@@ -15,17 +15,19 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
-    QGridLayout, QHBoxLayout, QLabel, QLineEdit,
-    QListWidget, QListWidgetItem, QMainWindow, QPushButton,
-    QSizePolicy, QStackedWidget, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QComboBox,
+    QFrame, QGridLayout, QHBoxLayout, QLabel,
+    QLineEdit, QListWidget, QListWidgetItem, QMainWindow,
+    QPushButton, QRadioButton, QSizePolicy, QStackedWidget,
+    QVBoxLayout, QWidget)
 import iconset_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(766, 439)
+        MainWindow.resize(770, 440)
+        MainWindow.setMinimumSize(QSize(770, 440))
         icon = QIcon()
         icon.addFile(u":/icons/glossy_3d_blue_orbs2_108.png", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -38,7 +40,7 @@ class Ui_MainWindow(object):
 "	font: 10pt \"Ethnocentric\";\n"
 "}\n"
 "*{\n"
-"	background-color: rgb(2, 28, 35);\n"
+"	background-color: rgb(17, 27, 43);\n"
 "	color: rgb(0, 255, 255);\n"
 "	border:none;\n"
 "}")
@@ -48,7 +50,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4 = QVBoxLayout(self.centralwidget)
         self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.verticalLayout_4.setContentsMargins(12, 4, 12, 4)
+        self.verticalLayout_4.setContentsMargins(12, 10, 12, 10)
         self.top_frame = QFrame(self.centralwidget)
         self.top_frame.setObjectName(u"top_frame")
         self.top_frame.setMinimumSize(QSize(0, 25))
@@ -426,12 +428,48 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setContentsMargins(0, -1, 0, -1)
         self.home_main_frame = QFrame(self.home_page)
         self.home_main_frame.setObjectName(u"home_main_frame")
+        self.home_main_frame.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
         self.home_main_frame.setFrameShape(QFrame.StyledPanel)
         self.home_main_frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_5 = QVBoxLayout(self.home_main_frame)
         self.verticalLayout_5.setSpacing(4)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.frame_11 = QFrame(self.home_main_frame)
+        self.frame_11.setObjectName(u"frame_11")
+        self.frame_11.setStyleSheet(u"QLabel{\n"
+"	font: 14pt \"Ethnocentric\";\n"
+"}")
+        self.frame_11.setFrameShape(QFrame.StyledPanel)
+        self.frame_11.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_11 = QVBoxLayout(self.frame_11)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.label_7 = QLabel(self.frame_11)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setStyleSheet(u"font: 12pt \"Ethnocentric\";")
+
+        self.verticalLayout_11.addWidget(self.label_7, 0, Qt.AlignLeft)
+
+
+        self.verticalLayout_5.addWidget(self.frame_11)
+
         self.home_head_label = QLabel(self.home_main_frame)
         self.home_head_label.setObjectName(u"home_head_label")
         font = QFont()
@@ -453,11 +491,30 @@ class Ui_MainWindow(object):
 
         self.home_user_list = QListWidget(self.home_main_frame)
         self.home_user_list.setObjectName(u"home_user_list")
+        self.home_user_list.setEditTriggers(QAbstractItemView.NoEditTriggers)
 
         self.verticalLayout_5.addWidget(self.home_user_list, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.home_btn_frame = QFrame(self.home_main_frame)
         self.home_btn_frame.setObjectName(u"home_btn_frame")
+        self.home_btn_frame.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
         self.home_btn_frame.setFrameShape(QFrame.StyledPanel)
         self.home_btn_frame.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_8 = QHBoxLayout(self.home_btn_frame)
@@ -469,48 +526,23 @@ class Ui_MainWindow(object):
         self.home_start_btn.setStyleSheet(u"QPushButton{\n"
 "border-radius:20px;\n"
 "border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "QPushButton:hover{\n"
 "	border-color: rgb(0, 255, 255);\n"
 "	color: black;\n"
 "	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "QPushButton:pressed {\n"
 "	border-color: rgb(0, 255, 255);\n"
 "	color: black;	\n"
 "	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "	")
 
-        self.horizontalLayout_8.addWidget(self.home_start_btn, 0, Qt.AlignRight|Qt.AlignVCenter)
-
-        self.home_newuser_btn = QPushButton(self.home_btn_frame)
-        self.home_newuser_btn.setObjectName(u"home_newuser_btn")
-        font1 = QFont()
-        font1.setFamilies([u"Ethnocentric"])
-        font1.setPointSize(8)
-        font1.setBold(False)
-        font1.setItalic(False)
-        font1.setKerning(True)
-        self.home_newuser_btn.setFont(font1)
-        self.home_newuser_btn.setStyleSheet(u"QPushButton{\n"
-"border-radius:20px;\n"
-"border-color: rgb(0, 255, 255);\n"
-"}\n"
-"QPushButton:hover{\n"
-"	border-color: rgb(0, 255, 255);\n"
-"	color: black;\n"
-"	background-color: rgb(170, 255, 255);\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	border-color: rgb(0, 255, 255);\n"
-"	color: black;	\n"
-"	background-color: rgb(0, 255, 255);\n"
-"}\n"
-"	")
-        self.home_newuser_btn.setIconSize(QSize(15, 15))
-
-        self.horizontalLayout_8.addWidget(self.home_newuser_btn, 0, Qt.AlignLeft|Qt.AlignVCenter)
+        self.horizontalLayout_8.addWidget(self.home_start_btn, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
 
         self.verticalLayout_5.addWidget(self.home_btn_frame)
@@ -536,7 +568,7 @@ class Ui_MainWindow(object):
         self.newuser_head_label.setObjectName(u"newuser_head_label")
         self.newuser_head_label.setStyleSheet(u"font: 13pt \"Ethnocentric\";")
 
-        self.verticalLayout_7.addWidget(self.newuser_head_label, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.verticalLayout_7.addWidget(self.newuser_head_label, 0, Qt.AlignLeft|Qt.AlignVCenter)
 
         self.newuser_error_label = QLabel(self.newuser_head_frame)
         self.newuser_error_label.setObjectName(u"newuser_error_label")
@@ -717,6 +749,216 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.addWidget(self.frame_5)
 
         self.stackedWidget.addWidget(self.new_user_page)
+        self.user_edit_page = QWidget()
+        self.user_edit_page.setObjectName(u"user_edit_page")
+        self.verticalLayout_9 = QVBoxLayout(self.user_edit_page)
+        self.verticalLayout_9.setSpacing(0)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.edit_header = QFrame(self.user_edit_page)
+        self.edit_header.setObjectName(u"edit_header")
+        self.edit_header.setFrameShape(QFrame.StyledPanel)
+        self.edit_header.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_10 = QVBoxLayout(self.edit_header)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.header_label = QLabel(self.edit_header)
+        self.header_label.setObjectName(u"header_label")
+        self.header_label.setStyleSheet(u"font: 12pt \"Ethnocentric\";\n"
+"")
+        self.header_label.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_10.addWidget(self.header_label, 0, Qt.AlignLeft)
+
+
+        self.verticalLayout_9.addWidget(self.edit_header)
+
+        self.edit_main = QFrame(self.user_edit_page)
+        self.edit_main.setObjectName(u"edit_main")
+        sizePolicy.setHeightForWidth(self.edit_main.sizePolicy().hasHeightForWidth())
+        self.edit_main.setSizePolicy(sizePolicy)
+        self.edit_main.setMinimumSize(QSize(350, 0))
+        self.edit_main.setStyleSheet(u"QLineEdit{\n"
+"	border: 1px solid;\n"
+"	border-color:rgb(85, 255, 255);\n"
+"	border-radius: 8px;\n"
+"}\n"
+"QComboBox{\n"
+"	padding: 4px;\n"
+"\n"
+"	margin: 4px;\n"
+"	border: 1px solid;\n"
+"	border-color:rgb(85, 255, 255);\n"
+"	border-radius: 8px;\n"
+"}")
+        self.edit_main.setFrameShape(QFrame.StyledPanel)
+        self.edit_main.setFrameShadow(QFrame.Raised)
+        self.gridLayout_2 = QGridLayout(self.edit_main)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.frame_9 = QFrame(self.edit_main)
+        self.frame_9.setObjectName(u"frame_9")
+        self.frame_9.setFrameShape(QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_19 = QHBoxLayout(self.frame_9)
+        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.label_11 = QLabel(self.frame_9)
+        self.label_11.setObjectName(u"label_11")
+
+        self.horizontalLayout_19.addWidget(self.label_11, 0, Qt.AlignHCenter)
+
+        self.comboBox = QComboBox(self.frame_9)
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setMinimumSize(QSize(116, 24))
+        self.comboBox.setIconSize(QSize(10, 10))
+
+        self.horizontalLayout_19.addWidget(self.comboBox, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.gridLayout_2.addWidget(self.frame_9, 3, 0, 1, 1)
+
+        self.frame_7 = QFrame(self.edit_main)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setFrameShape(QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_17 = QHBoxLayout(self.frame_7)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.label_9 = QLabel(self.frame_7)
+        self.label_9.setObjectName(u"label_9")
+
+        self.horizontalLayout_17.addWidget(self.label_9, 0, Qt.AlignHCenter)
+
+        self.id_edit_input = QLineEdit(self.frame_7)
+        self.id_edit_input.setObjectName(u"id_edit_input")
+        self.id_edit_input.setMinimumSize(QSize(0, 24))
+
+        self.horizontalLayout_17.addWidget(self.id_edit_input, 0, Qt.AlignHCenter)
+
+
+        self.gridLayout_2.addWidget(self.frame_7, 1, 0, 1, 1)
+
+        self.frame_8 = QFrame(self.edit_main)
+        self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setFrameShape(QFrame.StyledPanel)
+        self.frame_8.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_18 = QHBoxLayout(self.frame_8)
+        self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
+        self.label_10 = QLabel(self.frame_8)
+        self.label_10.setObjectName(u"label_10")
+
+        self.horizontalLayout_18.addWidget(self.label_10, 0, Qt.AlignHCenter)
+
+        self.mail_edit_input = QLineEdit(self.frame_8)
+        self.mail_edit_input.setObjectName(u"mail_edit_input")
+        self.mail_edit_input.setMinimumSize(QSize(0, 24))
+
+        self.horizontalLayout_18.addWidget(self.mail_edit_input, 0, Qt.AlignHCenter)
+
+
+        self.gridLayout_2.addWidget(self.frame_8, 2, 0, 1, 1)
+
+        self.frame_6 = QFrame(self.edit_main)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setFrameShape(QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_16 = QHBoxLayout(self.frame_6)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.label_8 = QLabel(self.frame_6)
+        self.label_8.setObjectName(u"label_8")
+
+        self.horizontalLayout_16.addWidget(self.label_8, 0, Qt.AlignHCenter)
+
+        self.name_edit_input = QLineEdit(self.frame_6)
+        self.name_edit_input.setObjectName(u"name_edit_input")
+        self.name_edit_input.setMinimumSize(QSize(0, 24))
+
+        self.horizontalLayout_16.addWidget(self.name_edit_input, 0, Qt.AlignHCenter)
+
+
+        self.gridLayout_2.addWidget(self.frame_6, 0, 0, 1, 1)
+
+        self.frame_10 = QFrame(self.edit_main)
+        self.frame_10.setObjectName(u"frame_10")
+        self.frame_10.setFrameShape(QFrame.StyledPanel)
+        self.frame_10.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_20 = QHBoxLayout(self.frame_10)
+        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
+        self.label_12 = QLabel(self.frame_10)
+        self.label_12.setObjectName(u"label_12")
+
+        self.horizontalLayout_20.addWidget(self.label_12, 0, Qt.AlignHCenter)
+
+        self.guect_check = QRadioButton(self.frame_10)
+        self.guect_check.setObjectName(u"guect_check")
+        self.guect_check.setStyleSheet(u"font: 9pt \"Ethnocentric\";")
+
+        self.horizontalLayout_20.addWidget(self.guect_check, 0, Qt.AlignHCenter)
+
+
+        self.gridLayout_2.addWidget(self.frame_10, 4, 0, 1, 1)
+
+
+        self.verticalLayout_9.addWidget(self.edit_main, 0, Qt.AlignHCenter)
+
+        self.edit_btn_frame = QFrame(self.user_edit_page)
+        self.edit_btn_frame.setObjectName(u"edit_btn_frame")
+        self.edit_btn_frame.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+        self.edit_btn_frame.setFrameShape(QFrame.StyledPanel)
+        self.edit_btn_frame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_15 = QHBoxLayout(self.edit_btn_frame)
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.edit_del_btn = QPushButton(self.edit_btn_frame)
+        self.edit_del_btn.setObjectName(u"edit_del_btn")
+        self.edit_del_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+
+        self.horizontalLayout_15.addWidget(self.edit_del_btn, 0, Qt.AlignRight)
+
+        self.edit_update_btn = QPushButton(self.edit_btn_frame)
+        self.edit_update_btn.setObjectName(u"edit_update_btn")
+
+        self.horizontalLayout_15.addWidget(self.edit_update_btn, 0, Qt.AlignHCenter)
+
+        self.edit_canel_btn = QPushButton(self.edit_btn_frame)
+        self.edit_canel_btn.setObjectName(u"edit_canel_btn")
+
+        self.horizontalLayout_15.addWidget(self.edit_canel_btn, 0, Qt.AlignLeft)
+
+
+        self.verticalLayout_9.addWidget(self.edit_btn_frame)
+
+        self.stackedWidget.addWidget(self.user_edit_page)
 
         self.horizontalLayout_6.addWidget(self.stackedWidget)
 
@@ -782,7 +1024,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
         self.gender_combobox.setCurrentIndex(-1)
 
 
@@ -804,10 +1046,10 @@ class Ui_MainWindow(object):
         self.detail_btn_label.setText(QCoreApplication.translate("MainWindow", u"Details", None))
         self.home_button.setText("")
         self.home_btn_label.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Home", None))
         self.home_head_label.setText(QCoreApplication.translate("MainWindow", u"WIllkommen", None))
         self.home_info_label.setText(QCoreApplication.translate("MainWindow", u"Aktuelle Benutzer:", None))
         self.home_start_btn.setText(QCoreApplication.translate("MainWindow", u"Starte S4M", None))
-        self.home_newuser_btn.setText(QCoreApplication.translate("MainWindow", u"Neuer User", None))
         self.newuser_head_label.setText(QCoreApplication.translate("MainWindow", u"Neuen Benutzer erstellen", None))
         self.newuser_error_label.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Benutzername", None))
@@ -821,6 +1063,16 @@ class Ui_MainWindow(object):
         self.guest_checker.setText(QCoreApplication.translate("MainWindow", u"Ist ein Gast", None))
         self.newuser_cancel_btn.setText(QCoreApplication.translate("MainWindow", u"Abbrechen", None))
         self.newuser_create_btn.setText(QCoreApplication.translate("MainWindow", u"Erstellen", None))
+        self.header_label.setText(QCoreApplication.translate("MainWindow", u"Benutzer Bearbeiten", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Geschlecht", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Nutzer ID", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Mail", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Gast?", None))
+        self.guect_check.setText(QCoreApplication.translate("MainWindow", u"Aktiv", None))
+        self.edit_del_btn.setText(QCoreApplication.translate("MainWindow", u"L\u00f6schen", None))
+        self.edit_update_btn.setText(QCoreApplication.translate("MainWindow", u"Aktualisieren", None))
+        self.edit_canel_btn.setText(QCoreApplication.translate("MainWindow", u"Abbrechen", None))
         self.footer_left_label.setText(QCoreApplication.translate("MainWindow", u"S4M 2.0 v1.0.1 | by S3R43o3", None))
         self.footer_help_btn.setText("")
     # retranslateUi

@@ -63,12 +63,11 @@ class MainWindow(QMainWindow):
         if self.ui_utils.is_new_user():
             self.ui.home_start_btn.setEnabled(False)
         self.ui.details_button.clicked.connect(lambda: self.animateMiniUI())
-
+        self.userToEdit = None
 
         self.ui.newuser_create_btn.clicked.connect(lambda: self.createNewUser())
         self.ui.x_button.clicked.connect(lambda: self.closeWindow())
         self.ui.mini_button.clicked.connect(lambda: self.showMinimized())
-        self.ui.home_newuser_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.new_user_page))
         self.ui.home_start_btn.clicked.connect(lambda: self.start_sam())
         self.ui.home_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home_page))
         self.ui.users_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.new_user_page))
@@ -88,7 +87,23 @@ class MainWindow(QMainWindow):
         if self.miniui.is_showing:
             self.miniui.closeWindow()
         else:
+            
             self.miniui.showWindow()
+    
+
+    def editUser(self,username):
+        self.userToEdit = username
+        self.ui.name_edit_input.setText(self.userToEdit)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.user_edit_page)
+
+
+    def editUsername(self):
+        self.userToEdit = None
+        self.userToEdit = self.ui.home_user_list.currentItem().text()
+        self.ui_utils.user_to_edit = self.userToEdit
+        if self.ui.name_edit_input.text() != "":
+            self.ui.name_edit_input.setText(self.userToEdit)
+        self.ui_utils.edit_name = self.ui.name_edit_input.text()    
 
 
     def animateMenu(self):
@@ -154,6 +169,8 @@ class MainWindow(QMainWindow):
                 new_item = QListWidgetItem()
                 new_item.setText(user.capitalize())
                 self.ui.home_user_list.addItem(new_item)
+                #new_item.connect.isSelected(self.editUser(user))
+                self.ui.home_user_list.itemClicked.connect(self.editUser(user))
 
     def reset_newuser(self):
         self.ui.new_username.setText("")
