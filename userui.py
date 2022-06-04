@@ -65,30 +65,6 @@ class UserUI(QMainWindow):
         
 
 
-<<<<<<< HEAD:sam_ui.py
-    def animateMiniUI(self):        
-        if self.miniui.is_showing:
-            self.miniui.closeWindow()
-        else:
-            
-            self.miniui.showWindow()
-    
-
-    def editUser(self,username):
-        self.userToEdit = username
-        self.ui.name_edit_input.setText(self.userToEdit)
-        self.ui.stackedWidget.setCurrentWidget(self.ui.user_edit_page)
-
-
-    def editUsername(self):
-        self.userToEdit = None
-        self.userToEdit = self.ui.home_user_list.currentItem().text()
-        self.ui_utils.user_to_edit = self.userToEdit
-        if self.ui.name_edit_input.text() != "":
-            self.ui.name_edit_input.setText(self.userToEdit)
-        self.ui_utils.edit_name = self.ui.name_edit_input.text()    
-=======
->>>>>>> db09c5ae3e197342b9d35a44747f0f4603c417b4:userui.py
 
 
     def animateMenu(self):
