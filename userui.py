@@ -1,50 +1,31 @@
-
-from re import S
 from loguru import logger
-from scipy.__config__ import show
 from interface import Ui_MainWindow
-from PySide6.QtWidgets import QApplication, QMainWindow, QGraphicsDropShadowEffect,QListWidgetItem, QWidget
+from PySide6.QtWidgets import *
 from PySide6.QtCore import *
-from PySide6 import QtGui
-from PySide6 import *
+from PySide6.QtGui import *
+
+
 from qt_material import apply_stylesheet
 import sys, os, time, datetime, json
 from ui_utils import UIutils
-from MiniUI import Ui_MiniFrame
+
 import main as SAM
 
-app = QApplication(sys.argv)
 
 
 
-class MiniUI(QWidget):
-    def __init__(self):
-        super(MiniUI, self).__init__()
-        self.ui = Ui_MiniFrame()
-        self.ui.setupUi(self)
-        self.ui.pushButton.clicked.connect(self.close)
-        self.setWindowFlags(Qt.FramelessWindowHint)
-        self.setAttribute(Qt.WA_TranslucentBackground)
-        self.is_showing = False
-    
-    def closeWindow(self):
-        self.close
-        self.is_showing = False
 
-    def showWindow(self):
-        self.show()
-        self.is_showing = True
 
-class MainWindow(QMainWindow):
+
+
+class UserUI(QMainWindow):
     def __init__(self ):
-        super(MainWindow, self).__init__()
+        QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
-        self.miniui = MiniUI()
         self.ui.setupUi(self)
         self.SAM = SAM
         self.ui.men_button.clicked.connect(lambda: self.animateMenu())
         self.ui_utils = UIutils()
-        apply_stylesheet(app, theme="dark_red.xml")
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.setWindowTitle("SAM 2.0")
@@ -52,8 +33,8 @@ class MainWindow(QMainWindow):
         self.shadow.setBlurRadius(50)
         self.shadow.setXOffset(0)
         self.shadow.setXOffset(0)
-        self.shadow.setColor(QtGui.QColor(0, 92, 157, 550))
-        self.ui.side_menu.setGraphicsEffect(self.shadow)
+        self.shadow.setColor(QColor(0, 240, 255, 550))
+        self.setGraphicsEffect(self.shadow)
         self.ui.stackedWidget.setCurrentWidget(self.ui.home_page)
         self.ui.newuser_error_label.setText("")
         itemsnew = ["Frau", "Mann"]
@@ -84,11 +65,7 @@ class MainWindow(QMainWindow):
                     e.accept()
         self.ui.top_frame.mouseMoveEvent = moveWindow
 
-    def animateMiniUI(self):        
-        if self.miniui.is_showing:
-            self.miniui.closeWindow()
-        else:
-            self.miniui.showWindow()
+
 
 
     def animateMenu(self):
@@ -166,21 +143,3 @@ class MainWindow(QMainWindow):
 
 
 
-
-def main():
-    window = MainWindow()
-
-    window.show()
-    sys.exit(app.exec())
-
-
-if __name__ == '__main__':
-    try:
-        main()
-    except Exception as e:
-        print("Error: {}".format(e))
-    except KeyboardInterrupt:
-        print('\n\nProgram terminated by user.\n')
-        sys.exit(0)
-    finally:
-        sys.exit(0)
