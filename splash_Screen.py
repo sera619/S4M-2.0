@@ -22,7 +22,7 @@ class SplashScreen(QMainWindow):
         self.progress = ProgressCirc()
         self.progress.height = 480
         self.progress.width = 480
-        self.progress.value = 0
+        self.progress.value = 80
         self.progress.font_size = 23
         self.progress.setFixedSize(self.progress.width, self.progress.height)
         self.progress.move(10,10)
@@ -33,7 +33,7 @@ class SplashScreen(QMainWindow):
 
         self.timer = QTimer()
         self.timer.timeout.connect(self.update)
-        self.timer.start(25)
+        self.timer.start(60)
 
 
 

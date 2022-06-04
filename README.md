@@ -74,7 +74,8 @@
 
 Da sich S4M 2.0 langsam in den Breich einer ersten open Beta bewegt, gibt es hier Vorab schoneinmal das User-Interface:
 >
+   > ![LoadingScreen](assets/ScreenShot/ScreenLoad.png)
+>
    > ![mainmenu](assets/ScreenShot/mainmanu.png)
 >
    > ![usermanagement](assets/ScreenShot/usermgm.png)
-
