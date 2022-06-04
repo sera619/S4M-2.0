@@ -9,7 +9,7 @@ from qt_material import apply_stylesheet
 import sys, os, time, datetime, json
 from ui_utils import UIutils
 
-import main as SAM
+
 
 
 
@@ -23,7 +23,6 @@ class UserUI(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.SAM = SAM
         self.ui.men_button.clicked.connect(lambda: self.animateMenu())
         self.ui_utils = UIutils()
         self.setWindowFlags(Qt.FramelessWindowHint)
@@ -64,6 +63,7 @@ class UserUI(QMainWindow):
                     self.clickPosition = e.globalPos()
                     e.accept()
         self.ui.top_frame.mouseMoveEvent = moveWindow
+        
 
 
 
@@ -137,9 +137,10 @@ class UserUI(QMainWindow):
         self.ui.newuser_number.setText("")
         self.ui.guest_checker.setChecked(False)
 
-    def start_sam(self):
-        self.hide
-        self.SAM.runSam()
 
 
 
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    sys.exit(app.exec_())
