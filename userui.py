@@ -43,12 +43,11 @@ class UserUI(QMainWindow):
         if self.ui_utils.is_new_user():
             self.ui.home_start_btn.setEnabled(False)
         self.ui.details_button.clicked.connect(lambda: self.animateMiniUI())
-
+        self.userToEdit = None
 
         self.ui.newuser_create_btn.clicked.connect(lambda: self.createNewUser())
         self.ui.x_button.clicked.connect(lambda: self.closeWindow())
         self.ui.mini_button.clicked.connect(lambda: self.showMinimized())
-        self.ui.home_newuser_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.new_user_page))
         self.ui.home_start_btn.clicked.connect(lambda: self.start_sam())
         self.ui.home_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home_page))
         self.ui.users_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.new_user_page))
@@ -131,6 +130,7 @@ class UserUI(QMainWindow):
                 new_item = QListWidgetItem()
                 new_item.setText(user.capitalize())
                 self.ui.home_user_list.addItem(new_item)
+
 
     def reset_newuser(self):
         self.ui.new_username.setText("")
