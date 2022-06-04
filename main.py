@@ -7,6 +7,7 @@ from usermgmt import UserMgmt
 from TTS import Voice
 from intentmgmt import IntentMgmt
 
+
 # UI Komponenten für das Tray Icon
 
 # Konstanten für das Tray Icon
@@ -49,7 +50,11 @@ class SplashScreen(QMainWindow):
 
 		self.timer = QTimer()
 		self.timer.timeout.connect(self.update)
+<<<<<<< HEAD
 		self.timer.start(10)
+=======
+		self.timer.start(60)
+>>>>>>> db09c5ae3e197342b9d35a44747f0f4603c417b4
 
 
 		self.show()
@@ -141,6 +146,9 @@ class VoiceAssistant:
 	def __init__(self):
 		logger.info("\nInitialisiere VoiceAssistant...")
 		
+		self.splash_screen = SplashScreen()
+		self.splash_screen.show()
+
 		logger.info("\nInitialisiere UI...")
 		self.app = MainApp(clearSigInt=False, redirect=True, filename='log.txt')
 				
@@ -329,11 +337,12 @@ class VoiceAssistant:
 							
 							global_variables.voice_assistant.audio_player.set_volume(global_variables.voice_assistant.volume)
 
-#if __name__ == '__main__':
-
-def runSam():
+if __name__ == '__main__':
 	multiprocessing.set_start_method('spawn')
+	app = QApplication(sys.argv)
 	
-	global_variables.voice_assistant = VoiceAssistant()
-	
-	global_variables.voice_assistant.app.MainLoop()
+
+	splash = SplashScreen()	
+	splash.show()
+	sys.exit(app.exec())	
+

@@ -21,6 +21,12 @@
 
 ---
 
+>S4M hat aktuell **70 696** Zeilen handgeschrieben Code.
+>
+> ![codeline](assets/ScreenShot/_small.png)
+
+---
+
 ## Features ##
 
 | **Features** |**Beschreibung**|
@@ -37,7 +43,7 @@
 |*Musicplayer*|Natürlich kannst du auch einfach deine eigene Playlist abspielen.|
 |*Quiz Game*| Ein kleines Quiz für helle Köpfe!|
 |*Password Manager*| Per Stimmabgleich gesicherter Passwortmanager.|
-|*Benutzerfreundliches Userinterface*| Beim Dysign und Funktionen des [User-Interface](assets/ScreenShot/mainmanu.png) wurde auf Benutzerfreundlichkeit viel Wert gelegt.|
+|*Benutzerfreundliches Userinterface*| Beim Dysign und Funktionen des [User-Interface](https://github.com/sera619/S4M-2.0#preview) wurde auf Benutzerfreundlichkeit viel Wert gelegt.|
 
 ---
 
@@ -68,7 +74,8 @@
 
 Da sich S4M 2.0 langsam in den Breich einer ersten open Beta bewegt, gibt es hier Vorab schoneinmal das User-Interface:
 >
+   > ![LoadingScreen](assets/ScreenShot/ScreenLoad.png)
+>
    > ![mainmenu](assets/ScreenShot/mainmanu.png)
 >
    > ![usermanagement](assets/ScreenShot/usermgm.png)
-
