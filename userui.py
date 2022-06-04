@@ -130,8 +130,7 @@ class UserUI(QMainWindow):
                 new_item = QListWidgetItem()
                 new_item.setText(user.capitalize())
                 self.ui.home_user_list.addItem(new_item)
-                #new_item.connect.isSelected(self.editUser(user))
-                self.ui.home_user_list.itemClicked.connect(self.editUser(user))
+
 
     def reset_newuser(self):
         self.ui.new_username.setText("")
