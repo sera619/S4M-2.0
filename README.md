@@ -78,6 +78,4 @@ Da sich S4M 2.0 langsam in den Breich einer ersten open Beta bewegt, gibt es hie
 >
    > ![mainmenu](assets/ScreenShot/mainmanu.png)
 >
-   > ![usermanagement](assets/ScreenShot/usermgm.png)
->
    > ![useredit](assets/ScreenShot/edit_user.png)
