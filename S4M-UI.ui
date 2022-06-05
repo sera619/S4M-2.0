@@ -663,7 +663,7 @@ padding: 5px 10px;
 }</string>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="home_page">
           <property name="styleSheet">
@@ -780,7 +780,10 @@ QPushButton:pressed {
               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                <widget class="QListWidget" name="home_user_list">
                 <property name="editTriggers">
-                 <set>QAbstractItemView::NoEditTriggers</set>
+                 <set>QAbstractItemView::SelectedClicked</set>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
                 </property>
                </widget>
               </item>
@@ -1219,7 +1222,7 @@ QPushButton:pressed {
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
-             <layout class="QVBoxLayout" name="verticalLayout_10">
+             <layout class="QHBoxLayout" name="horizontalLayout_22">
               <item alignment="Qt::AlignLeft">
                <widget class="QLabel" name="header_label">
                 <property name="styleSheet">
@@ -1231,6 +1234,16 @@ QPushButton:pressed {
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="edit_error_label">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 0, 0);</string>
+                </property>
+                <property name="text">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -1258,9 +1271,9 @@ QPushButton:pressed {
 	border-radius: 8px;
 }
 QComboBox{
-	padding: 4px;
+	padding: 3px;
 
-	margin: 4px;
+	margin: 3px;
 	border: 1px solid;
 	border-color:rgb(85, 255, 255);
 	border-radius: 8px;
@@ -1273,8 +1286,11 @@ QComboBox{
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QGridLayout" name="gridLayout_2">
-              <item row="3" column="0">
+              <item row="4" column="0">
                <widget class="QFrame" name="frame_9">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
@@ -1290,12 +1306,15 @@ QComboBox{
                   </widget>
                  </item>
                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                  <widget class="QComboBox" name="comboBox">
+                  <widget class="QComboBox" name="edit_gender_box">
                    <property name="minimumSize">
                     <size>
                      <width>116</width>
                      <height>24</height>
                     </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -1308,29 +1327,29 @@ QComboBox{
                 </layout>
                </widget>
               </item>
-              <item row="1" column="0">
-               <widget class="QFrame" name="frame_7">
+              <item row="5" column="0">
+               <widget class="QFrame" name="frame_10">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                <layout class="QHBoxLayout" name="horizontalLayout_20">
                  <item alignment="Qt::AlignHCenter">
-                  <widget class="QLabel" name="label_9">
+                  <widget class="QLabel" name="label_12">
                    <property name="text">
-                    <string>Nutzer ID</string>
+                    <string>Gast?</string>
                    </property>
                   </widget>
                  </item>
                  <item alignment="Qt::AlignHCenter">
-                  <widget class="QLineEdit" name="id_edit_input">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>24</height>
-                    </size>
+                  <widget class="QRadioButton" name="edit_guest_check">
+                   <property name="styleSheet">
+                    <string notr="true">font: 9pt &quot;Ethnocentric&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Aktiv</string>
                    </property>
                   </widget>
                  </item>
@@ -1395,29 +1414,61 @@ QComboBox{
                 </layout>
                </widget>
               </item>
-              <item row="4" column="0">
-               <widget class="QFrame" name="frame_10">
+              <item row="1" column="0">
+               <widget class="QFrame" name="frame_7">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_20">
+                <layout class="QHBoxLayout" name="horizontalLayout_17">
                  <item alignment="Qt::AlignHCenter">
-                  <widget class="QLabel" name="label_12">
+                  <widget class="QLabel" name="label_9">
                    <property name="text">
-                    <string>Gast?</string>
+                    <string>Telefon</string>
                    </property>
                   </widget>
                  </item>
                  <item alignment="Qt::AlignHCenter">
-                  <widget class="QRadioButton" name="guect_check">
-                   <property name="styleSheet">
-                    <string notr="true">font: 9pt &quot;Ethnocentric&quot;;</string>
+                  <widget class="QLineEdit" name="phone_edit_input">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>24</height>
+                    </size>
                    </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="3" column="0" alignment="Qt::AlignVCenter">
+               <widget class="QFrame" name="frame_12">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_13">
                    <property name="text">
-                    <string>Aktiv</string>
+                    <string>Sprache</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                  <widget class="QComboBox" name="edit_user_lang">
+                   <property name="minimumSize">
+                    <size>
+                     <width>116</width>
+                     <height>24</height>
+                    </size>
                    </property>
                   </widget>
                  </item>

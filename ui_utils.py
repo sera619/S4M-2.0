@@ -14,26 +14,44 @@ class UIutils:
             return True
         else:
             return False
+    def get_user_number(self, name):
+        speaker = Query()
+        user = self.speaker_table.search(speaker.name == str(name))
+        userphone =  user[0]['phone']
+        return str(userphone)
+
+    def get_gender(self,name):
+        speaker = Query()
+        user = self.speaker_table.search(speaker.name == str(name))
+        usergender =  user[0]['gender']
+        if usergender == 'Mann':
+            return 1
+        else:
+            return 0
+
+    def is_user_guest(self,name):
+        speaker = Query()
+        user = self.speaker_table.search(speaker.name == str(name))
+        userpermissions =  user[0]['intents']
+        if userpermissions == "[*]":
+            return False
+        else:
+            return True
+
+    def get_user_lang(self,name):
+        speaker = Query()
+        user = self.speaker_table.search(speaker.name == str(name))
+        userlang =  user[0]['language']
+        if userlang == "de":
+            return 1
+        else:
+            return 0
 
     def get_user(self, name):
         speaker = Query()
         user = self.speaker_table.search(speaker.name == str(name))
         self.user_to_edit =user
         return user 
-    
-    def edit_name(self,user_name):
-        if self.user_to_edit != None:
-            speaker = Query()
-            self.speaker_table.update({'name': self.user_to_edit},speaker.name == user_name)
-
-    def edit_guest(self,active):
-        if self.user_to_edit != None:
-            if active == True:
-                self.speaker_table.update({'intents': '[*]'}, Query().name == self.user_to_edit['name'])
-            else:
-                self.speaker_table.update({'intents': '["animalsounds","gettime"]'}, Query().name == self.user_to_edit['name'])
-            
-
     
     def name_exist(self, name):
         speaker = Query()

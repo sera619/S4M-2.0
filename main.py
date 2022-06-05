@@ -50,7 +50,7 @@ class SplashScreen(QMainWindow):
 
 		self.timer = QTimer()
 		self.timer.timeout.connect(self.update)
-		self.timer.start(60)
+		self.timer.start(5)
 
 
 		self.show()

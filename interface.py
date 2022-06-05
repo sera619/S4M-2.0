@@ -491,7 +491,8 @@ class Ui_MainWindow(object):
 
         self.home_user_list = QListWidget(self.home_main_frame)
         self.home_user_list.setObjectName(u"home_user_list")
-        self.home_user_list.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.home_user_list.setEditTriggers(QAbstractItemView.SelectedClicked)
+        self.home_user_list.setSelectionBehavior(QAbstractItemView.SelectRows)
 
         self.verticalLayout_5.addWidget(self.home_user_list, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
@@ -759,15 +760,21 @@ class Ui_MainWindow(object):
         self.edit_header.setObjectName(u"edit_header")
         self.edit_header.setFrameShape(QFrame.StyledPanel)
         self.edit_header.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_10 = QVBoxLayout(self.edit_header)
-        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.horizontalLayout_22 = QHBoxLayout(self.edit_header)
+        self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
         self.header_label = QLabel(self.edit_header)
         self.header_label.setObjectName(u"header_label")
         self.header_label.setStyleSheet(u"font: 12pt \"Ethnocentric\";\n"
 "")
         self.header_label.setAlignment(Qt.AlignCenter)
 
-        self.verticalLayout_10.addWidget(self.header_label, 0, Qt.AlignLeft)
+        self.horizontalLayout_22.addWidget(self.header_label, 0, Qt.AlignLeft)
+
+        self.edit_error_label = QLabel(self.edit_header)
+        self.edit_error_label.setObjectName(u"edit_error_label")
+        self.edit_error_label.setStyleSheet(u"color: rgb(255, 0, 0);")
+
+        self.horizontalLayout_22.addWidget(self.edit_error_label)
 
 
         self.verticalLayout_9.addWidget(self.edit_header)
@@ -783,9 +790,9 @@ class Ui_MainWindow(object):
 "	border-radius: 8px;\n"
 "}\n"
 "QComboBox{\n"
-"	padding: 4px;\n"
+"	padding: 3px;\n"
 "\n"
-"	margin: 4px;\n"
+"	margin: 3px;\n"
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
 "	border-radius: 8px;\n"
@@ -796,6 +803,7 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.frame_9 = QFrame(self.edit_main)
         self.frame_9.setObjectName(u"frame_9")
+        self.frame_9.setStyleSheet(u"")
         self.frame_9.setFrameShape(QFrame.StyledPanel)
         self.frame_9.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_19 = QHBoxLayout(self.frame_9)
@@ -805,35 +813,36 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_19.addWidget(self.label_11, 0, Qt.AlignHCenter)
 
-        self.comboBox = QComboBox(self.frame_9)
-        self.comboBox.setObjectName(u"comboBox")
-        self.comboBox.setMinimumSize(QSize(116, 24))
-        self.comboBox.setIconSize(QSize(10, 10))
+        self.edit_gender_box = QComboBox(self.frame_9)
+        self.edit_gender_box.setObjectName(u"edit_gender_box")
+        self.edit_gender_box.setMinimumSize(QSize(116, 24))
+        self.edit_gender_box.setStyleSheet(u"")
+        self.edit_gender_box.setIconSize(QSize(10, 10))
 
-        self.horizontalLayout_19.addWidget(self.comboBox, 0, Qt.AlignHCenter|Qt.AlignVCenter)
-
-
-        self.gridLayout_2.addWidget(self.frame_9, 3, 0, 1, 1)
-
-        self.frame_7 = QFrame(self.edit_main)
-        self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setFrameShape(QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_17 = QHBoxLayout(self.frame_7)
-        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
-        self.label_9 = QLabel(self.frame_7)
-        self.label_9.setObjectName(u"label_9")
-
-        self.horizontalLayout_17.addWidget(self.label_9, 0, Qt.AlignHCenter)
-
-        self.id_edit_input = QLineEdit(self.frame_7)
-        self.id_edit_input.setObjectName(u"id_edit_input")
-        self.id_edit_input.setMinimumSize(QSize(0, 24))
-
-        self.horizontalLayout_17.addWidget(self.id_edit_input, 0, Qt.AlignHCenter)
+        self.horizontalLayout_19.addWidget(self.edit_gender_box, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
 
-        self.gridLayout_2.addWidget(self.frame_7, 1, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.frame_9, 4, 0, 1, 1)
+
+        self.frame_10 = QFrame(self.edit_main)
+        self.frame_10.setObjectName(u"frame_10")
+        self.frame_10.setFrameShape(QFrame.StyledPanel)
+        self.frame_10.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_20 = QHBoxLayout(self.frame_10)
+        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
+        self.label_12 = QLabel(self.frame_10)
+        self.label_12.setObjectName(u"label_12")
+
+        self.horizontalLayout_20.addWidget(self.label_12, 0, Qt.AlignHCenter)
+
+        self.edit_guest_check = QRadioButton(self.frame_10)
+        self.edit_guest_check.setObjectName(u"edit_guest_check")
+        self.edit_guest_check.setStyleSheet(u"font: 9pt \"Ethnocentric\";")
+
+        self.horizontalLayout_20.addWidget(self.edit_guest_check, 0, Qt.AlignHCenter)
+
+
+        self.gridLayout_2.addWidget(self.frame_10, 5, 0, 1, 1)
 
         self.frame_8 = QFrame(self.edit_main)
         self.frame_8.setObjectName(u"frame_8")
@@ -875,25 +884,46 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addWidget(self.frame_6, 0, 0, 1, 1)
 
-        self.frame_10 = QFrame(self.edit_main)
-        self.frame_10.setObjectName(u"frame_10")
-        self.frame_10.setFrameShape(QFrame.StyledPanel)
-        self.frame_10.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_20 = QHBoxLayout(self.frame_10)
-        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
-        self.label_12 = QLabel(self.frame_10)
-        self.label_12.setObjectName(u"label_12")
+        self.frame_7 = QFrame(self.edit_main)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setFrameShape(QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_17 = QHBoxLayout(self.frame_7)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.label_9 = QLabel(self.frame_7)
+        self.label_9.setObjectName(u"label_9")
 
-        self.horizontalLayout_20.addWidget(self.label_12, 0, Qt.AlignHCenter)
+        self.horizontalLayout_17.addWidget(self.label_9, 0, Qt.AlignHCenter)
 
-        self.guect_check = QRadioButton(self.frame_10)
-        self.guect_check.setObjectName(u"guect_check")
-        self.guect_check.setStyleSheet(u"font: 9pt \"Ethnocentric\";")
+        self.phone_edit_input = QLineEdit(self.frame_7)
+        self.phone_edit_input.setObjectName(u"phone_edit_input")
+        self.phone_edit_input.setMinimumSize(QSize(0, 24))
 
-        self.horizontalLayout_20.addWidget(self.guect_check, 0, Qt.AlignHCenter)
+        self.horizontalLayout_17.addWidget(self.phone_edit_input, 0, Qt.AlignHCenter)
 
 
-        self.gridLayout_2.addWidget(self.frame_10, 4, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.frame_7, 1, 0, 1, 1)
+
+        self.frame_12 = QFrame(self.edit_main)
+        self.frame_12.setObjectName(u"frame_12")
+        self.frame_12.setStyleSheet(u"")
+        self.frame_12.setFrameShape(QFrame.StyledPanel)
+        self.frame_12.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_21 = QHBoxLayout(self.frame_12)
+        self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
+        self.label_13 = QLabel(self.frame_12)
+        self.label_13.setObjectName(u"label_13")
+
+        self.horizontalLayout_21.addWidget(self.label_13, 0, Qt.AlignHCenter)
+
+        self.edit_user_lang = QComboBox(self.frame_12)
+        self.edit_user_lang.setObjectName(u"edit_user_lang")
+        self.edit_user_lang.setMinimumSize(QSize(116, 24))
+
+        self.horizontalLayout_21.addWidget(self.edit_user_lang, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+
+
+        self.gridLayout_2.addWidget(self.frame_12, 3, 0, 1, 1, Qt.AlignVCenter)
 
 
         self.verticalLayout_9.addWidget(self.edit_main, 0, Qt.AlignHCenter)
@@ -1024,7 +1054,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
         self.gender_combobox.setCurrentIndex(-1)
 
 
@@ -1064,12 +1094,14 @@ class Ui_MainWindow(object):
         self.newuser_cancel_btn.setText(QCoreApplication.translate("MainWindow", u"Abbrechen", None))
         self.newuser_create_btn.setText(QCoreApplication.translate("MainWindow", u"Erstellen", None))
         self.header_label.setText(QCoreApplication.translate("MainWindow", u"Benutzer Bearbeiten", None))
+        self.edit_error_label.setText("")
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Geschlecht", None))
-        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Nutzer ID", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Gast?", None))
+        self.edit_guest_check.setText(QCoreApplication.translate("MainWindow", u"Aktiv", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"Mail", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Name", None))
-        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Gast?", None))
-        self.guect_check.setText(QCoreApplication.translate("MainWindow", u"Aktiv", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Telefon", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Sprache", None))
         self.edit_del_btn.setText(QCoreApplication.translate("MainWindow", u"L\u00f6schen", None))
         self.edit_update_btn.setText(QCoreApplication.translate("MainWindow", u"Aktualisieren", None))
         self.edit_canel_btn.setText(QCoreApplication.translate("MainWindow", u"Abbrechen", None))

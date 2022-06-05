@@ -1,3 +1,4 @@
+from ctypes import util
 from loguru import logger
 from interface import Ui_MainWindow
 from PySide6.QtWidgets import *
@@ -38,7 +39,9 @@ class UserUI(QMainWindow):
         self.ui.newuser_error_label.setText("")
         itemsnew = ["Frau", "Mann"]
         langs = ["Deutsch", "Englisch"]
+        self.ui.edit_gender_box.addItems(itemsnew)
         self.ui.gender_combobox.addItems(itemsnew)
+        self.ui.edit_user_lang.addItems(langs)
         self.ui.newuser_lang_box.addItems(langs)
         if self.ui_utils.is_new_user():
             self.ui.home_start_btn.setEnabled(False)
@@ -52,6 +55,9 @@ class UserUI(QMainWindow):
         self.ui.home_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home_page))
         self.ui.users_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.new_user_page))
         self.ui.newuser_cancel_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home_page))
+        self.ui.edit_canel_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home_page))
+        self.ui.edit_update_btn.clicked.connect(lambda: self.update_user())
+        self.ui.home_user_list.itemClicked.connect(lambda: self.edit_user_page())
 
         self.ui.centralwidget.setGraphicsEffect(self.shadow)
         self.update_userlist()
@@ -65,7 +71,29 @@ class UserUI(QMainWindow):
         
 
 
+    def edit_user_page(self):
+        user = self.ui.home_user_list.currentItem().text()
+        self.userToEdit = user
+        print(user)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.user_edit_page)
+        self.ui.name_edit_input.setText(user)
+        self.ui.phone_edit_input.setText(self.ui_utils.get_user_number(user))
+        self.ui.edit_gender_box.setCurrentIndex(self.ui_utils.get_gender(user))
+        self.ui.edit_guest_check.setChecked(self.ui_utils.is_user_guest(user))
+        self.ui.edit_user_lang.setCurrentIndex(self.ui_utils.get_user_lang(user))
 
+    def update_user(self):
+        updated_username = self.ui.name_edit_input.text()
+        number = self.ui.phone_edit_input.text()
+        #self.ui_utils.edit_guest(self.userToEdit, self.ui.edit_guest_check.checkStateSet())
+        self.ui_utils.edit_name(self.userToEdit, updated_username)
+        self.ui_utils.edit_usernumber(self.userToEdit, number)
+        self.ui_utils.edit_gender(self.userToEdit, self.ui.edit_gender_box.currentText())
+        self.ui_utils.edit_lang(self.userToEdit,self.ui.edit_gender_box.currentText())
+        self.update_userlist()
+        self.ui.edit_error_label.setText('Benutzer wurde aktualisiert!')
+        time.sleep(1.5)
+        self.ui.stackedWidget.setCurrentWidget(self.ui.home_page)
 
     def animateMenu(self):
         width = self.ui.side_menu.minimumWidth()
@@ -130,6 +158,7 @@ class UserUI(QMainWindow):
                 new_item = QListWidgetItem()
                 new_item.setText(user.capitalize())
                 self.ui.home_user_list.addItem(new_item)
+
 
 
     def reset_newuser(self):
