@@ -43,7 +43,7 @@
 |*Musicplayer*|Natürlich kannst du auch einfach deine eigene Playlist abspielen.|
 |*Quiz Game*| Ein kleines Quiz für helle Köpfe!|
 |*Password Manager*| Per Stimmabgleich gesicherter Passwortmanager.|
-|*Benutzerfreundliches Userinterface*| Beim Dysign und Funktionen des [User-Interface](https://github.com/sera619/S4M-2.0#preview) wurde auf Benutzerfreundlichkeit viel Wert gelegt.|
+|*Benutzerfreundliches Userinterface*| Beim Design und Funktionen des [User-Interface](https://github.com/sera619/S4M-2.0#preview) wurde auf Benutzerfreundlichkeit viel Wert gelegt.|
 
 ---
 
