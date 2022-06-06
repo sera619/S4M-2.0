@@ -91,6 +91,10 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/icons/align-justify.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.men_button.setIcon(icon1)
+        self.men_button.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.men_button, 0, Qt.AlignHCenter|Qt.AlignBottom)
 
@@ -158,9 +162,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/icons/minus.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.mini_button.setIcon(icon1)
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/icons/minus.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.mini_button.setIcon(icon2)
         self.mini_button.setIconSize(QSize(20, 20))
 
         self.horizontalLayout.addWidget(self.mini_button, 0, Qt.AlignRight|Qt.AlignTop)
@@ -188,9 +192,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/icons/arrow-down-right.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.maxi_button.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/icons/arrow-down-right.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.maxi_button.setIcon(icon3)
         self.maxi_button.setIconSize(QSize(20, 20))
 
         self.horizontalLayout.addWidget(self.maxi_button, 0, Qt.AlignRight|Qt.AlignTop)
@@ -215,9 +219,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/icons/x.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.x_button.setIcon(icon3)
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/icons/x.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.x_button.setIcon(icon4)
         self.x_button.setIconSize(QSize(20, 20))
 
         self.horizontalLayout.addWidget(self.x_button, 0, Qt.AlignRight|Qt.AlignTop)
@@ -236,9 +240,9 @@ class Ui_MainWindow(object):
         self.mid_main_frame.setFrameShape(QFrame.StyledPanel)
         self.mid_main_frame.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_6 = QHBoxLayout(self.mid_main_frame)
-        self.horizontalLayout_6.setSpacing(0)
+        self.horizontalLayout_6.setSpacing(4)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.horizontalLayout_6.setContentsMargins(0, 3, 0, 0)
+        self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.side_menu = QFrame(self.mid_main_frame)
         self.side_menu.setObjectName(u"side_menu")
         sizePolicy1 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
@@ -249,6 +253,7 @@ class Ui_MainWindow(object):
         self.side_menu.setMinimumSize(QSize(0, 0))
         self.side_menu.setMaximumSize(QSize(0, 16777215))
         self.side_menu.setStyleSheet(u"font: 7 pt \"Ethnocentric\";\n"
+"\n"
 "QPushButton{\n"
 "	padding: 2px 4px;\n"
 "	color: rgb(0, 255, 255);\n"
@@ -266,13 +271,16 @@ class Ui_MainWindow(object):
 "	color: black;\n"
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
+"}\n"
+"QFrame{\n"
+"border-right: 1px solid rgb(0, 255, 255);\n"
 "}")
         self.side_menu.setFrameShape(QFrame.StyledPanel)
         self.side_menu.setFrameShadow(QFrame.Raised)
         self.gridLayout = QGridLayout(self.side_menu)
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setHorizontalSpacing(2)
-        self.gridLayout.setVerticalSpacing(15)
+        self.gridLayout.setVerticalSpacing(8)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.skills_btn_label = QLabel(self.side_menu)
         self.skills_btn_label.setObjectName(u"skills_btn_label")
@@ -299,9 +307,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icons/zoom-in.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.details_button.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/icons/zoom-in.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.details_button.setIcon(icon5)
         self.details_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.details_button, 4, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
@@ -326,9 +334,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/icons/book.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.skills_button.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/icons/book.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.skills_button.setIcon(icon6)
         self.skills_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.skills_button, 3, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
@@ -358,9 +366,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon6 = QIcon()
-        icon6.addFile(u":/icons/icons/users.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.users_button.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/icons/users.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.users_button.setIcon(icon7)
         self.users_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.users_button, 1, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
@@ -390,9 +398,9 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon7 = QIcon()
-        icon7.addFile(u":/icons/icons/home.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.home_button.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/icons/home.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.home_button.setIcon(icon8)
         self.home_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.home_button, 0, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
@@ -403,7 +411,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.home_btn_label, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
 
 
-        self.horizontalLayout_6.addWidget(self.side_menu, 0, Qt.AlignTop)
+        self.horizontalLayout_6.addWidget(self.side_menu, 0, Qt.AlignVCenter)
 
         self.stackedWidget = QStackedWidget(self.mid_main_frame)
         self.stackedWidget.setObjectName(u"stackedWidget")
@@ -425,7 +433,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7 = QHBoxLayout(self.home_page)
         self.horizontalLayout_7.setSpacing(4)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.horizontalLayout_7.setContentsMargins(0, -1, 0, -1)
+        self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.home_main_frame = QFrame(self.home_page)
         self.home_main_frame.setObjectName(u"home_main_frame")
         self.home_main_frame.setStyleSheet(u"QPushButton{\n"
@@ -461,6 +469,7 @@ class Ui_MainWindow(object):
         self.frame_11.setFrameShadow(QFrame.Raised)
         self.verticalLayout_11 = QVBoxLayout(self.frame_11)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
         self.label_7 = QLabel(self.frame_11)
         self.label_7.setObjectName(u"label_7")
         self.label_7.setStyleSheet(u"font: 12pt \"Ethnocentric\";")
@@ -565,6 +574,7 @@ class Ui_MainWindow(object):
         self.newuser_head_frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_7 = QVBoxLayout(self.newuser_head_frame)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.newuser_head_label = QLabel(self.newuser_head_frame)
         self.newuser_head_label.setObjectName(u"newuser_head_label")
         self.newuser_head_label.setStyleSheet(u"font: 13pt \"Ethnocentric\";")
@@ -700,6 +710,7 @@ class Ui_MainWindow(object):
         self.frame_5.setObjectName(u"frame_5")
         sizePolicy1.setHeightForWidth(self.frame_5.sizePolicy().hasHeightForWidth())
         self.frame_5.setSizePolicy(sizePolicy1)
+        self.frame_5.setStyleSheet(u"")
         self.frame_5.setFrameShape(QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_13 = QHBoxLayout(self.frame_5)
@@ -711,16 +722,19 @@ class Ui_MainWindow(object):
         self.newuser_cancel_btn.setStyleSheet(u"QPushButton{\n"
 "border-radius:20px;\n"
 "border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "QPushButton:hover{\n"
 "	border-color: rgb(0, 255, 255);\n"
 "	color: black;\n"
 "	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "QPushButton:pressed {\n"
 "	border-color: rgb(0, 255, 255);\n"
 "	color: black;	\n"
 "	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "	")
 
@@ -731,16 +745,19 @@ class Ui_MainWindow(object):
         self.newuser_create_btn.setStyleSheet(u"QPushButton{\n"
 "border-radius:20px;\n"
 "border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "QPushButton:hover{\n"
 "	border-color: rgb(0, 255, 255);\n"
 "	color: black;\n"
 "	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "QPushButton:pressed {\n"
 "	border-color: rgb(0, 255, 255);\n"
 "	color: black;	\n"
 "	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
 "}\n"
 "	")
 
@@ -761,7 +778,9 @@ class Ui_MainWindow(object):
         self.edit_header.setFrameShape(QFrame.StyledPanel)
         self.edit_header.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_22 = QHBoxLayout(self.edit_header)
+        self.horizontalLayout_22.setSpacing(0)
         self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
+        self.horizontalLayout_22.setContentsMargins(0, 9, 0, 0)
         self.header_label = QLabel(self.edit_header)
         self.header_label.setObjectName(u"header_label")
         self.header_label.setStyleSheet(u"font: 12pt \"Ethnocentric\";\n"
@@ -788,10 +807,11 @@ class Ui_MainWindow(object):
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
 "	border-radius: 8px;\n"
+"text-align: center\n"
 "}\n"
 "QComboBox{\n"
 "	padding: 3px;\n"
-"\n"
+"	text-align:center;\n"
 "	margin: 3px;\n"
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
@@ -800,14 +820,18 @@ class Ui_MainWindow(object):
         self.edit_main.setFrameShape(QFrame.StyledPanel)
         self.edit_main.setFrameShadow(QFrame.Raised)
         self.gridLayout_2 = QGridLayout(self.edit_main)
+        self.gridLayout_2.setSpacing(0)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 4, 0, 4)
         self.frame_9 = QFrame(self.edit_main)
         self.frame_9.setObjectName(u"frame_9")
         self.frame_9.setStyleSheet(u"")
         self.frame_9.setFrameShape(QFrame.StyledPanel)
         self.frame_9.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_19 = QHBoxLayout(self.frame_9)
+        self.horizontalLayout_19.setSpacing(0)
         self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.horizontalLayout_19.setContentsMargins(0, 0, 0, 0)
         self.label_11 = QLabel(self.frame_9)
         self.label_11.setObjectName(u"label_11")
 
@@ -815,7 +839,7 @@ class Ui_MainWindow(object):
 
         self.edit_gender_box = QComboBox(self.frame_9)
         self.edit_gender_box.setObjectName(u"edit_gender_box")
-        self.edit_gender_box.setMinimumSize(QSize(116, 24))
+        self.edit_gender_box.setMinimumSize(QSize(166, 24))
         self.edit_gender_box.setStyleSheet(u"")
         self.edit_gender_box.setIconSize(QSize(10, 10))
 
@@ -829,7 +853,9 @@ class Ui_MainWindow(object):
         self.frame_10.setFrameShape(QFrame.StyledPanel)
         self.frame_10.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_20 = QHBoxLayout(self.frame_10)
+        self.horizontalLayout_20.setSpacing(0)
         self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
+        self.horizontalLayout_20.setContentsMargins(0, 0, 0, 0)
         self.label_12 = QLabel(self.frame_10)
         self.label_12.setObjectName(u"label_12")
 
@@ -849,7 +875,9 @@ class Ui_MainWindow(object):
         self.frame_8.setFrameShape(QFrame.StyledPanel)
         self.frame_8.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_18 = QHBoxLayout(self.frame_8)
+        self.horizontalLayout_18.setSpacing(0)
         self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
+        self.horizontalLayout_18.setContentsMargins(0, 0, 0, 0)
         self.label_10 = QLabel(self.frame_8)
         self.label_10.setObjectName(u"label_10")
 
@@ -857,7 +885,8 @@ class Ui_MainWindow(object):
 
         self.mail_edit_input = QLineEdit(self.frame_8)
         self.mail_edit_input.setObjectName(u"mail_edit_input")
-        self.mail_edit_input.setMinimumSize(QSize(0, 24))
+        self.mail_edit_input.setMinimumSize(QSize(160, 25))
+        self.mail_edit_input.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_18.addWidget(self.mail_edit_input, 0, Qt.AlignHCenter)
 
@@ -869,7 +898,9 @@ class Ui_MainWindow(object):
         self.frame_6.setFrameShape(QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_16 = QHBoxLayout(self.frame_6)
+        self.horizontalLayout_16.setSpacing(0)
         self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.horizontalLayout_16.setContentsMargins(0, 0, 0, 0)
         self.label_8 = QLabel(self.frame_6)
         self.label_8.setObjectName(u"label_8")
 
@@ -877,7 +908,13 @@ class Ui_MainWindow(object):
 
         self.name_edit_input = QLineEdit(self.frame_6)
         self.name_edit_input.setObjectName(u"name_edit_input")
-        self.name_edit_input.setMinimumSize(QSize(0, 24))
+        sizePolicy2 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.name_edit_input.sizePolicy().hasHeightForWidth())
+        self.name_edit_input.setSizePolicy(sizePolicy2)
+        self.name_edit_input.setMinimumSize(QSize(160, 25))
+        self.name_edit_input.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_16.addWidget(self.name_edit_input, 0, Qt.AlignHCenter)
 
@@ -889,7 +926,9 @@ class Ui_MainWindow(object):
         self.frame_7.setFrameShape(QFrame.StyledPanel)
         self.frame_7.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_17 = QHBoxLayout(self.frame_7)
+        self.horizontalLayout_17.setSpacing(0)
         self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.horizontalLayout_17.setContentsMargins(0, 0, 0, 0)
         self.label_9 = QLabel(self.frame_7)
         self.label_9.setObjectName(u"label_9")
 
@@ -897,7 +936,8 @@ class Ui_MainWindow(object):
 
         self.phone_edit_input = QLineEdit(self.frame_7)
         self.phone_edit_input.setObjectName(u"phone_edit_input")
-        self.phone_edit_input.setMinimumSize(QSize(0, 24))
+        self.phone_edit_input.setMinimumSize(QSize(160, 25))
+        self.phone_edit_input.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_17.addWidget(self.phone_edit_input, 0, Qt.AlignHCenter)
 
@@ -910,7 +950,9 @@ class Ui_MainWindow(object):
         self.frame_12.setFrameShape(QFrame.StyledPanel)
         self.frame_12.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_21 = QHBoxLayout(self.frame_12)
+        self.horizontalLayout_21.setSpacing(0)
         self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
+        self.horizontalLayout_21.setContentsMargins(0, 0, 0, 0)
         self.label_13 = QLabel(self.frame_12)
         self.label_13.setObjectName(u"label_13")
 
@@ -918,7 +960,7 @@ class Ui_MainWindow(object):
 
         self.edit_user_lang = QComboBox(self.frame_12)
         self.edit_user_lang.setObjectName(u"edit_user_lang")
-        self.edit_user_lang.setMinimumSize(QSize(116, 24))
+        self.edit_user_lang.setMinimumSize(QSize(166, 24))
 
         self.horizontalLayout_21.addWidget(self.edit_user_lang, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
@@ -951,7 +993,9 @@ class Ui_MainWindow(object):
         self.edit_btn_frame.setFrameShape(QFrame.StyledPanel)
         self.edit_btn_frame.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_15 = QHBoxLayout(self.edit_btn_frame)
+        self.horizontalLayout_15.setSpacing(0)
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.horizontalLayout_15.setContentsMargins(0, -1, 0, -1)
         self.edit_del_btn = QPushButton(self.edit_btn_frame)
         self.edit_del_btn.setObjectName(u"edit_del_btn")
         self.edit_del_btn.setStyleSheet(u"QPushButton{\n"
@@ -997,11 +1041,11 @@ class Ui_MainWindow(object):
 
         self.footer_frame = QFrame(self.centralwidget)
         self.footer_frame.setObjectName(u"footer_frame")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.footer_frame.sizePolicy().hasHeightForWidth())
-        self.footer_frame.setSizePolicy(sizePolicy2)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.footer_frame.sizePolicy().hasHeightForWidth())
+        self.footer_frame.setSizePolicy(sizePolicy3)
         self.footer_frame.setMinimumSize(QSize(0, 15))
         self.footer_frame.setMaximumSize(QSize(16777215, 0))
         self.footer_frame.setFrameShape(QFrame.StyledPanel)
@@ -1037,9 +1081,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.footer_help_btn = QPushButton(self.footer_right_frame)
         self.footer_help_btn.setObjectName(u"footer_help_btn")
-        icon8 = QIcon()
-        icon8.addFile(u":/icons/icons/help-circle.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.footer_help_btn.setIcon(icon8)
+        icon9 = QIcon()
+        icon9.addFile(u":/icons/icons/help-circle.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.footer_help_btn.setIcon(icon9)
         self.footer_help_btn.setIconSize(QSize(14, 14))
 
         self.verticalLayout_2.addWidget(self.footer_help_btn, 0, Qt.AlignRight|Qt.AlignBottom)

@@ -147,6 +147,16 @@ QPushButton:pressed{
             <property name="text">
              <string>Menu</string>
             </property>
+            <property name="icon">
+             <iconset resource="assets/iconset.qrc">
+              <normaloff>:/icons/icons/align-justify.png</normaloff>:/icons/icons/align-justify.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
            </widget>
           </item>
          </layout>
@@ -383,13 +393,13 @@ QPushButton:pressed{
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_6">
        <property name="spacing">
-        <number>0</number>
+        <number>4</number>
        </property>
        <property name="leftMargin">
         <number>0</number>
        </property>
        <property name="topMargin">
-        <number>3</number>
+        <number>0</number>
        </property>
        <property name="rightMargin">
         <number>0</number>
@@ -397,7 +407,7 @@ QPushButton:pressed{
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignTop">
+       <item alignment="Qt::AlignVCenter">
         <widget class="QFrame" name="side_menu">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -419,6 +429,7 @@ QPushButton:pressed{
          </property>
          <property name="styleSheet">
           <string notr="true">font: 7 pt &quot;Ethnocentric&quot;;
+
 QPushButton{
 	padding: 2px 4px;
 	color: rgb(0, 255, 255);
@@ -436,6 +447,9 @@ QPushButton:pressed{
 	color: black;
 	border-color: rgb(0, 255, 255);
 	background-color: rgb(170, 255, 255);
+}
+QFrame{
+border-right: 1px solid rgb(0, 255, 255);
 }</string>
          </property>
          <property name="frameShape">
@@ -461,7 +475,7 @@ QPushButton:pressed{
            <number>2</number>
           </property>
           <property name="verticalSpacing">
-           <number>15</number>
+           <number>8</number>
           </property>
           <item row="3" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
            <widget class="QLabel" name="skills_btn_label">
@@ -676,7 +690,13 @@ padding: 5px 10px;
            <property name="leftMargin">
             <number>0</number>
            </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
            <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
             <number>0</number>
            </property>
            <item>
@@ -737,6 +757,18 @@ QPushButton:pressed {
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignLeft">
                   <widget class="QLabel" name="label_7">
                    <property name="styleSheet">
@@ -892,6 +924,18 @@ QPushButton:pressed {
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_7">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
                <widget class="QLabel" name="newuser_head_label">
                 <property name="styleSheet">
@@ -1122,6 +1166,9 @@ font: 8pt &quot;Ethnocentric&quot;;</string>
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -1150,16 +1197,19 @@ font: 8pt &quot;Ethnocentric&quot;;</string>
                  <string notr="true">QPushButton{
 border-radius:20px;
 border-color: rgb(0, 255, 255);
+	border-radius: 10px;
 }
 QPushButton:hover{
 	border-color: rgb(0, 255, 255);
 	color: black;
 	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
 }
 QPushButton:pressed {
 	border-color: rgb(0, 255, 255);
 	color: black;	
 	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
 }
 	</string>
                 </property>
@@ -1174,16 +1224,19 @@ QPushButton:pressed {
                  <string notr="true">QPushButton{
 border-radius:20px;
 border-color: rgb(0, 255, 255);
+	border-radius: 10px;
 }
 QPushButton:hover{
 	border-color: rgb(0, 255, 255);
 	color: black;
 	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
 }
 QPushButton:pressed {
 	border-color: rgb(0, 255, 255);
 	color: black;	
 	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
 }
 	</string>
                 </property>
@@ -1223,6 +1276,21 @@ QPushButton:pressed {
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_22">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item alignment="Qt::AlignLeft">
                <widget class="QLabel" name="header_label">
                 <property name="styleSheet">
@@ -1269,10 +1337,11 @@ QPushButton:pressed {
 	border: 1px solid;
 	border-color:rgb(85, 255, 255);
 	border-radius: 8px;
+text-align: center
 }
 QComboBox{
 	padding: 3px;
-
+	text-align:center;
 	margin: 3px;
 	border: 1px solid;
 	border-color:rgb(85, 255, 255);
@@ -1286,6 +1355,21 @@ QComboBox{
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QGridLayout" name="gridLayout_2">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>4</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>4</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
               <item row="4" column="0">
                <widget class="QFrame" name="frame_9">
                 <property name="styleSheet">
@@ -1298,6 +1382,21 @@ QComboBox{
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_19">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_11">
                    <property name="text">
@@ -1309,7 +1408,7 @@ QComboBox{
                   <widget class="QComboBox" name="edit_gender_box">
                    <property name="minimumSize">
                     <size>
-                     <width>116</width>
+                     <width>166</width>
                      <height>24</height>
                     </size>
                    </property>
@@ -1336,6 +1435,21 @@ QComboBox{
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_20">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_12">
                    <property name="text">
@@ -1365,6 +1479,21 @@ QComboBox{
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_18">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_10">
                    <property name="text">
@@ -1376,9 +1505,12 @@ QComboBox{
                   <widget class="QLineEdit" name="mail_edit_input">
                    <property name="minimumSize">
                     <size>
-                     <width>0</width>
-                     <height>24</height>
+                     <width>160</width>
+                     <height>25</height>
                     </size>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
                    </property>
                   </widget>
                  </item>
@@ -1394,6 +1526,21 @@ QComboBox{
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_8">
                    <property name="text">
@@ -1403,11 +1550,20 @@ QComboBox{
                  </item>
                  <item alignment="Qt::AlignHCenter">
                   <widget class="QLineEdit" name="name_edit_input">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
-                     <width>0</width>
-                     <height>24</height>
+                     <width>160</width>
+                     <height>25</height>
                     </size>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
                    </property>
                   </widget>
                  </item>
@@ -1423,6 +1579,21 @@ QComboBox{
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_17">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_9">
                    <property name="text">
@@ -1434,9 +1605,12 @@ QComboBox{
                   <widget class="QLineEdit" name="phone_edit_input">
                    <property name="minimumSize">
                     <size>
-                     <width>0</width>
-                     <height>24</height>
+                     <width>160</width>
+                     <height>25</height>
                     </size>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
                    </property>
                   </widget>
                  </item>
@@ -1455,6 +1629,21 @@ QComboBox{
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_13">
                    <property name="text">
@@ -1466,7 +1655,7 @@ QComboBox{
                   <widget class="QComboBox" name="edit_user_lang">
                    <property name="minimumSize">
                     <size>
-                     <width>116</width>
+                     <width>166</width>
                      <height>24</height>
                     </size>
                    </property>
@@ -1507,6 +1696,15 @@ QPushButton:pressed {
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_15">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
               <item alignment="Qt::AlignRight">
                <widget class="QPushButton" name="edit_del_btn">
                 <property name="styleSheet">
