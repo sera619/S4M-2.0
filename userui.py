@@ -22,6 +22,7 @@ from ui_utils import UIutils
 class UserUI(QMainWindow):
     def __init__(self ):
         QMainWindow.__init__(self)
+        logger.debug('\nLaunching Userinterface')
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.men_button.clicked.connect(lambda: self.animateMenu())
@@ -74,24 +75,33 @@ class UserUI(QMainWindow):
     def edit_user_page(self):
         user = self.ui.home_user_list.currentItem().text()
         self.userToEdit = user
-        print(user)
+        logger.debug('\nUser to edit: ' + user)
         self.ui.stackedWidget.setCurrentWidget(self.ui.user_edit_page)
         self.ui.name_edit_input.setText(user)
         self.ui.phone_edit_input.setText(self.ui_utils.get_user_number(user))
         self.ui.edit_gender_box.setCurrentIndex(self.ui_utils.get_gender(user))
         self.ui.edit_guest_check.setChecked(self.ui_utils.is_user_guest(user))
         self.ui.edit_user_lang.setCurrentIndex(self.ui_utils.get_user_lang(user))
+        self.ui.mail_edit_input.setText(self.ui_utils.get_user_mail(user))
+
+
 
     def update_user(self):
         updated_username = self.ui.name_edit_input.text()
-        number = self.ui.phone_edit_input.text()
-        #self.ui_utils.edit_guest(self.userToEdit, self.ui.edit_guest_check.checkStateSet())
+        updated_number = self.ui.phone_edit_input.text()
+        updated_gender = self.ui.edit_gender_box.currentText()
+        updated_lang = self.ui.edit_user_lang.currentText()
+        updated_permission = self.ui.edit_guest_check.isChecked()
+        updated_mail =  self.ui.mail_edit_input.text()
+        self.ui_utils.edit_number(self.userToEdit, updated_number)
+        self.ui_utils.edit_lang(self.userToEdit, updated_lang)
+        self.ui_utils.edit_gender(self.userToEdit, updated_gender)
+        self.ui_utils.edit_permissions(self.userToEdit, updated_permission)
+        self.ui_utils.edit_mail(self.userToEdit, updated_mail)
         self.ui_utils.edit_name(self.userToEdit, updated_username)
-        self.ui_utils.edit_usernumber(self.userToEdit, number)
-        self.ui_utils.edit_gender(self.userToEdit, self.ui.edit_gender_box.currentText())
-        self.ui_utils.edit_lang(self.userToEdit,self.ui.edit_gender_box.currentText())
+        self.ui_utils.edit_number(self.userToEdit, updated_number)
+        self.ui.edit_error_label.setText("Benutzer erfolgreich aktualisiert")
         self.update_userlist()
-        self.ui.edit_error_label.setText('Benutzer wurde aktualisiert!')
         time.sleep(1.5)
         self.ui.stackedWidget.setCurrentWidget(self.ui.home_page)
 
@@ -142,7 +152,7 @@ class UserUI(QMainWindow):
         new_uservoice,
         new_userintents,
         new_userlang)
-        logger.debug("User {} created".format(new_username))
+        logger.debug("\nUser {} created".format(new_username))
         self.update_userlist()
     
     def update_userlist(self):
