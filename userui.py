@@ -30,6 +30,7 @@ class UserUI(QMainWindow):
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.setWindowTitle("SAM 2.0")
+        self.setWindowIcon(QIcon('assets/favpng.png'))
         self.shadow = QGraphicsDropShadowEffect(self)
         self.shadow.setBlurRadius(50)
         self.shadow.setXOffset(0)
@@ -45,20 +46,22 @@ class UserUI(QMainWindow):
         self.ui.edit_user_lang.addItems(langs)
         self.ui.newuser_lang_box.addItems(langs)
         if self.ui_utils.is_new_user():
-            self.ui.home_start_btn.setEnabled(False)
-        self.ui.details_button.clicked.connect(lambda: self.animateMiniUI())
+            self.ui.start_sam_btn.setEnabled(False)
         self.userToEdit = None
 
+        self.ui.details_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.info_page))
         self.ui.newuser_create_btn.clicked.connect(lambda: self.createNewUser())
         self.ui.x_button.clicked.connect(lambda: self.closeWindow())
         self.ui.mini_button.clicked.connect(lambda: self.showMinimized())
-        self.ui.home_start_btn.clicked.connect(lambda: self.start_sam())
+        self.ui.start_sam_btn.clicked.connect(lambda: self.start_sam())
+        self.ui.users_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.user_page))
         self.ui.home_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home_page))
-        self.ui.users_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.new_user_page))
+        self.ui.create_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.new_user_page))
         self.ui.newuser_cancel_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home_page))
         self.ui.edit_canel_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.home_page))
         self.ui.edit_update_btn.clicked.connect(lambda: self.update_user())
         self.ui.home_user_list.itemClicked.connect(lambda: self.edit_user_page())
+        self.ui.home_help_btn.clicked.connect(lambda:self.ui.stackedWidget.setCurrentWidget(self.ui.info_page))
 
         self.ui.centralwidget.setGraphicsEffect(self.shadow)
         self.update_userlist()
@@ -158,9 +161,9 @@ class UserUI(QMainWindow):
     def update_userlist(self):
         self.ui.home_user_list.clear()
         if self.ui_utils.is_new_user():
-            self.ui.home_start_btn.setEnabled(False)
+            self.ui.start_sam_btn.setEnabled(False)
         else:
-            self.ui.home_start_btn.setEnabled(True)
+            self.ui.start_sam_btn.setEnabled(True)
         for user in self.ui_utils.get_user_list():
             if user== "sera" or user == "sarah":
                 pass

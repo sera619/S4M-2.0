@@ -127,7 +127,7 @@ class UIutils:
             users.append(user['name'])
         if len(users) == 2:
             users = []
-        logger.debug("\n"+users)
+        logger.debug(users)
         return users
 
 
