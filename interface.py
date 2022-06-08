@@ -1503,6 +1503,132 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.addWidget(self.edit_btn_frame)
 
         self.stackedWidget.addWidget(self.user_edit_page)
+        self.skills_page = QWidget()
+        self.skills_page.setObjectName(u"skills_page")
+        self.verticalLayout_19 = QVBoxLayout(self.skills_page)
+        self.verticalLayout_19.setSpacing(4)
+        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.verticalLayout_19.setContentsMargins(0, 9, 0, 0)
+        self.frame_21 = QFrame(self.skills_page)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setFrameShape(QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_20 = QVBoxLayout(self.frame_21)
+        self.verticalLayout_20.setSpacing(0)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.verticalLayout_20.setContentsMargins(0, 0, 0, 0)
+        self.label_17 = QLabel(self.frame_21)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setStyleSheet(u"font: 13pt \"Ethnocentric\";")
+
+        self.verticalLayout_20.addWidget(self.label_17, 0, Qt.AlignTop)
+
+
+        self.verticalLayout_19.addWidget(self.frame_21)
+
+        self.frame_22 = QFrame(self.skills_page)
+        self.frame_22.setObjectName(u"frame_22")
+        sizePolicy.setHeightForWidth(self.frame_22.sizePolicy().hasHeightForWidth())
+        self.frame_22.setSizePolicy(sizePolicy)
+        self.frame_22.setFrameShape(QFrame.StyledPanel)
+        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_21 = QVBoxLayout(self.frame_22)
+        self.verticalLayout_21.setSpacing(0)
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
+        self.verticalLayout_21.setContentsMargins(0, 0, 0, 0)
+        self.label_26 = QLabel(self.frame_22)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_21.addWidget(self.label_26, 0, Qt.AlignHCenter)
+
+        self.frame_23 = QFrame(self.frame_22)
+        self.frame_23.setObjectName(u"frame_23")
+        self.frame_23.setFrameShape(QFrame.StyledPanel)
+        self.frame_23.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_26 = QHBoxLayout(self.frame_23)
+        self.horizontalLayout_26.setSpacing(0)
+        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
+        self.horizontalLayout_26.setContentsMargins(0, 0, 0, 0)
+        self.label_18 = QLabel(self.frame_23)
+        self.label_18.setObjectName(u"label_18")
+
+        self.horizontalLayout_26.addWidget(self.label_18, 0, Qt.AlignHCenter)
+
+        self.label_25 = QLabel(self.frame_23)
+        self.label_25.setObjectName(u"label_25")
+
+        self.horizontalLayout_26.addWidget(self.label_25, 0, Qt.AlignLeft)
+
+
+        self.verticalLayout_21.addWidget(self.frame_23, 0, Qt.AlignVCenter)
+
+        self.frame_27 = QFrame(self.frame_22)
+        self.frame_27.setObjectName(u"frame_27")
+        self.frame_27.setFrameShape(QFrame.StyledPanel)
+        self.frame_27.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_30 = QHBoxLayout(self.frame_27)
+        self.horizontalLayout_30.setObjectName(u"horizontalLayout_30")
+        self.label_27 = QLabel(self.frame_27)
+        self.label_27.setObjectName(u"label_27")
+        self.label_27.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_30.addWidget(self.label_27)
+
+        self.label_28 = QLabel(self.frame_27)
+        self.label_28.setObjectName(u"label_28")
+
+        self.horizontalLayout_30.addWidget(self.label_28)
+
+
+        self.verticalLayout_21.addWidget(self.frame_27)
+
+        self.frame_24 = QFrame(self.frame_22)
+        self.frame_24.setObjectName(u"frame_24")
+        self.frame_24.setFrameShape(QFrame.StyledPanel)
+        self.frame_24.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_27 = QHBoxLayout(self.frame_24)
+        self.horizontalLayout_27.setSpacing(0)
+        self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
+        self.horizontalLayout_27.setContentsMargins(0, 0, 0, 0)
+        self.label_19 = QLabel(self.frame_24)
+        self.label_19.setObjectName(u"label_19")
+
+        self.horizontalLayout_27.addWidget(self.label_19, 0, Qt.AlignHCenter)
+
+        self.label_24 = QLabel(self.frame_24)
+        self.label_24.setObjectName(u"label_24")
+
+        self.horizontalLayout_27.addWidget(self.label_24)
+
+
+        self.verticalLayout_21.addWidget(self.frame_24)
+
+        self.frame_26 = QFrame(self.frame_22)
+        self.frame_26.setObjectName(u"frame_26")
+        self.frame_26.setFrameShape(QFrame.StyledPanel)
+        self.frame_26.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_28 = QHBoxLayout(self.frame_26)
+        self.horizontalLayout_28.setSpacing(0)
+        self.horizontalLayout_28.setObjectName(u"horizontalLayout_28")
+        self.horizontalLayout_28.setContentsMargins(0, 0, 0, 0)
+        self.label_20 = QLabel(self.frame_26)
+        self.label_20.setObjectName(u"label_20")
+
+        self.horizontalLayout_28.addWidget(self.label_20, 0, Qt.AlignHCenter)
+
+        self.label_23 = QLabel(self.frame_26)
+        self.label_23.setObjectName(u"label_23")
+
+        self.horizontalLayout_28.addWidget(self.label_23)
+
+
+        self.verticalLayout_21.addWidget(self.frame_26)
+
+
+        self.verticalLayout_19.addWidget(self.frame_22)
+
+        self.stackedWidget.addWidget(self.skills_page)
 
         self.horizontalLayout_6.addWidget(self.stackedWidget)
 
@@ -1566,7 +1692,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(5)
+        self.stackedWidget.setCurrentIndex(6)
         self.gender_combobox.setCurrentIndex(-1)
 
 
@@ -1633,6 +1759,16 @@ class Ui_MainWindow(object):
         self.edit_del_btn.setText(QCoreApplication.translate("MainWindow", u"L\u00f6schen", None))
         self.edit_update_btn.setText(QCoreApplication.translate("MainWindow", u"Aktualisieren", None))
         self.edit_canel_btn.setText(QCoreApplication.translate("MainWindow", u"Abbrechen", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"Skillz", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Eine kurze Bedienungsanleitung findest du hier.<br/>Beachte bitte das vor jedem Befehl das wakeword<br/>'Bumblebee' benutzt werden muss.</p></body></html>", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Wie sp\u00e4t ist es? Wie sp\u00e4t ist es in?", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Die aktuelle Uhrzeit des Ortes.", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Wer ist? Kennst du ...", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Frage S4M nach Personen<br/>oder Dingen</p></body></html>", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Wie macht die ...", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>z.b. Kuh um S4M Tierstimmen<br/>imitieren zu lassen</p></body></html>", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"S4M h\u00f6rt auf zu sprechen.", None))
         self.footer_left_label.setText(QCoreApplication.translate("MainWindow", u"S4M 2.0 v1.0.8 | by S3R43o3", None))
         self.footer_help_btn.setText("")
     # retranslateUi
