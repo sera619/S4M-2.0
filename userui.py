@@ -64,7 +64,7 @@ class UserUI(QMainWindow):
         self.ui.social_mail_btn.clicked.connect(lambda: webbrowser.open_new_tab(self.mailURL))
         ##############################################################################################
 
-
+        self.ui.skills_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.skills_page))
         self.ui.dialog_cancel_btn.clicked.connect(lambda: self.edit_user_page())
         self.ui.dialog_ok_btn.clicked.connect(lambda: self.accept_delete())
         self.ui.menu_help_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.info_page))
