@@ -2,7 +2,7 @@
 
 # S4M 2.0 Voiceassistant #
 
-**TecAlpha Version**
+**public alpha Version 1.0.8**
 
 ---
 **!IMPORTANT!**
@@ -18,6 +18,14 @@
 > S4M ist ein Sprachassistent der, wie die bekannten anderen Assistenten Siri oder Alexa, euch mit verschiedenen Funktionen unterstützen kann. Simple Zeitabfragen oder Todo-Listen. Musikplayer und die Möglichkeit mit anderen S4M's per LiveChat zu sprechen. Weitere Features sind in Planung.
 >
 >S4M ist in der Lage den Gesprächspartner zu erkennen und dann individuell auf den gespeicherten Benutzer zu reagieren.
+
+## Alpha Test-Version verfügbar! ##
+
+---
+> Es ist soweit ab sofort könnt ihr euch S4M [downloaden](releaselink) und ausprobieren. Es sei zu beachten das noch nicht alles final ist. Hier und da müssen noch eine Stellschrauben gedreht werden.
+> Das Feintuning erfordert allerdings auch die Interaktion mit normalen Nutzern, daher bin ich über Feedback sehr dankbar. Dies könnt ihr ganz einfach über die [Comunity Seite]((https://github.com/sera619/S4M-2.0/discussions)) oder über die [Issue Seite]((https://github.com/sera619/S4M-2.0/issues)) des Repositorys tun.
+> Eine detailierte Funktionsbeschreibung findet ihr im Programm selbst unter dem Menüpunkt Skills.
+> Ich wünsche viel Spaß mit S4M!
 
 ---
 
