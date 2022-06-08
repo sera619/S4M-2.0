@@ -721,7 +721,7 @@ padding: 5px 10px;
 }</string>
          </property>
          <property name="currentIndex">
-          <number>6</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="user_page">
           <property name="styleSheet">
@@ -1120,7 +1120,7 @@ QPushButton:pressed {
               <item>
                <widget class="QLabel" name="label_7">
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Solltest du Probleme bei der Verwendung von S4M haben kannst du mich &lt;br/&gt;über diese Buttons kontaktieren.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Solltest du Probleme bei&lt;/p&gt;&lt;p&gt;der Verwendung von S4M haben &lt;/p&gt;&lt;p&gt;kannst du mich über diese Buttons kontaktieren.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="textFormat">
                  <enum>Qt::RichText</enum>
@@ -2664,7 +2664,7 @@ QPushButton:pressed {
                  <item alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_18">
                    <property name="text">
-                    <string>Wie spät ist es? Wie spät ist es in?</string>
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wie spät ist es?&lt;/p&gt;&lt;p&gt;Wie spät ist es in?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                    </property>
                   </widget>
                  </item>
@@ -2690,7 +2690,7 @@ QPushButton:pressed {
                  <item>
                   <widget class="QLabel" name="label_27">
                    <property name="text">
-                    <string>Wer ist? Kennst du ...</string>
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wer ist..?&lt;/p&gt;&lt;p&gt;Kennst du..?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>

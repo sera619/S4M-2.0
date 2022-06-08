@@ -1692,7 +1692,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(6)
+        self.stackedWidget.setCurrentIndex(2)
         self.gender_combobox.setCurrentIndex(-1)
 
 
@@ -1723,7 +1723,7 @@ class Ui_MainWindow(object):
         self.dialog_text_label.setText(QCoreApplication.translate("MainWindow", u"Bist du sicher das du den Benutzer ... l\u00f6schen m\u00f6chtest?", None))
         self.dialog_cancel_btn.setText(QCoreApplication.translate("MainWindow", u"L\u00f6schen", None))
         self.dialog_ok_btn.setText(QCoreApplication.translate("MainWindow", u"abbrechen", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Solltest du Probleme bei der Verwendung von S4M haben kannst du mich <br/>\u00fcber diese Buttons kontaktieren.</p></body></html>", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><br/></p><p><br/></p><p>Solltest du Probleme bei</p><p>der Verwendung von S4M haben </p><p>kannst du mich \u00fcber diese Buttons kontaktieren.</p></body></html>", None))
         self.social_hackzor_btn.setText("")
         self.social_mail_btn.setText("")
         self.social_codepen_btn.setText("")
@@ -1761,9 +1761,9 @@ class Ui_MainWindow(object):
         self.edit_canel_btn.setText(QCoreApplication.translate("MainWindow", u"Abbrechen", None))
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"Skillz", None))
         self.label_26.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Eine kurze Bedienungsanleitung findest du hier.<br/>Beachte bitte das vor jedem Befehl das wakeword<br/>'Bumblebee' benutzt werden muss.</p></body></html>", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Wie sp\u00e4t ist es? Wie sp\u00e4t ist es in?", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Wie sp\u00e4t ist es?</p><p>Wie sp\u00e4t ist es in?</p></body></html>", None))
         self.label_25.setText(QCoreApplication.translate("MainWindow", u"Die aktuelle Uhrzeit des Ortes.", None))
-        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Wer ist? Kennst du ...", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Wer ist..?</p><p>Kennst du..?</p></body></html>", None))
         self.label_28.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Frage S4M nach Personen<br/>oder Dingen</p></body></html>", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"Wie macht die ...", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>z.b. Kuh um S4M Tierstimmen<br/>imitieren zu lassen</p></body></html>", None))
