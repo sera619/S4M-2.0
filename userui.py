@@ -1,4 +1,5 @@
 from ctypes import util
+from tkinter import E
 from loguru import logger
 from interface import Ui_MainWindow
 from PySide6.QtWidgets import *
@@ -114,6 +115,8 @@ class UserUI(QMainWindow):
 
     def accept_delete(self):
         self.ui_utils.delete_user(self.userToEdit)
+        self.update_userlist()
+        self.ui.stackedWidget.setCurrentWidget(self.ui.user_page)
         self.userToEdit = None
 
     def update_user(self):
@@ -175,6 +178,12 @@ class UserUI(QMainWindow):
             new_userintents = ["animalsounds","gettime"]
         else:
             new_userintents = ["*"]
+        
+        if self.ui.newuser_mail.text() == "":
+            newuser_mail = "No Mail"
+        else:
+            newuser_mail = self.ui.newuser_mail.text()
+
         new_uservoice = []
         new_userlang = self.ui.newuser_lang_box.currentText()
         self.ui_utils.create_user(new_username,
@@ -182,9 +191,13 @@ class UserUI(QMainWindow):
         new_userphone,
         new_uservoice,
         new_userintents,
-        new_userlang)
+        new_userlang,
+        newuser_mail
+        )
         logger.debug("\nUser {} created".format(new_username))
         self.update_userlist()
+        self.ui.stackedWidget.setCurrentWidget(self.ui.user_page)
+
     
     def update_userlist(self):
         self.ui.home_user_list.clear()

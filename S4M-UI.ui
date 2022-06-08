@@ -721,7 +721,7 @@ padding: 5px 10px;
 }</string>
          </property>
          <property name="currentIndex">
-          <number>2</number>
+          <number>4</number>
          </property>
          <widget class="QWidget" name="user_page">
           <property name="styleSheet">
@@ -1030,7 +1030,7 @@ QPushButton:pressed {
                   <number>0</number>
                  </property>
                  <item>
-                  <widget class="QPushButton" name="dialog_cancel_btn">
+                  <widget class="QPushButton" name="dialog_ok_btn">
                    <property name="styleSheet">
                     <string notr="true">QPushButton{
 border-radius:20px;
@@ -1057,7 +1057,7 @@ QPushButton:pressed {
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="dialog_ok_btn">
+                  <widget class="QPushButton" name="dialog_cancel_btn">
                    <property name="styleSheet">
                     <string notr="true">QPushButton{
 border-radius:20px;
@@ -2017,7 +2017,7 @@ text-align: center
                   </widget>
                  </item>
                  <item alignment="Qt::AlignHCenter">
-                  <widget class="QLineEdit" name="lineEdit">
+                  <widget class="QLineEdit" name="newuser_mail">
                    <property name="minimumSize">
                     <size>
                      <width>160</width>
@@ -2031,6 +2031,9 @@ text-align: center
 	border-radius: 8px;
 text-align: center
 }</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
                    </property>
                   </widget>
                  </item>

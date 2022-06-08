@@ -630,29 +630,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_25.setSpacing(10)
         self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
         self.horizontalLayout_25.setContentsMargins(0, 0, 0, 0)
-        self.dialog_cancel_btn = QPushButton(self.frame_19)
-        self.dialog_cancel_btn.setObjectName(u"dialog_cancel_btn")
-        self.dialog_cancel_btn.setStyleSheet(u"QPushButton{\n"
-"border-radius:20px;\n"
-"border-color: rgb(0, 255, 255);\n"
-"	border-radius: 10px;\n"
-"}\n"
-"QPushButton:hover{\n"
-"	border-color: rgb(0, 255, 255);\n"
-"	color: black;\n"
-"	background-color: rgb(170, 255, 255);\n"
-"	border-radius: 10px;\n"
-"}\n"
-"QPushButton:pressed {\n"
-"	border-color: rgb(0, 255, 255);\n"
-"	color: black;	\n"
-"	background-color: rgb(0, 255, 255);\n"
-"	border-radius: 10px;\n"
-"}\n"
-"	")
-
-        self.horizontalLayout_25.addWidget(self.dialog_cancel_btn)
-
         self.dialog_ok_btn = QPushButton(self.frame_19)
         self.dialog_ok_btn.setObjectName(u"dialog_ok_btn")
         self.dialog_ok_btn.setStyleSheet(u"QPushButton{\n"
@@ -675,6 +652,29 @@ class Ui_MainWindow(object):
 "	")
 
         self.horizontalLayout_25.addWidget(self.dialog_ok_btn)
+
+        self.dialog_cancel_btn = QPushButton(self.frame_19)
+        self.dialog_cancel_btn.setObjectName(u"dialog_cancel_btn")
+        self.dialog_cancel_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+
+        self.horizontalLayout_25.addWidget(self.dialog_cancel_btn)
 
 
         self.verticalLayout_17.addWidget(self.frame_19, 0, Qt.AlignHCenter)
@@ -1218,17 +1218,18 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_23.addWidget(self.label_14, 0, Qt.AlignHCenter)
 
-        self.lineEdit = QLineEdit(self.frame_13)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setMinimumSize(QSize(160, 24))
-        self.lineEdit.setStyleSheet(u"QLineEdit{\n"
+        self.newuser_mail = QLineEdit(self.frame_13)
+        self.newuser_mail.setObjectName(u"newuser_mail")
+        self.newuser_mail.setMinimumSize(QSize(160, 24))
+        self.newuser_mail.setStyleSheet(u"QLineEdit{\n"
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
 "	border-radius: 8px;\n"
 "text-align: center\n"
 "}")
+        self.newuser_mail.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_23.addWidget(self.lineEdit, 0, Qt.AlignHCenter)
+        self.horizontalLayout_23.addWidget(self.newuser_mail, 0, Qt.AlignHCenter)
 
 
         self.gridLayout_3.addWidget(self.frame_13, 1, 0, 1, 1)
@@ -1692,7 +1693,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(4)
         self.gender_combobox.setCurrentIndex(-1)
 
 
@@ -1721,8 +1722,8 @@ class Ui_MainWindow(object):
         self.home_info_label.setText(QCoreApplication.translate("MainWindow", u"Aktuelle Benutzer:", None))
         self.create_btn.setText(QCoreApplication.translate("MainWindow", u"Erstellen", None))
         self.dialog_text_label.setText(QCoreApplication.translate("MainWindow", u"Bist du sicher das du den Benutzer ... l\u00f6schen m\u00f6chtest?", None))
-        self.dialog_cancel_btn.setText(QCoreApplication.translate("MainWindow", u"L\u00f6schen", None))
-        self.dialog_ok_btn.setText(QCoreApplication.translate("MainWindow", u"abbrechen", None))
+        self.dialog_ok_btn.setText(QCoreApplication.translate("MainWindow", u"L\u00f6schen", None))
+        self.dialog_cancel_btn.setText(QCoreApplication.translate("MainWindow", u"abbrechen", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><br/></p><p><br/></p><p>Solltest du Probleme bei</p><p>der Verwendung von S4M haben </p><p>kannst du mich \u00fcber diese Buttons kontaktieren.</p></body></html>", None))
         self.social_hackzor_btn.setText("")
         self.social_mail_btn.setText("")

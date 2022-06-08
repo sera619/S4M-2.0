@@ -12,10 +12,8 @@ class UIutils:
 
     def delete_user(self, user):
         speaker = Query()
-        self.db.remove(where('name') == str(user))
-        self.db.update()
+        self.speaker_table.remove(speaker.name == user)
         logger.debug('\nUser: ' +str(user)+ ' deleted!')
-
 
     def edit_name(self,user,name):
         speaker = Query()
