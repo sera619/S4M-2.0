@@ -1,6 +1,5 @@
 <RCC>
   <qresource prefix="icons">
-    <file>glossy_3d_blue_orbs2_108.png</file>
     <file>favicon.ico</file>
     <file>icons/activity.png</file>
     <file>icons/airplay.png</file>
@@ -288,6 +287,13 @@
     <file>icons/zap-off.png</file>
     <file>icons/zoom-in.png</file>
     <file>icons/zoom-out.png</file>
+  </qresource>
+  <qresource prefix="fabicons">
+    <file>mail.png</file>
+    <file>CodePen.png</file>
+    <file>Spider.png</file>
+    <file>Youtube.png</file>
+    <file>Github.png</file>
   </qresource>
   <qresource prefix="fonts">
     <file>bobcat.ttf</file>
