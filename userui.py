@@ -110,7 +110,7 @@ class UserUI(QMainWindow):
 
     def delete_user(self):
         user = self.ui.home_user_list.currentItem().text()
-        self.ui.dialog_text_label.setText('Möchstest du den Benutzer: '+ str(user) + ' wirklich löschen?')
+        self.ui.dialog_text_label.setText('Möchstest du den Benutzer:\n\n'+ str(user) + '\n\nwirklich löschen?')
         self.ui.stackedWidget.setCurrentWidget(self.ui.dialog_page)
 
     def accept_delete(self):

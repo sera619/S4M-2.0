@@ -1573,8 +1573,10 @@ QPushButton:pressed {
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">
+              <string notr="true">QLabel{
 font: 8pt &quot;Ethnocentric&quot;;
+
+}
 QLineEdit{
 	border: 1px solid;
 	border-color:rgb(85, 255, 255);
@@ -1582,6 +1584,8 @@ QLineEdit{
 text-align: center;
 }
 QComboBox{
+font: 8pt &quot;Ethnocentric&quot;;
+
 	padding: 3px;
 	text-align:center;
 	margin: 3px;
@@ -1647,9 +1651,15 @@ QComboBox{
                   <widget class="QComboBox" name="gender_combobox">
                    <property name="minimumSize">
                     <size>
-                     <width>186</width>
+                     <width>166</width>
                      <height>24</height>
                     </size>
+                   </property>
+                   <property name="mouseTracking">
+                    <bool>true</bool>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
                    </property>
                    <property name="styleSheet">
                     <string notr="true">QComboBox{
@@ -1659,6 +1669,9 @@ QComboBox{
 	border: 1px solid;
 	border-color:rgb(85, 255, 255);
 	border-radius: 8px;
+}
+QComboBox::focus{
+	border-color:rgb(255, 0, 0);
 }</string>
                    </property>
                    <property name="currentText">
@@ -1797,9 +1810,12 @@ QPushButton:pressed {
                   <widget class="QLineEdit" name="new_username">
                    <property name="minimumSize">
                     <size>
-                     <width>140</width>
+                     <width>160</width>
                      <height>25</height>
                     </size>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
                    </property>
                    <property name="styleSheet">
                     <string notr="true">QLineEdit{
@@ -1807,6 +1823,9 @@ QPushButton:pressed {
 	border-color:rgb(85, 255, 255);
 	border-radius: 8px;
 text-align: center
+}
+QLineEdit::focus{
+	border-color:rgb(255, 0, 0);
 }</string>
                    </property>
                    <property name="maxLength">
@@ -1858,9 +1877,12 @@ text-align: center
                   <widget class="QComboBox" name="newuser_lang_box">
                    <property name="minimumSize">
                     <size>
-                     <width>186</width>
+                     <width>166</width>
                      <height>24</height>
                     </size>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
                    </property>
                    <property name="styleSheet">
                     <string notr="true">QComboBox{
@@ -1870,6 +1892,9 @@ text-align: center
 	border: 1px solid;
 	border-color:rgb(85, 255, 255);
 	border-radius: 8px;
+}
+QComboBox::focus{
+	border-color:rgb(255, 0, 0);
 }</string>
                    </property>
                   </widget>
@@ -1910,6 +1935,9 @@ text-align: center
                  </item>
                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                   <widget class="QCheckBox" name="guest_checker">
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
                    <property name="text">
                     <string>Ist ein Gast</string>
                    </property>
@@ -1963,12 +1991,18 @@ text-align: center
                      <height>16777215</height>
                     </size>
                    </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">QLineEdit{
 	border: 1px solid;
 	border-color:rgb(85, 255, 255);
 	border-radius: 8px;
 text-align: center
+}
+QLineEdit::focus{
+	border-color:rgb(255, 0, 0);
 }</string>
                    </property>
                    <property name="maxLength">
@@ -2024,12 +2058,18 @@ text-align: center
                      <height>24</height>
                     </size>
                    </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">QLineEdit{
 	border: 1px solid;
 	border-color:rgb(85, 255, 255);
 	border-radius: 8px;
 text-align: center
+}
+QLineEdit::focus{
+	border-color:rgb(255, 0, 0);
 }</string>
                    </property>
                    <property name="alignment">
@@ -2207,8 +2247,13 @@ QComboBox{
                      <height>24</height>
                     </size>
                    </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
                    <property name="styleSheet">
-                    <string notr="true"/>
+                    <string notr="true">QComboBox::focus{
+	border-color:rgb(255, 0, 0);
+}</string>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -2304,6 +2349,14 @@ QComboBox{
                      <height>25</height>
                     </size>
                    </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit::focus{
+	border-color:rgb(255, 0, 0);
+}</string>
+                   </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
                    </property>
@@ -2357,6 +2410,14 @@ QComboBox{
                      <height>25</height>
                     </size>
                    </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit::focus{
+	border-color:rgb(255, 0, 0);
+}</string>
+                   </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
                    </property>
@@ -2403,6 +2464,14 @@ QComboBox{
                      <width>160</width>
                      <height>25</height>
                     </size>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit::focus{
+	border-color:rgb(255, 0, 0);
+}</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -2453,6 +2522,14 @@ QComboBox{
                      <width>166</width>
                      <height>24</height>
                     </size>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QComboBox::focus{
+	border-color:rgb(255, 0, 0);
+}</string>
                    </property>
                   </widget>
                  </item>

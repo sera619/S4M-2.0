@@ -981,8 +981,10 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.newuser_mainframe.sizePolicy().hasHeightForWidth())
         self.newuser_mainframe.setSizePolicy(sizePolicy)
         self.newuser_mainframe.setMinimumSize(QSize(400, 0))
-        self.newuser_mainframe.setStyleSheet(u"\n"
+        self.newuser_mainframe.setStyleSheet(u"QLabel{\n"
 "font: 8pt \"Ethnocentric\";\n"
+"\n"
+"}\n"
 "QLineEdit{\n"
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
@@ -990,6 +992,8 @@ class Ui_MainWindow(object):
 "text-align: center;\n"
 "}\n"
 "QComboBox{\n"
+"font: 8pt \"Ethnocentric\";\n"
+"\n"
 "	padding: 3px;\n"
 "	text-align:center;\n"
 "	margin: 3px;\n"
@@ -1018,7 +1022,9 @@ class Ui_MainWindow(object):
 
         self.gender_combobox = QComboBox(self.new_gender_frame)
         self.gender_combobox.setObjectName(u"gender_combobox")
-        self.gender_combobox.setMinimumSize(QSize(186, 24))
+        self.gender_combobox.setMinimumSize(QSize(166, 24))
+        self.gender_combobox.setMouseTracking(True)
+        self.gender_combobox.setFocusPolicy(Qt.ClickFocus)
         self.gender_combobox.setStyleSheet(u"QComboBox{\n"
 "	padding: 3px;\n"
 "	text-align:center;\n"
@@ -1026,6 +1032,9 @@ class Ui_MainWindow(object):
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
 "	border-radius: 8px;\n"
+"}\n"
+"QComboBox::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
 "}")
 
         self.horizontalLayout_9.addWidget(self.gender_combobox, 0, Qt.AlignHCenter|Qt.AlignVCenter)
@@ -1108,12 +1117,16 @@ class Ui_MainWindow(object):
 
         self.new_username = QLineEdit(self.frame_3)
         self.new_username.setObjectName(u"new_username")
-        self.new_username.setMinimumSize(QSize(140, 25))
+        self.new_username.setMinimumSize(QSize(160, 25))
+        self.new_username.setFocusPolicy(Qt.ClickFocus)
         self.new_username.setStyleSheet(u"QLineEdit{\n"
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
 "	border-radius: 8px;\n"
 "text-align: center\n"
+"}\n"
+"QLineEdit::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
 "}")
         self.new_username.setMaxLength(14)
         self.new_username.setAlignment(Qt.AlignCenter)
@@ -1138,7 +1151,8 @@ class Ui_MainWindow(object):
 
         self.newuser_lang_box = QComboBox(self.frame_4)
         self.newuser_lang_box.setObjectName(u"newuser_lang_box")
-        self.newuser_lang_box.setMinimumSize(QSize(186, 24))
+        self.newuser_lang_box.setMinimumSize(QSize(166, 24))
+        self.newuser_lang_box.setFocusPolicy(Qt.ClickFocus)
         self.newuser_lang_box.setStyleSheet(u"QComboBox{\n"
 "	padding: 3px;\n"
 "	text-align:center;\n"
@@ -1146,6 +1160,9 @@ class Ui_MainWindow(object):
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
 "	border-radius: 8px;\n"
+"}\n"
+"QComboBox::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
 "}")
 
         self.horizontalLayout_14.addWidget(self.newuser_lang_box, 0, Qt.AlignHCenter|Qt.AlignVCenter)
@@ -1168,6 +1185,7 @@ class Ui_MainWindow(object):
 
         self.guest_checker = QCheckBox(self.frame_2)
         self.guest_checker.setObjectName(u"guest_checker")
+        self.guest_checker.setFocusPolicy(Qt.ClickFocus)
 
         self.horizontalLayout_11.addWidget(self.guest_checker, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
@@ -1191,11 +1209,15 @@ class Ui_MainWindow(object):
         self.newuser_number.setObjectName(u"newuser_number")
         self.newuser_number.setMinimumSize(QSize(160, 24))
         self.newuser_number.setMaximumSize(QSize(16777215, 16777215))
+        self.newuser_number.setFocusPolicy(Qt.ClickFocus)
         self.newuser_number.setStyleSheet(u"QLineEdit{\n"
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
 "	border-radius: 8px;\n"
 "text-align: center\n"
+"}\n"
+"QLineEdit::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
 "}")
         self.newuser_number.setMaxLength(13)
         self.newuser_number.setAlignment(Qt.AlignCenter)
@@ -1221,11 +1243,15 @@ class Ui_MainWindow(object):
         self.newuser_mail = QLineEdit(self.frame_13)
         self.newuser_mail.setObjectName(u"newuser_mail")
         self.newuser_mail.setMinimumSize(QSize(160, 24))
+        self.newuser_mail.setFocusPolicy(Qt.ClickFocus)
         self.newuser_mail.setStyleSheet(u"QLineEdit{\n"
 "	border: 1px solid;\n"
 "	border-color:rgb(85, 255, 255);\n"
 "	border-radius: 8px;\n"
 "text-align: center\n"
+"}\n"
+"QLineEdit::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
 "}")
         self.newuser_mail.setAlignment(Qt.AlignCenter)
 
@@ -1311,7 +1337,10 @@ class Ui_MainWindow(object):
         self.edit_gender_box = QComboBox(self.frame_9)
         self.edit_gender_box.setObjectName(u"edit_gender_box")
         self.edit_gender_box.setMinimumSize(QSize(166, 24))
-        self.edit_gender_box.setStyleSheet(u"")
+        self.edit_gender_box.setFocusPolicy(Qt.ClickFocus)
+        self.edit_gender_box.setStyleSheet(u"QComboBox::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
+"}")
         self.edit_gender_box.setIconSize(QSize(10, 10))
 
         self.horizontalLayout_19.addWidget(self.edit_gender_box, 0, Qt.AlignHCenter|Qt.AlignVCenter)
@@ -1357,6 +1386,10 @@ class Ui_MainWindow(object):
         self.mail_edit_input = QLineEdit(self.frame_8)
         self.mail_edit_input.setObjectName(u"mail_edit_input")
         self.mail_edit_input.setMinimumSize(QSize(160, 25))
+        self.mail_edit_input.setFocusPolicy(Qt.ClickFocus)
+        self.mail_edit_input.setStyleSheet(u"QLineEdit::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
+"}")
         self.mail_edit_input.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_18.addWidget(self.mail_edit_input, 0, Qt.AlignHCenter)
@@ -1385,6 +1418,10 @@ class Ui_MainWindow(object):
         sizePolicy2.setHeightForWidth(self.name_edit_input.sizePolicy().hasHeightForWidth())
         self.name_edit_input.setSizePolicy(sizePolicy2)
         self.name_edit_input.setMinimumSize(QSize(160, 25))
+        self.name_edit_input.setFocusPolicy(Qt.ClickFocus)
+        self.name_edit_input.setStyleSheet(u"QLineEdit::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
+"}")
         self.name_edit_input.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_16.addWidget(self.name_edit_input, 0, Qt.AlignHCenter)
@@ -1408,6 +1445,10 @@ class Ui_MainWindow(object):
         self.phone_edit_input = QLineEdit(self.frame_7)
         self.phone_edit_input.setObjectName(u"phone_edit_input")
         self.phone_edit_input.setMinimumSize(QSize(160, 25))
+        self.phone_edit_input.setFocusPolicy(Qt.ClickFocus)
+        self.phone_edit_input.setStyleSheet(u"QLineEdit::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
+"}")
         self.phone_edit_input.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_17.addWidget(self.phone_edit_input, 0, Qt.AlignHCenter)
@@ -1432,6 +1473,10 @@ class Ui_MainWindow(object):
         self.edit_user_lang = QComboBox(self.frame_12)
         self.edit_user_lang.setObjectName(u"edit_user_lang")
         self.edit_user_lang.setMinimumSize(QSize(166, 24))
+        self.edit_user_lang.setFocusPolicy(Qt.ClickFocus)
+        self.edit_user_lang.setStyleSheet(u"QComboBox::focus{\n"
+"	border-color:rgb(255, 0, 0);\n"
+"}")
 
         self.horizontalLayout_21.addWidget(self.edit_user_lang, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
