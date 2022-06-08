@@ -282,69 +282,15 @@ class Ui_MainWindow(object):
         self.gridLayout.setHorizontalSpacing(2)
         self.gridLayout.setVerticalSpacing(8)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
-        self.skills_btn_label = QLabel(self.side_menu)
-        self.skills_btn_label.setObjectName(u"skills_btn_label")
-
-        self.gridLayout.addWidget(self.skills_btn_label, 3, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.details_button = QPushButton(self.side_menu)
-        self.details_button.setObjectName(u"details_button")
-        self.details_button.setStyleSheet(u"QPushButton{\n"
-"	padding: 2px 4px;\n"
-"	color: rgb(0, 255, 255);\n"
-"}\n"
-"QPushButton:hover{\n"
-"	border: 1px solid;\n"
-"	border-radius: 10px;\n"
-"	\n"
-"	border-color: rgb(0, 255, 255);\n"
-"	background-color: rgb(170, 255, 255);\n"
-"}\n"
-"QPushButton:pressed{\n"
-"	border: 1px solid;\n"
-"	border-radius: 10px;\n"
-"	color: black;\n"
-"	border-color: rgb(0, 255, 255);\n"
-"	background-color: rgb(170, 255, 255);\n"
-"}")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/icons/zoom-in.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.details_button.setIcon(icon5)
-        self.details_button.setIconSize(QSize(25, 25))
-
-        self.gridLayout.addWidget(self.details_button, 4, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.skills_button = QPushButton(self.side_menu)
-        self.skills_button.setObjectName(u"skills_button")
-        self.skills_button.setStyleSheet(u"QPushButton{\n"
-"	padding: 2px 4px;\n"
-"	color: rgb(0, 255, 255);\n"
-"}\n"
-"QPushButton:hover{\n"
-"	border: 1px solid;\n"
-"	border-radius: 10px;\n"
-"	\n"
-"	border-color: rgb(0, 255, 255);\n"
-"	background-color: rgb(170, 255, 255);\n"
-"}\n"
-"QPushButton:pressed{\n"
-"	border: 1px solid;\n"
-"	border-radius: 10px;\n"
-"	color: black;\n"
-"	border-color: rgb(0, 255, 255);\n"
-"	background-color: rgb(170, 255, 255);\n"
-"}")
-        icon6 = QIcon()
-        icon6.addFile(u":/icons/icons/book.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.skills_button.setIcon(icon6)
-        self.skills_button.setIconSize(QSize(25, 25))
-
-        self.gridLayout.addWidget(self.skills_button, 3, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
-
         self.users_btn_label = QLabel(self.side_menu)
         self.users_btn_label.setObjectName(u"users_btn_label")
 
         self.gridLayout.addWidget(self.users_btn_label, 1, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.skills_btn_label = QLabel(self.side_menu)
+        self.skills_btn_label.setObjectName(u"skills_btn_label")
+
+        self.gridLayout.addWidget(self.skills_btn_label, 3, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
 
         self.users_button = QPushButton(self.side_menu)
         self.users_button.setObjectName(u"users_button")
@@ -366,17 +312,71 @@ class Ui_MainWindow(object):
 "	border-color: rgb(0, 255, 255);\n"
 "	background-color: rgb(170, 255, 255);\n"
 "}")
-        icon7 = QIcon()
-        icon7.addFile(u":/icons/icons/users.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.users_button.setIcon(icon7)
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/icons/users.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.users_button.setIcon(icon5)
         self.users_button.setIconSize(QSize(25, 25))
 
         self.gridLayout.addWidget(self.users_button, 1, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
 
+        self.details_button = QPushButton(self.side_menu)
+        self.details_button.setObjectName(u"details_button")
+        self.details_button.setStyleSheet(u"QPushButton{\n"
+"	padding: 2px 4px;\n"
+"	color: rgb(0, 255, 255);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 1px solid;\n"
+"	border-radius: 10px;\n"
+"	\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	background-color: rgb(170, 255, 255);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 1px solid;\n"
+"	border-radius: 10px;\n"
+"	color: black;\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	background-color: rgb(170, 255, 255);\n"
+"}")
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/icons/zoom-in.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.details_button.setIcon(icon6)
+        self.details_button.setIconSize(QSize(25, 25))
+
+        self.gridLayout.addWidget(self.details_button, 5, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.skills_button = QPushButton(self.side_menu)
+        self.skills_button.setObjectName(u"skills_button")
+        self.skills_button.setStyleSheet(u"QPushButton{\n"
+"	padding: 2px 4px;\n"
+"	color: rgb(0, 255, 255);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 1px solid;\n"
+"	border-radius: 10px;\n"
+"	\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	background-color: rgb(170, 255, 255);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 1px solid;\n"
+"	border-radius: 10px;\n"
+"	color: black;\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	background-color: rgb(170, 255, 255);\n"
+"}")
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/icons/book.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.skills_button.setIcon(icon7)
+        self.skills_button.setIconSize(QSize(25, 25))
+
+        self.gridLayout.addWidget(self.skills_button, 3, 0, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+
         self.detail_btn_label = QLabel(self.side_menu)
         self.detail_btn_label.setObjectName(u"detail_btn_label")
 
-        self.gridLayout.addWidget(self.detail_btn_label, 4, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+        self.gridLayout.addWidget(self.detail_btn_label, 5, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
 
         self.home_button = QPushButton(self.side_menu)
         self.home_button.setObjectName(u"home_button")
@@ -409,6 +409,38 @@ class Ui_MainWindow(object):
         self.home_btn_label.setObjectName(u"home_btn_label")
 
         self.gridLayout.addWidget(self.home_btn_label, 0, 1, 1, 1, Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.menu_help_btn = QPushButton(self.side_menu)
+        self.menu_help_btn.setObjectName(u"menu_help_btn")
+        self.menu_help_btn.setStyleSheet(u"QPushButton{\n"
+"	padding: 2px 4px;\n"
+"	color: rgb(0, 255, 255);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 1px solid;\n"
+"	border-radius: 10px;\n"
+"	\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	background-color: rgb(170, 255, 255);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 1px solid;\n"
+"	border-radius: 10px;\n"
+"	color: black;\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	background-color: rgb(170, 255, 255);\n"
+"}")
+        icon9 = QIcon()
+        icon9.addFile(u":/icons/icons/help-circle.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.menu_help_btn.setIcon(icon9)
+        self.menu_help_btn.setIconSize(QSize(25, 25))
+
+        self.gridLayout.addWidget(self.menu_help_btn, 4, 0, 1, 1, Qt.AlignLeft)
+
+        self.help_btn_label = QLabel(self.side_menu)
+        self.help_btn_label.setObjectName(u"help_btn_label")
+
+        self.gridLayout.addWidget(self.help_btn_label, 4, 1, 1, 1)
 
 
         self.horizontalLayout_6.addWidget(self.side_menu, 0, Qt.AlignVCenter)
@@ -561,6 +593,96 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.addWidget(self.home_main_frame)
 
         self.stackedWidget.addWidget(self.user_page)
+        self.dialog_page = QWidget()
+        self.dialog_page.setObjectName(u"dialog_page")
+        self.verticalLayout_16 = QVBoxLayout(self.dialog_page)
+        self.verticalLayout_16.setSpacing(4)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
+        self.frame_18 = QFrame(self.dialog_page)
+        self.frame_18.setObjectName(u"frame_18")
+        self.frame_18.setFrameShape(QFrame.StyledPanel)
+        self.frame_18.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_17 = QVBoxLayout(self.frame_18)
+        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.frame_20 = QFrame(self.frame_18)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_18 = QVBoxLayout(self.frame_20)
+        self.verticalLayout_18.setSpacing(0)
+        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
+        self.dialog_text_label = QLabel(self.frame_20)
+        self.dialog_text_label.setObjectName(u"dialog_text_label")
+        self.dialog_text_label.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_18.addWidget(self.dialog_text_label)
+
+
+        self.verticalLayout_17.addWidget(self.frame_20)
+
+        self.frame_19 = QFrame(self.frame_18)
+        self.frame_19.setObjectName(u"frame_19")
+        self.frame_19.setFrameShape(QFrame.StyledPanel)
+        self.frame_19.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_25 = QHBoxLayout(self.frame_19)
+        self.horizontalLayout_25.setSpacing(10)
+        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
+        self.horizontalLayout_25.setContentsMargins(0, 0, 0, 0)
+        self.dialog_cancel_btn = QPushButton(self.frame_19)
+        self.dialog_cancel_btn.setObjectName(u"dialog_cancel_btn")
+        self.dialog_cancel_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+
+        self.horizontalLayout_25.addWidget(self.dialog_cancel_btn)
+
+        self.dialog_ok_btn = QPushButton(self.frame_19)
+        self.dialog_ok_btn.setObjectName(u"dialog_ok_btn")
+        self.dialog_ok_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+
+        self.horizontalLayout_25.addWidget(self.dialog_ok_btn)
+
+
+        self.verticalLayout_17.addWidget(self.frame_19, 0, Qt.AlignHCenter)
+
+
+        self.verticalLayout_16.addWidget(self.frame_18)
+
+        self.stackedWidget.addWidget(self.dialog_page)
         self.info_page = QWidget()
         self.info_page.setObjectName(u"info_page")
         self.verticalLayout_13 = QVBoxLayout(self.info_page)
@@ -571,15 +693,162 @@ class Ui_MainWindow(object):
         self.frame_17.setObjectName(u"frame_17")
         self.frame_17.setFrameShape(QFrame.StyledPanel)
         self.frame_17.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_14 = QVBoxLayout(self.frame_17)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.label_7 = QLabel(self.frame_17)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setTextFormat(Qt.RichText)
+        self.label_7.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_14.addWidget(self.label_7)
+
 
         self.verticalLayout_13.addWidget(self.frame_17)
 
-        self.frame_18 = QFrame(self.info_page)
-        self.frame_18.setObjectName(u"frame_18")
-        self.frame_18.setFrameShape(QFrame.StyledPanel)
-        self.frame_18.setFrameShadow(QFrame.Raised)
+        self.info_main_frame = QFrame(self.info_page)
+        self.info_main_frame.setObjectName(u"info_main_frame")
+        self.info_main_frame.setMinimumSize(QSize(220, 0))
+        self.info_main_frame.setFrameShape(QFrame.StyledPanel)
+        self.info_main_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_15 = QVBoxLayout(self.info_main_frame)
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.social_hackzor_btn = QPushButton(self.info_main_frame)
+        self.social_hackzor_btn.setObjectName(u"social_hackzor_btn")
+        self.social_hackzor_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+        icon10 = QIcon()
+        icon10.addFile(u":/fabicons/Spider.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.social_hackzor_btn.setIcon(icon10)
+        self.social_hackzor_btn.setIconSize(QSize(22, 22))
 
-        self.verticalLayout_13.addWidget(self.frame_18)
+        self.verticalLayout_15.addWidget(self.social_hackzor_btn)
+
+        self.social_mail_btn = QPushButton(self.info_main_frame)
+        self.social_mail_btn.setObjectName(u"social_mail_btn")
+        self.social_mail_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+        icon11 = QIcon()
+        icon11.addFile(u":/fabicons/mail.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.social_mail_btn.setIcon(icon11)
+        self.social_mail_btn.setIconSize(QSize(22, 22))
+
+        self.verticalLayout_15.addWidget(self.social_mail_btn)
+
+        self.social_codepen_btn = QPushButton(self.info_main_frame)
+        self.social_codepen_btn.setObjectName(u"social_codepen_btn")
+        self.social_codepen_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+        icon12 = QIcon()
+        icon12.addFile(u":/fabicons/CodePen.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.social_codepen_btn.setIcon(icon12)
+        self.social_codepen_btn.setIconSize(QSize(20, 20))
+
+        self.verticalLayout_15.addWidget(self.social_codepen_btn)
+
+        self.social_yt_btn = QPushButton(self.info_main_frame)
+        self.social_yt_btn.setObjectName(u"social_yt_btn")
+        self.social_yt_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+        icon13 = QIcon()
+        icon13.addFile(u":/fabicons/Youtube.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.social_yt_btn.setIcon(icon13)
+        self.social_yt_btn.setIconSize(QSize(20, 20))
+
+        self.verticalLayout_15.addWidget(self.social_yt_btn)
+
+        self.social_git_btn = QPushButton(self.info_main_frame)
+        self.social_git_btn.setObjectName(u"social_git_btn")
+        self.social_git_btn.setStyleSheet(u"QPushButton{\n"
+"border-radius:20px;\n"
+"border-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;\n"
+"	background-color: rgb(170, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	border-color: rgb(0, 255, 255);\n"
+"	color: black;	\n"
+"	background-color: rgb(0, 255, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"	")
+        icon14 = QIcon()
+        icon14.addFile(u":/fabicons/Github.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.social_git_btn.setIcon(icon14)
+        self.social_git_btn.setIconSize(QSize(20, 20))
+
+        self.verticalLayout_15.addWidget(self.social_git_btn)
+
+
+        self.verticalLayout_13.addWidget(self.info_main_frame, 0, Qt.AlignHCenter)
 
         self.stackedWidget.addWidget(self.info_page)
         self.home_page = QWidget()
@@ -1282,8 +1551,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.footer_help_btn = QPushButton(self.footer_right_frame)
         self.footer_help_btn.setObjectName(u"footer_help_btn")
-        icon9 = QIcon()
-        icon9.addFile(u":/icons/icons/help-circle.png", QSize(), QIcon.Normal, QIcon.Off)
         self.footer_help_btn.setIcon(icon9)
         self.footer_help_btn.setIconSize(QSize(14, 14))
 
@@ -1299,7 +1566,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(5)
         self.gender_combobox.setCurrentIndex(-1)
 
 
@@ -1313,18 +1580,29 @@ class Ui_MainWindow(object):
         self.mini_button.setText("")
         self.maxi_button.setText("")
         self.x_button.setText("")
+        self.users_btn_label.setText(QCoreApplication.translate("MainWindow", u"Users", None))
         self.skills_btn_label.setText(QCoreApplication.translate("MainWindow", u"Skills", None))
+        self.users_button.setText("")
         self.details_button.setText("")
         self.skills_button.setText("")
-        self.users_btn_label.setText(QCoreApplication.translate("MainWindow", u"Users", None))
-        self.users_button.setText("")
         self.detail_btn_label.setText(QCoreApplication.translate("MainWindow", u"Details", None))
         self.home_button.setText("")
         self.home_btn_label.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.menu_help_btn.setText("")
+        self.help_btn_label.setText(QCoreApplication.translate("MainWindow", u"Hilfe", None))
         self.edit_header_2.setText(QCoreApplication.translate("MainWindow", u"User", None))
         self.home_head_label.setText("")
         self.home_info_label.setText(QCoreApplication.translate("MainWindow", u"Aktuelle Benutzer:", None))
         self.create_btn.setText(QCoreApplication.translate("MainWindow", u"Erstellen", None))
+        self.dialog_text_label.setText(QCoreApplication.translate("MainWindow", u"Bist du sicher das du den Benutzer ... l\u00f6schen m\u00f6chtest?", None))
+        self.dialog_cancel_btn.setText(QCoreApplication.translate("MainWindow", u"L\u00f6schen", None))
+        self.dialog_ok_btn.setText(QCoreApplication.translate("MainWindow", u"abbrechen", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Solltest du Probleme bei der Verwendung von S4M haben kannst du mich <br/>\u00fcber diese Buttons kontaktieren.</p></body></html>", None))
+        self.social_hackzor_btn.setText("")
+        self.social_mail_btn.setText("")
+        self.social_codepen_btn.setText("")
+        self.social_yt_btn.setText("")
+        self.social_git_btn.setText("")
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:16pt;\">Willkommen</span></p><p><span style=\" font-size:9pt;\">version 1.0.8</span></p></body></html>", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:6pt;\">Development &amp; Design<br/>By S3R43o3</span></p><p><span style=\" font-size:6pt;\"><br/></span></p></body></html>", None))
         self.start_sam_btn.setText(QCoreApplication.translate("MainWindow", u"Start S4M", None))

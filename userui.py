@@ -7,7 +7,7 @@ from PySide6.QtGui import *
 
 
 from qt_material import apply_stylesheet
-import sys, os, time, datetime, json
+import sys, os, time, datetime, json, webbrowser
 from ui_utils import UIutils
 
 
@@ -49,7 +49,26 @@ class UserUI(QMainWindow):
             self.ui.start_sam_btn.setEnabled(False)
         self.userToEdit = None
 
-        self.ui.details_button.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.info_page))
+
+
+        # Social buttons #
+        self.hackzorURL = "https://www.hackzor.de"
+        self.gitURL = "https://www.github.com/sera619"
+        self.ytURL = "https://www.youtube.com/channel/UCJLXwZV5Kk4XRF6TSY_iPgQ"
+        self.codepenURL = "https://codepen.io/sera619"
+        self.mailURL = "mailto:seraphinus619@gmail.com"
+        self.ui.social_codepen_btn.clicked.connect(lambda: webbrowser.open_new_tab(self.codepenURL))
+        self.ui.social_git_btn.clicked.connect(lambda: webbrowser.open_new_tab(self.gitURL))
+        self.ui.social_hackzor_btn.clicked.connect(lambda: webbrowser.open_new_tab(self.hackzorURL))
+        self.ui.social_yt_btn.clicked.connect(lambda: webbrowser.open_new_tab(self.ytURL))
+        self.ui.social_mail_btn.clicked.connect(lambda: webbrowser.open_new_tab(self.mailURL))
+        ##############################################################################################
+
+
+        self.ui.dialog_cancel_btn.clicked.connect(lambda: self.edit_user_page())
+        self.ui.dialog_ok_btn.clicked.connect(lambda: self.accept_delete())
+        self.ui.menu_help_btn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.info_page))
+        self.ui.edit_del_btn.clicked.connect(lambda: self.delete_user())
         self.ui.newuser_create_btn.clicked.connect(lambda: self.createNewUser())
         self.ui.x_button.clicked.connect(lambda: self.closeWindow())
         self.ui.mini_button.clicked.connect(lambda: self.showMinimized())
@@ -88,6 +107,14 @@ class UserUI(QMainWindow):
         self.ui.mail_edit_input.setText(self.ui_utils.get_user_mail(user))
 
 
+    def delete_user(self):
+        user = self.ui.home_user_list.currentItem().text()
+        self.ui.dialog_text_label.setText('Möchstest du den Benutzer: '+ str(user) + ' wirklich löschen?')
+        self.ui.stackedWidget.setCurrentWidget(self.ui.dialog_page)
+
+    def accept_delete(self):
+        self.ui_utils.delete_user(self.userToEdit)
+        self.userToEdit = None
 
     def update_user(self):
         updated_username = self.ui.name_edit_input.text()
@@ -106,6 +133,7 @@ class UserUI(QMainWindow):
         self.ui.edit_error_label.setText("Benutzer erfolgreich aktualisiert")
         self.update_userlist()
         time.sleep(1.5)
+        self.userToEdit = None
         self.ui.stackedWidget.setCurrentWidget(self.ui.home_page)
 
     def animateMenu(self):

@@ -20,7 +20,7 @@
    <string>MainWindow</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="assets/iconset.qrc">
+   <iconset>
     <normaloff>:/icons/glossy_3d_blue_orbs2_108.png</normaloff>:/icons/glossy_3d_blue_orbs2_108.png</iconset>
   </property>
   <property name="styleSheet">
@@ -477,6 +477,13 @@ border-right: 1px solid rgb(0, 255, 255);
           <property name="verticalSpacing">
            <number>8</number>
           </property>
+          <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QLabel" name="users_btn_label">
+            <property name="text">
+             <string>Users</string>
+            </property>
+           </widget>
+          </item>
           <item row="3" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
            <widget class="QLabel" name="skills_btn_label">
             <property name="text">
@@ -484,7 +491,44 @@ border-right: 1px solid rgb(0, 255, 255);
             </property>
            </widget>
           </item>
-          <item row="4" column="0" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+          <item row="1" column="0" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+           <widget class="QPushButton" name="users_button">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	padding: 2px 4px;
+	color: rgb(0, 255, 255);
+}
+QPushButton:hover{
+	border: 1px solid;
+	border-radius: 10px;
+	
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed{
+	border: 1px solid;
+	border-radius: 10px;
+	color: black;
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="assets/iconset.qrc">
+              <normaloff>:/icons/icons/users.png</normaloff>:/icons/icons/users.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" alignment="Qt::AlignLeft|Qt::AlignVCenter">
            <widget class="QPushButton" name="details_button">
             <property name="styleSheet">
              <string notr="true">QPushButton{
@@ -558,51 +602,7 @@ QPushButton:pressed{
             </property>
            </widget>
           </item>
-          <item row="1" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
-           <widget class="QLabel" name="users_btn_label">
-            <property name="text">
-             <string>Users</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0" alignment="Qt::AlignLeft|Qt::AlignVCenter">
-           <widget class="QPushButton" name="users_button">
-            <property name="styleSheet">
-             <string notr="true">QPushButton{
-	padding: 2px 4px;
-	color: rgb(0, 255, 255);
-}
-QPushButton:hover{
-	border: 1px solid;
-	border-radius: 10px;
-	
-	border-color: rgb(0, 255, 255);
-	background-color: rgb(170, 255, 255);
-}
-QPushButton:pressed{
-	border: 1px solid;
-	border-radius: 10px;
-	color: black;
-	border-color: rgb(0, 255, 255);
-	background-color: rgb(170, 255, 255);
-}</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="icon">
-             <iconset resource="assets/iconset.qrc">
-              <normaloff>:/icons/icons/users.png</normaloff>:/icons/icons/users.png</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>25</width>
-              <height>25</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
+          <item row="5" column="1" alignment="Qt::AlignLeft|Qt::AlignVCenter">
            <widget class="QLabel" name="detail_btn_label">
             <property name="text">
              <string>Details</string>
@@ -653,6 +653,50 @@ QPushButton:pressed{
             </property>
            </widget>
           </item>
+          <item row="4" column="0" alignment="Qt::AlignLeft">
+           <widget class="QPushButton" name="menu_help_btn">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	padding: 2px 4px;
+	color: rgb(0, 255, 255);
+}
+QPushButton:hover{
+	border: 1px solid;
+	border-radius: 10px;
+	
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}
+QPushButton:pressed{
+	border: 1px solid;
+	border-radius: 10px;
+	color: black;
+	border-color: rgb(0, 255, 255);
+	background-color: rgb(170, 255, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="assets/iconset.qrc">
+              <normaloff>:/icons/icons/help-circle.png</normaloff>:/icons/icons/help-circle.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="help_btn_label">
+            <property name="text">
+             <string>Hilfe</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -677,7 +721,7 @@ padding: 5px 10px;
 }</string>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>5</number>
          </property>
          <widget class="QWidget" name="user_page">
           <property name="styleSheet">
@@ -898,6 +942,155 @@ QPushButton:pressed {
            </item>
           </layout>
          </widget>
+         <widget class="QWidget" name="dialog_page">
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="frame_18">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <widget class="QFrame" name="frame_20">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="dialog_text_label">
+                   <property name="text">
+                    <string>Bist du sicher das du den Benutzer ... löschen möchtest?</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QFrame" name="frame_19">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_25">
+                 <property name="spacing">
+                  <number>10</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="dialog_cancel_btn">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+	</string>
+                   </property>
+                   <property name="text">
+                    <string>Löschen</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="dialog_ok_btn">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+	</string>
+                   </property>
+                   <property name="text">
+                    <string>abbrechen</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
          <widget class="QWidget" name="info_page">
           <layout class="QVBoxLayout" name="verticalLayout_13">
            <property name="spacing">
@@ -923,16 +1116,224 @@ QPushButton:pressed {
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <item>
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Solltest du Probleme bei der Verwendung von S4M haben kannst du mich &lt;br/&gt;über diese Buttons kontaktieren.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="textFormat">
+                 <enum>Qt::RichText</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </item>
-           <item>
-            <widget class="QFrame" name="frame_18">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QFrame" name="info_main_frame">
+             <property name="minimumSize">
+              <size>
+               <width>220</width>
+               <height>0</height>
+              </size>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QPushButton" name="social_hackzor_btn">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="assets/iconset.qrc">
+                  <normaloff>:/fabicons/Spider.png</normaloff>:/fabicons/Spider.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>22</width>
+                  <height>22</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="social_mail_btn">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="assets/iconset.qrc">
+                  <normaloff>:/fabicons/mail.png</normaloff>:/fabicons/mail.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>22</width>
+                  <height>22</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="social_codepen_btn">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="assets/iconset.qrc">
+                  <normaloff>:/fabicons/CodePen.png</normaloff>:/fabicons/CodePen.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="social_yt_btn">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="assets/iconset.qrc">
+                  <normaloff>:/fabicons/Youtube.png</normaloff>:/fabicons/Youtube.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="social_git_btn">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-radius:20px;
+border-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:hover{
+	border-color: rgb(0, 255, 255);
+	color: black;
+	background-color: rgb(170, 255, 255);
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	border-color: rgb(0, 255, 255);
+	color: black;	
+	background-color: rgb(0, 255, 255);
+	border-radius: 10px;
+}
+	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="assets/iconset.qrc">
+                  <normaloff>:/fabicons/Github.png</normaloff>:/fabicons/Github.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </item>
           </layout>
