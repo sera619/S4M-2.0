@@ -1,6 +1,6 @@
 from loguru import logger
 import json, os, sys, time, datetime
-from tinydb import TinyDB, Query
+from tinydb import TinyDB, Query, where
 from tinydb.operations import set as tset
 from usermgmt import UserMgmt
 
@@ -9,6 +9,13 @@ class UIutils:
     def __init__(self):
         self.db = TinyDB('users.json')
         self.speaker_table = self.db.table('speakers')
+
+    def delete_user(self, user):
+        speaker = Query()
+        self.db.remove(where('name') == str(user))
+        self.db.update()
+        logger.debug('\nUser: ' +str(user)+ ' deleted!')
+
 
     def edit_name(self,user,name):
         speaker = Query()
