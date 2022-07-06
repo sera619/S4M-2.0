@@ -33,7 +33,7 @@ importlib-metadata==4.11.4
 joblib==1.1.0
 lief==0.12.1
 loguru==0.5.3
-lxml==4.8.0
+lxml==4.9.1
 notify-py==0.3.3
 num2words==0.5.10
 numpy==1.22.4
