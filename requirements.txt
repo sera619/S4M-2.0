@@ -30,7 +30,7 @@ gmail==0.6.3
 greenlet==1.1.2
 idna==3.3
 importlib-metadata==4.11.4
-joblib==1.1.0
+joblib==1.2.0
 lief==0.12.1
 loguru==0.5.3
 lxml==4.9.1
