@@ -5,7 +5,7 @@ autopep8==1.6.0
 beautifulsoup4==4.11.1
 bottle==0.12.21
 bottle-websocket==0.2.9
-certifi==2022.5.18.1
+certifi==2022.12.7
 cffi==1.15.0
 charset-normalizer==2.0.12
 chatbotAI==0.3.1.3
