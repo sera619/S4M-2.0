@@ -68,7 +68,7 @@ pywin32==304
 pywin32-ctypes==0.2.0
 PyYAML==6.0
 ratelim==0.1.6
-requests==2.27.1
+requests==2.31.0
 scikit-learn==0.22.2.post1
 scipy==1.8.1
 shiboken6==6.3.0
