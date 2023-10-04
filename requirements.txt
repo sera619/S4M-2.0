@@ -39,7 +39,7 @@ num2words==0.5.10
 numpy==1.22.4
 packaging==21.3
 pefile==2022.5.30
-Pillow==9.3.0
+Pillow==10.0.1
 pvporcupine==1.9.5
 pyaml==19.12.0
 PyAudio @ file:///C:/1Coding/Python/S4M-2.0/conf/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
