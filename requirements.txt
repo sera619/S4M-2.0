@@ -87,7 +87,7 @@ tinydb==4.7.0
 toml==0.10.2
 tqdm==4.64.0
 twilio==7.9.1
-urllib3==1.26.9
+urllib3==1.26.18
 vosk==0.3.7
 whichcraft==0.6.1
 wikipedia==1.4.0
