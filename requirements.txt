@@ -46,7 +46,7 @@ PyAudio @ file:///C:/1Coding/Python/S4M-2.0/conf/PyAudio-0.2.11-cp38-cp38-win_am
 pycodestyle==2.8.0
 pycountry==20.7.3
 pycparser==2.21
-pycryptodomex==3.14.1
+pycryptodomex==3.19.1
 pygame==2.1.2
 pyinstaller==5.1
 pyinstaller-hooks-contrib==2022.6
