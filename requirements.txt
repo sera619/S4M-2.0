@@ -28,7 +28,7 @@ gevent==23.9.1
 gevent-websocket==0.10.1
 gmail==0.6.3
 greenlet==1.1.2
-idna==3.3
+idna==3.7
 importlib-metadata==4.11.4
 joblib==1.2.0
 lief==0.12.1
