@@ -93,6 +93,6 @@ whichcraft==0.6.1
 wikipedia==1.4.0
 win32-setctime==1.1.0
 wxPython==4.1.1
-zipp==3.8.0
+zipp==3.19.1
 zope.event==4.5.0
 zope.interface==5.4.0
